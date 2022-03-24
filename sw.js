@@ -1,60 +1,54 @@
-'use strict';
-
-const PREFIX = 'victorvico.github.io';
-const HASH = %HASH%; // Computed at build time.
-const OFFLINE_CACHE = `${PREFIX}-${HASH}`;
-
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open(OFFLINE_CACHE).then(function(cache) {
-      return cache.addAll(%CACHE_LIST%); // Computed at build time.
-    })
-  );
-});
-
-self.addEventListener('activate', function(event) {
-  // Delete old asset caches.
-  event.waitUntil(
-    caches.keys().then(function(keys) {
-      return Promise.all(
-        keys.map(function(key) {
-          if (
-            key != OFFLINE_CACHE &&
-            key.startsWith(`${PREFIX}-`)
-          ) {
-            return caches.delete(key);
-          }
-        })
-      );
-    })
-  );
-});
-
-self.addEventListener('fetch', function(event) {
-  if (event.request.mode == 'navigate') {
-    console.log('Handling fetch event for', event.request.url);
-    console.log(event.request);
-    event.respondWith(
-      fetch(event.request).catch(function(exception) {
-        // The `catch` is only triggered if `fetch()` throws an exception,
-        // which most likely happens due to the server being unreachable.
-        console.error(
-          'Fetch failed; returning offline page instead.',
-          exception
-        );
-        return caches.open(OFFLINE_CACHE).then(function(cache) {
-          return cache.match('/');
+// PWA Fire Bundle
+                      
+        // after a service worker is installed and the user navigates to a different page or 
+        // refreshes,the service worker will begin to receive fetch events
+                          
+        self.addEventListener('fetch', function(event) {
+        event.respondWith(caches.open('cache').then(function(cache) {
+        return cache.match(event.request).then(function(response) {
+        console.log("cache request: " + event.request.url);
+        var fetchPromise = fetch(event.request).then(function(networkResponse) {           
+        // if we got a response from the cache, update the cache                   
+        console.log("fetch completed: " + event.request.url, networkResponse);
+        if (networkResponse) {
+            console.debug("updated cached page: " + event.request.url, networkResponse);
+              cache.put(event.request, networkResponse.clone());}
+              return networkResponse;
+                  }, function (event) {   
+        // rejected promise - just ignore it, we're offline!   
+                  console.log("Error in fetch()", event);
+                  event.waitUntil(
+                  caches.open('cache').then(function(cache) { 
+        // our cache is named *cache* in the caches.open() above
+                  return cache.addAll
+                  ([            
+        //cache.addAll(), takes a list of URLs, then fetches them from the server
+        // and adds the response to the cache.           
+        // add your entire site to the cache- as in the code below; for offline access
+        // If you have some build process for your site, perhaps that could 
+        // generate the list of possible URLs that a user might load.               
+                '/', // do not remove this
+                '/index.html', //default
+                '/index.html?homescreen=1', //default
+                '/?homescreen=1', //default
+                '/assets/*',// configure as by your site ; just an example
+                '/forms/*',// choose images to keep offline; just an example
+        // Do not replace/delete/edit the manifest.js paths below
+        //These are links to the extenal social media buttons that should be cached;
+        // we have used twitter's as an example
+              'https://platform.twitter.com/widgets.js',       
+                ]);
+                })
+                );
+                });
+        // respond from the cache, or the network
+          return response || fetchPromise;
         });
-      })
-    );
-  } else {
-    // It’s not a request for an HTML document, but rather for a CSS or SVG
-    // file or whatever…
-    event.respondWith(
-      caches.match(event.request).then(function(response) {
-        return response || fetch(event.request);
-      })
-    );
-  }
-
-});
+        }));
+        });
+        
+        self.addEventListener('install', function(event) {
+          // The promise that skipWaiting() returns can be safely ignored.
+          self.skipWaiting();
+          console.log("Latest version installed!");
+        });
