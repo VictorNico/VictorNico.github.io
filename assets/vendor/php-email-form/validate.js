@@ -58,9 +58,9 @@
   function sendEmail(payload) {
     Email.send({
     Host: "smtp.elasticemail.com",
-    Username : "victordev2805@gmail.com",
-    Password : "Tien-tcheu_28",
-    To : 'Viclegranddab@gmail.com',
+    Username : "",
+    Password : "",
+    To : '',
     From : `${payload.email}`,
     Subject : `${payload.subject}`,
     Body : `Hi Dear, \n  ${payload.message} \n With king regard ${payload.name}`,
