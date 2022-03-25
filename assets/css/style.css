@@ -84,6 +84,27 @@ h1, h2, h3, h4, h5, h6 {
   border: 8px solid #2c2f3f;
 }
 
+/*#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: #2a4696;
+  overflow-y: auto;
+}
+
+#header .profile img {
+  margin: 15px auto;
+  display: block;
+  width: 120px;
+  border: 8px solid #149ddd;
+}*/
+
 #header .profile h1 {
   font-size: 24px;
   margin: 0;
