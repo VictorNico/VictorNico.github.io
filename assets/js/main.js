@@ -128,22 +128,40 @@
   /**
    * Hero type effect
    */
- const typed = select('.typed')
-  if (typed) {
+  const typeds = document.querySelectorAll('span[data-typed-items]')
+  
+  typeds.forEach((typed) => {
     let typed_strings = typed.getAttribute('data-typed-items')
+    let class_strings = typed.getAttribute('class')
     typed_strings = typed_strings.split(',')
-    new Typed('.typed', {
+    class_strings = class_strings.split(' ').filter((el)=>el.toLowerCase().startsWith('typed'))
+    class_strings.forEach((cls)=>{
+      new Typed(`.${cls}`, {
       strings: typed_strings,
       loop: true,
       typeSpeed: 100,
       backSpeed: 50,
       backDelay: 2000
     });
-  }
+    })
+    
+  })
 
   /**
    * Skills animation
    */
+    function onVisible(element, callback) {
+    new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+          // console.log(entry.intersectionRatio)
+          callback(element);
+          observer.disconnect();
+        }
+      });
+    }).observe(element);
+  }
+
   let skilsContent = select('.skills-content');
   if (skilsContent) {
     new Waypoint({
@@ -154,9 +172,25 @@
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
         });
+
+        let ratings = select('.ratings .bi', true);
+        ratings.forEach((el,i) => {
+            el.classList.add('rating-color')
+        });
+        // select('.ratings', true).forEach((el, i) => {
+        //   el.setAttribute("data-aos", `${i%2 === 0 ? "fade-left":"fade-right"}`)
+        //   // el.setAttribute("data-aos-delay", "300")
+        //   // onVisible(el, () => {
+        //   //   el.setAttribute("data-aos", `${i%2 === 0 ? "fade-left":"fade-right"}`)
+        //   //   el.setAttribute("data-aos-delay", "100")
+        //   // });
+        // });
       }
     })
   }
+
+
+  
 
   /**
    * Porfolio isotope and filter
