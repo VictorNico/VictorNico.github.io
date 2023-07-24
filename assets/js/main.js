@@ -189,8 +189,46 @@
     })
   }
 
-
+let multipleCardCarousel = document.querySelector(
+  "#carouselSkill"
+);
+if (window.matchMedia("(min-width: 768px)").matches) {
+  console.log("hdvsds","#edf44")
+  let carousel = new bootstrap.Carousel(multipleCardCarousel, {
+    interval: false,
+    wrap: false,
+  });
+  let carouselWidth = $(".carousel-inner")[0].scrollWidth;
+  let cardWidth = $(".carousel-item").width();
+  let scrollPosition = 0;
+  $("#carouselSkill .carousel-control-next").on("click", function () {
+    if (scrollPosition < carouselWidth - cardWidth * 4) {
+      scrollPosition += cardWidth;
+      $("#carouselSkill .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+  $("#carouselSkill .carousel-control-prev").on("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition -= cardWidth;
+      $("#carouselSkill .carousel-inner").animate(
+        { scrollLeft: scrollPosition },
+        600
+      );
+    }
+  });
+} else {
+  $(multipleCardCarousel).addClass("slide");
+}
   
+const resizeObserver = new ResizeObserver(entries => 
+  console.log('Body height changed:', entries[0].target.clientHeight)
+)
+
+// start observing a DOM node
+resizeObserver.observe(document.body)
 
   /**
    * Porfolio isotope and filter
