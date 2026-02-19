@@ -6,6 +6,10 @@
         :src="profile?.personal?.photo"
         :alt="profile?.personal?.name"
         class="profile-img"
+        width="120"
+        height="120"
+        loading="eager"
+        fetchpriority="high"
       />
       <h1 class="profile-name">
         <a href="#hero">{{ profile?.personal?.name }}</a>

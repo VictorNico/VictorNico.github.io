@@ -1,11 +1,21 @@
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
+
+const dataCache = new Map()
 
 /**
- * Composable pour charger les données depuis les fichiers JSON
- * @param {string} endpoint - Le nom du fichier JSON (sans extension)
- * @returns {Object} - { data, loading, error }
+ * Composable pour charger les données depuis les fichiers JSON.
+ * Les résultats sont mis en cache au niveau module : le même endpoint
+ * ne déclenche qu'un seul fetch quelle que soit le nombre de composants
+ * qui l'utilisent.
+ *
+ * @param {string} endpoint - Nom du fichier JSON (sans extension)
+ * @returns {{ data: Ref, loading: Ref, error: Ref, reload: Function }}
  */
 export function useDataLoader(endpoint) {
+  if (dataCache.has(endpoint)) {
+    return dataCache.get(endpoint)
+  }
+
   const data = ref(null)
   const loading = ref(true)
   const error = ref(null)
@@ -28,14 +38,11 @@ export function useDataLoader(endpoint) {
     }
   }
 
-  onMounted(() => {
-    loadData()
-  })
+  const result = { data, loading, error, reload: loadData }
+  dataCache.set(endpoint, result)
 
-  return {
-    data,
-    loading,
-    error,
-    reload: loadData
-  }
+  // Fetch immediately — pas besoin d'attendre onMounted
+  loadData()
+
+  return result
 }

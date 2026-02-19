@@ -186,6 +186,11 @@ const initParticles = () => {
   z-index: 3;
   text-align: center;
   padding: 0 $spacing-lg;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-name {
