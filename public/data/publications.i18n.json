@@ -3,36 +3,7 @@
     "en": "Research contributions and academic publications in Graph Machine Learning, Multilayer Network Analysis, and Agricultural AI.",
     "fr": "Contributions à la recherche et publications académiques en Apprentissage Automatique sur Graphes, Analyse de Réseaux Multicouches et IA Agricole."
   },
-  "publications": [
-    {
-      "id": 1,
-      "status": "published",
-      "title": {
-        "en": "Convolutional Neural Network-Based Xception, MobileNetV2 and InceptionV3 Models for Plant Disease Identification in Sub-Saharan Africa",
-        "fr": "Modèles Xception, MobileNetV2 et InceptionV3 basés sur les Réseaux de Neurones Convolutifs pour l'Identification des Maladies des Plantes en Afrique Subsaharienne"
-      },
-      "authors": [
-        "Halidou, A.",
-        "Mohamadou, Y.",
-        "Apen, P.T.",
-        "Von Kallon, D.V.",
-        "Baraza, W.J.",
-        "Patrick, M.G.",
-        "Djiembou, V.N.",
-        "Mardochée, R."
-      ],
-      "journal": "International Journal of Computer Applications",
-      "volume": "186(78)",
-      "pages": "1-15",
-      "year": 2025,
-      "abstract": {
-        "en": "This paper presents a comprehensive study on plant disease identification using state-of-the-art CNN architectures (Xception, MobileNetV2, InceptionV3) tailored for Sub-Saharan African agricultural contexts. The models were evaluated on real-world datasets and achieved high accuracy in identifying various plant diseases, enabling early detection and intervention.",
-        "fr": "Cet article présente une étude complète sur l'identification des maladies des plantes utilisant des architectures CNN de pointe (Xception, MobileNetV2, InceptionV3) adaptées aux contextes agricoles d'Afrique subsaharienne. Les modèles ont été évalués sur des ensembles de données réelles et ont atteint une grande précision dans l'identification de diverses maladies des plantes, permettant une détection et une intervention précoces."
-      },
-      "doi": "10.5120/ijca2025924642",
-      "url": "https://doi.org/10.5120/ijca2025924642",
-      "tags": ["Deep Learning", "Computer Vision", "Agricultural AI", "Plant Disease", "CNN", "Transfer Learning"]
-    },
+  "_publications": [
     {
       "id": 2,
       "status": "under-review",
@@ -101,6 +72,37 @@
         "fr": "Manuscrit en préparation pour IEEE Access, soumission prévue en avril 2026."
       },
       "tags": ["Deep Learning", "Computer Vision", "Agricultural AI", "Model Optimization", "Mobile Deployment", "Competition Winner"]
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "status": "published",
+      "title": {
+        "en": "Convolutional Neural Network-Based Xception, MobileNetV2 and InceptionV3 Models for Plant Disease Identification in Sub-Saharan Africa",
+        "fr": "Modèles Xception, MobileNetV2 et InceptionV3 basés sur les Réseaux de Neurones Convolutifs pour l'Identification des Maladies des Plantes en Afrique Subsaharienne"
+      },
+      "authors": [
+        "Halidou, A.",
+        "Mohamadou, Y.",
+        "Apen, P.T.",
+        "Von Kallon, D.V.",
+        "Baraza, W.J.",
+        "Patrick, M.G.",
+        "Djiembou, V.N.",
+        "Mardochée, R."
+      ],
+      "journal": "International Journal of Computer Applications",
+      "volume": "186(78)",
+      "pages": "1-15",
+      "year": 2025,
+      "abstract": {
+        "en": "This paper presents a comprehensive study on plant disease identification using state-of-the-art CNN architectures (Xception, MobileNetV2, InceptionV3) tailored for Sub-Saharan African agricultural contexts. The models were evaluated on real-world datasets and achieved high accuracy in identifying various plant diseases, enabling early detection and intervention.",
+        "fr": "Cet article présente une étude complète sur l'identification des maladies des plantes utilisant des architectures CNN de pointe (Xception, MobileNetV2, InceptionV3) adaptées aux contextes agricoles d'Afrique subsaharienne. Les modèles ont été évalués sur des ensembles de données réelles et ont atteint une grande précision dans l'identification de diverses maladies des plantes, permettant une détection et une intervention précoces."
+      },
+      "doi": "10.5120/ijca2025924642",
+      "url": "https://doi.org/10.5120/ijca2025924642",
+      "tags": ["Deep Learning", "Computer Vision", "Agricultural AI", "Plant Disease", "CNN", "Transfer Learning"]
     }
   ]
 }
