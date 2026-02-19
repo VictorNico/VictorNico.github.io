@@ -75,5 +75,5 @@ export default defineConfig({
       }
     })
   ],
-  base: '/nom-du-depot/',
+  base: '/',
 })
