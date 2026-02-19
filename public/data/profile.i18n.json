@@ -81,7 +81,7 @@
   "hero": {
     "roles": {
       "en": [
-        "Published Researcher",
+        "Local-Context-Integrated and Inclusive-Promoted AI Researcher",
         "CONIA Hackathon Winner 2025",
         "Graduate Research Assistant",
         "PhD Applicant Fall 2027",
@@ -91,11 +91,12 @@
         "Agricultural AI Researcher",
         "Data Scientist",
         "Senior FullStack Developer",
+        "ISS Engineer",
         "TAKENCO IT Lead",
         "Open Source Contributor"
       ],
       "fr": [
-        "Chercheur Publié",
+        "Chercheur en IA intégré au contexte local et favorisant l'inclusion",
         "Gagnant Hackathon CONIA 2025",
         "Assistant de Recherche Diplômé",
         "Candidat PhD Automne 2027",
@@ -106,6 +107,7 @@
         "Data Scientist",
         "Développeur FullStack Senior",
         "Responsable IT TAKENCO",
+        "Ingénieur en SSI",
         "Contributeur Open Source"
       ]
     }
