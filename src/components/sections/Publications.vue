@@ -61,11 +61,11 @@
           </div>
 
           <div class="pub-actions">
-            <a v-if="pub.doi" :href="`https://doi.org/${pub.doi}`" target="_blank" class="btn-action" :aria-label="`DOI – ${getTranslated(pub.title)}`">
+            <a v-if="pub.doi" :href="`https://doi.org/${pub.doi}`" target="_blank" class="btn-action" rel="noopener noreferrer" :aria-label="`DOI – ${getTranslated(pub.title)}`">
               <i class="bx bx-link-external"></i>
               DOI
             </a>
-            <a v-if="pub.url" :href="pub.url" target="_blank" class="btn-action" :aria-label="`${t('publications.readMore')} – ${getTranslated(pub.title)}`">
+            <a v-if="pub.url" :href="pub.url" target="_blank" class="btn-action" rel="noopener noreferrer" :aria-label="`${t('publications.readMore')} – ${getTranslated(pub.title)}`">
               <i class="bx bx-link-external"></i>
               {{ t('publications.readMore') }}
             </a>
