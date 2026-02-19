@@ -1,0 +1,143 @@
+{
+  "_education": [
+    {
+      "id": 1,
+      "degree": {
+        "en": "Baccalaureate D",
+        "fr": "Baccalauréat D"
+      },
+      "field": {
+        "en": "Probatory Baccalaureate of General Education, Life and Earth Sciences",
+        "fr": "Baccalauréat Probatoire de l'Enseignement Général, Sciences de la Vie et de la Terre"
+      },
+      "institution": "Nylon Ndogpassi High School",
+      "location": "Douala, CMR",
+      "startDate": "2016-09",
+      "endDate": "2017-06",
+      "description": {
+        "en": "Beginning to put into practice the knowledge acquired in all the previous rooms.",
+        "fr": "Début de la mise en pratique des connaissances acquises dans toutes les classes précédentes."
+      }
+    },
+    {
+      "id": 2,
+      "degree": {
+        "en": "Professional degree in Computer Science",
+        "fr": "Licence Professionnelle en Informatique"
+      },
+      "field": {
+        "en": "Information Systems Security",
+        "fr": "Sécurité des Systèmes d'Information"
+      },
+      "institution": "University of Yaoundé I",
+      "location": "Yaoundé, CMR",
+      "startDate": "2017-09",
+      "endDate": "2020-06",
+      "gpa": "3.48/4.0",
+      "description": {
+        "en": "Acquired the rank of Work Engineer in Information Systems Security & Analyst Designer Programmer. Specialization in cybersecurity, forensic analysis, and secure software development.",
+        "fr": "Obtention du grade d'Ingénieur de Travaux en Sécurité des Systèmes d'Information & Analyste Concepteur Programmeur. Spécialisation en cybersécurité, analyse forensique et développement logiciel sécurisé."
+      }
+    },
+    {
+      "id": 3,
+      "degree": {
+        "en": "Academic degree in Computer Science",
+        "fr": "Licence Académique en Informatique"
+      },
+      "field": {
+        "en": "Information Systems Security",
+        "fr": "Sécurité des Systèmes d'Information"
+      },
+      "institution": "University of Yaoundé I",
+      "location": "Yaoundé, CMR",
+      "startDate": "2020-09",
+      "endDate": "2021-06",
+      "description": {
+        "en": "Research-oriented degree in Information Systems Security. Acquired skills in cybersecurity research, threat analysis, and digital forensics.",
+        "fr": "Diplôme orienté recherche en Sécurité des Systèmes d'Information. Acquisition de compétences en recherche en cybersécurité, analyse des menaces et forensique numérique."
+      }
+    },
+    {
+      "id": 4,
+      "degree": {
+        "en": "Master 1 in Computer Science",
+        "fr": "Master 1 en Informatique"
+      },
+      "field": {
+        "en": "Data Science",
+        "fr": "Science des Données"
+      },
+      "institution": "University of Yaoundé I",
+      "location": "Yaoundé, CMR",
+      "startDate": "2021-09",
+      "endDate": "2023-06",
+      "description": {
+        "en": "Acquired skills in Research Domain Problem Solving Optimization and Machine Learning & Skill in Data Mining (using R) & Skill in Data Analysis (using Python) & Skill in Complexity and Advanced Algorithms (using Java and Spring MVC framework) & Skill in Software Engineering.",
+        "fr": "Acquisition de compétences en résolution de problèmes d'optimisation et apprentissage automatique & Compétence en Fouille de Données (utilisant R) & Compétence en Analyse de Données (utilisant Python) & Compétence en Complexité et Algorithmes Avancés (utilisant Java et framework Spring MVC) & Compétence en Génie Logiciel."
+      }
+    },
+    {
+      "id": 5,
+      "degree": {
+        "en": "MSc in Data Science and Artificial Intelligence",
+        "fr": "MSc en Science des Données et Intelligence Artificielle"
+      },
+      "field": {
+        "en": "Graph Machine Learning & Multilayer Network Analysis",
+        "fr": "Apprentissage Automatique sur Graphes & Analyse de Réseaux Multicouches"
+      },
+      "institution": "University of Yaoundé I",
+      "location": "Yaoundé, CMR",
+      "startDate": "2023-09",
+      "endDate": "current",
+      "gpa": "3.17/4.0",
+      "description": {
+        "en": "Master's thesis on 'Class-based Multilayer Graph Feature Extraction for Supervised Machine Learning'. Developed novel MNIFS protocol for optimal attribute selection and observation-based Personalized PageRank algorithm. Achieved up to 99.9% reduction in financial losses on credit risk prediction benchmarks. Validated approach on 7 benchmark datasets with 6 ML models. Manuscript submitted to Data Mining and Knowledge Discovery (DMKD) journal. Selected coursework: Advanced Data Mining, Computer Vision, Distributed Learning, AI, Advanced Algorithms & Optimization.",
+        "fr": "Thèse de master sur 'Extraction de Caractéristiques de Graphes Multicouches Basée sur les Classes pour l'Apprentissage Automatique Supervisé'. Développement du protocole MNIFS novateur pour la sélection optimale d'attributs et algorithme de PageRank Personnalisé basé sur les observations. Réduction jusqu'à 99,9% des pertes financières sur les benchmarks de prédiction du risque de crédit. Validation sur 7 jeux de données avec 6 modèles ML. Manuscrit soumis à la revue Data Mining and Knowledge Discovery (DMKD). Cours sélectionnés : Fouille de Données Avancée, Vision par Ordinateur, Apprentissage Distribué, IA, Algorithmes Avancés & Optimisation."
+      }
+    }
+  ],
+  "education": [
+    {
+      "id": 2,
+      "degree": {
+        "en": "Professional degree in Computer Science",
+        "fr": "Licence Professionnelle en Informatique"
+      },
+      "field": {
+        "en": "Information Systems Security",
+        "fr": "Sécurité des Systèmes d'Information"
+      },
+      "institution": "University of Yaoundé I",
+      "location": "Yaoundé, CMR",
+      "startDate": "2017-09",
+      "endDate": "2020-06",
+      "gpa": "3.48/4.0",
+      "description": {
+        "en": "Acquired the rank of Work Engineer in Information Systems Security & Analyst Designer Programmer. Specialization in cybersecurity, forensic analysis, and secure software development.",
+        "fr": "Obtention du grade d'Ingénieur de Travaux en Sécurité des Systèmes d'Information & Analyste Concepteur Programmeur. Spécialisation en cybersécurité, analyse forensique et développement logiciel sécurisé."
+      }
+    },
+    {
+      "id": 5,
+      "degree": {
+        "en": "MSc in Data Science and Artificial Intelligence",
+        "fr": "MSc en Science des Données et Intelligence Artificielle"
+      },
+      "field": {
+        "en": "Graph Machine Learning & Multilayer Network Analysis",
+        "fr": "Apprentissage Automatique sur Graphes & Analyse de Réseaux Multicouches"
+      },
+      "institution": "University of Yaoundé I",
+      "location": "Yaoundé, CMR",
+      "startDate": "2023-09",
+      "endDate": "current",
+      "gpa": "3.17/4.0",
+      "description": {
+        "en": "Master's thesis on 'Class-based Multilayer Graph Feature Extraction for Supervised Machine Learning'. Developed novel MNIFS protocol for optimal attribute selection and observation-based Personalized PageRank algorithm. Achieved up to 99.9% reduction in financial losses on credit risk prediction benchmarks. Validated approach on 7 benchmark datasets with 6 ML models. Manuscript submitted to Data Mining and Knowledge Discovery (DMKD) journal. Selected coursework: Advanced Data Mining, Computer Vision, Distributed Learning, AI, Advanced Algorithms & Optimization.",
+        "fr": "Thèse de master sur 'Extraction de Caractéristiques de Graphes Multicouches Basée sur les Classes pour l'Apprentissage Automatique Supervisé'. Développement du protocole MNIFS novateur pour la sélection optimale d'attributs et algorithme de PageRank Personnalisé basé sur les observations. Réduction jusqu'à 99,9% des pertes financières sur les benchmarks de prédiction du risque de crédit. Validation sur 7 jeux de données avec 6 modèles ML. Manuscrit soumis à la revue Data Mining and Knowledge Discovery (DMKD). Cours sélectionnés : Fouille de Données Avancée, Vision par Ordinateur, Apprentissage Distribué, IA, Algorithmes Avancés & Optimisation."
+      }
+    }
+  ]
+}

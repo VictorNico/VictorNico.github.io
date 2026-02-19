@@ -1,0 +1,439 @@
+{
+  "intro": {
+    "en": "With 6+ years of full-stack development experience and advanced research in Graph Machine Learning, I've built expertise across software engineering, data science, and AI research. My technical skills span from practical software development to cutting-edge research in network science and explainable AI.",
+    "fr": "Avec plus de 6 ans d'expérience en développement full-stack et recherche avancée en Machine Learning sur Graphes, j'ai développé une expertise en génie logiciel, science des données et recherche en IA. Mes compétences techniques s'étendent du développement logiciel pratique à la recherche de pointe en science des réseaux et IA explicable."
+  },
+  "categories": [
+    {
+      "name": {
+        "en": "Programming Languages",
+        "fr": "Langages de Programmation"
+      },
+      "type": "programming",
+      "skills": [
+        {
+          "name": {
+            "en": "Python",
+            "fr": "Python"
+          },
+          "level": 95,
+          "icon": "code-slash",
+          "color": "#3776ab"
+        },
+        {
+          "name": {
+            "en": "JavaScript / TypeScript",
+            "fr": "JavaScript / TypeScript"
+          },
+          "level": 95,
+          "icon": "code-slash",
+          "color": "#f7df1e"
+        },
+        {
+          "name": {
+            "en": "C++",
+            "fr": "C++"
+          },
+          "level": 75,
+          "icon": "code-slash",
+          "color": "#00599c"
+        },
+        {
+          "name": {
+            "en": "Java",
+            "fr": "Java"
+          },
+          "level": 85,
+          "icon": "code-slash",
+          "color": "#007396"
+        },
+        {
+          "name": {
+            "en": "R",
+            "fr": "R"
+          },
+          "level": 80,
+          "icon": "code-slash",
+          "color": "#276dc3"
+        },
+        {
+          "name": {
+            "en": "SQL / Cypher",
+            "fr": "SQL / Cypher"
+          },
+          "level": 85,
+          "icon": "database",
+          "color": "#cc2927"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "ML/DL Frameworks & Research",
+        "fr": "Frameworks ML/DL et Recherche"
+      },
+      "type": "ml-research",
+      "skills": [
+        {
+          "name": {
+            "en": "PyTorch",
+            "fr": "PyTorch"
+          },
+          "level": 90,
+          "icon": "cpu",
+          "color": "#ee4c2c"
+        },
+        {
+          "name": {
+            "en": "TensorFlow / Keras",
+            "fr": "TensorFlow / Keras"
+          },
+          "level": 85,
+          "icon": "cpu",
+          "color": "#ff6f00"
+        },
+        {
+          "name": {
+            "en": "scikit-learn",
+            "fr": "scikit-learn"
+          },
+          "level": 95,
+          "icon": "graph-up",
+          "color": "#f7931e"
+        },
+        {
+          "name": {
+            "en": "XGBoost",
+            "fr": "XGBoost"
+          },
+          "level": 90,
+          "icon": "bar-chart",
+          "color": "#1a73e8"
+        },
+        {
+          "name": {
+            "en": "NetworkX (Graph Algorithms)",
+            "fr": "NetworkX (Algorithmes de Graphes)"
+          },
+          "level": 95,
+          "icon": "diagram-3",
+          "color": "#64ffda"
+        },
+        {
+          "name": {
+            "en": "SHAP / Explainable AI",
+            "fr": "SHAP / IA Explicable"
+          },
+          "level": 90,
+          "icon": "lightbulb",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Specialized Research Skills",
+        "fr": "Compétences de Recherche Spécialisées"
+      },
+      "type": "specialized",
+      "skills": [
+        {
+          "name": {
+            "en": "Graph Machine Learning",
+            "fr": "Machine Learning sur Graphes"
+          },
+          "level": 95,
+          "icon": "diagram-3",
+          "color": "#64ffda"
+        },
+        {
+          "name": {
+            "en": "PageRank & Network Algorithms",
+            "fr": "PageRank et Algorithmes Réseau"
+          },
+          "level": 95,
+          "icon": "share",
+          "color": "#42b883"
+        },
+        {
+          "name": {
+            "en": "Feature Engineering",
+            "fr": "Ingénierie de Caractéristiques"
+          },
+          "level": 95,
+          "icon": "sliders",
+          "color": "#f59e0b"
+        },
+        {
+          "name": {
+            "en": "Model Compression & Optimization",
+            "fr": "Compression et Optimisation de Modèles"
+          },
+          "level": 85,
+          "icon": "speedometer2",
+          "color": "#8b5cf6"
+        },
+        {
+          "name": {
+            "en": "Transfer Learning",
+            "fr": "Apprentissage par Transfert"
+          },
+          "level": 90,
+          "icon": "arrow-left-right",
+          "color": "#06b6d4"
+        },
+        {
+          "name": {
+            "en": "Explainable AI (SHAP, LIME)",
+            "fr": "IA Explicable (SHAP, LIME)"
+          },
+          "level": 90,
+          "icon": "eye",
+          "color": "#10b981"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Full-Stack Development",
+        "fr": "Développement Full-Stack"
+      },
+      "type": "fullstack",
+      "skills": [
+        {
+          "name": {
+            "en": "Vue.js / Nuxt.js",
+            "fr": "Vue.js / Nuxt.js"
+          },
+          "level": 95,
+          "icon": "code-slash",
+          "color": "#42b883"
+        },
+        {
+          "name": {
+            "en": "Node.js / Express.js",
+            "fr": "Node.js / Express.js"
+          },
+          "level": 95,
+          "icon": "server",
+          "color": "#68a063"
+        },
+        {
+          "name": {
+            "en": "Flask / Django",
+            "fr": "Flask / Django"
+          },
+          "level": 90,
+          "icon": "server",
+          "color": "#092e20"
+        },
+        {
+          "name": {
+            "en": "MongoDB / PostgreSQL",
+            "fr": "MongoDB / PostgreSQL"
+          },
+          "level": 90,
+          "icon": "database",
+          "color": "#47a248"
+        },
+        {
+          "name": {
+            "en": "Neo4j (Graph Databases)",
+            "fr": "Neo4j (Bases de Données Graphes)"
+          },
+          "level": 85,
+          "icon": "diagram-3",
+          "color": "#008cc1"
+        },
+        {
+          "name": {
+            "en": "RESTful APIs / Microservices",
+            "fr": "APIs RESTful / Microservices"
+          },
+          "level": 95,
+          "icon": "cloud",
+          "color": "#667eea"
+        },
+        {
+          "name": {
+            "en": "Docker",
+            "fr": "Docker"
+          },
+          "level": 80,
+          "icon": "box",
+          "color": "#2496ed"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Data Science & Tools",
+        "fr": "Science des Données et Outils"
+      },
+      "type": "data-science",
+      "skills": [
+        {
+          "name": {
+            "en": "Pandas / NumPy",
+            "fr": "Pandas / NumPy"
+          },
+          "level": 95,
+          "icon": "table",
+          "color": "#150458"
+        },
+        {
+          "name": {
+            "en": "Matplotlib / Seaborn",
+            "fr": "Matplotlib / Seaborn"
+          },
+          "level": 90,
+          "icon": "bar-chart",
+          "color": "#11557c"
+        },
+        {
+          "name": {
+            "en": "Jupyter Notebooks",
+            "fr": "Jupyter Notebooks"
+          },
+          "level": 95,
+          "icon": "journal-code",
+          "color": "#f37626"
+        },
+        {
+          "name": {
+            "en": "Git / GitHub / GitLab",
+            "fr": "Git / GitHub / GitLab"
+          },
+          "level": 95,
+          "icon": "git",
+          "color": "#f05032"
+        },
+        {
+          "name": {
+            "en": "Linux/Unix Administration",
+            "fr": "Administration Linux/Unix"
+          },
+          "level": 75,
+          "icon": "terminal",
+          "color": "#fcc624"
+        },
+        {
+          "name": {
+            "en": "AWS (Basic)",
+            "fr": "AWS (Basique)"
+          },
+          "level": 60,
+          "icon": "cloud",
+          "color": "#ff9900"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Languages",
+        "fr": "Langues"
+      },
+      "type": "language",
+      "skills": [
+        {
+          "name": {
+            "en": "French (Native)",
+            "fr": "Français (Langue Maternelle)"
+          },
+          "level": 100,
+          "icon": "chat-left-text",
+          "color": "#0055a4",
+          "description": {
+            "en": "Native speaker",
+            "fr": "Locuteur natif"
+          }
+        },
+        {
+          "name": {
+            "en": "English (Fluent)",
+            "fr": "Anglais (Courant)"
+          },
+          "level": 85,
+          "icon": "chat-left-text",
+          "color": "#012169",
+          "description": {
+            "en": "Target: IELTS Band 8.0",
+            "fr": "Objectif : IELTS Band 8.0"
+          }
+        },
+        {
+          "name": {
+            "en": "Fe'efe'e (Native Language)",
+            "fr": "Fe'efe'e (Langue Maternelle)"
+          },
+          "level": 60,
+          "icon": "chat-left-text",
+          "color": "#007a3d"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Soft Skills & Leadership",
+        "fr": "Soft Skills et Leadership"
+      },
+      "type": "soft",
+      "skills": [
+        {
+          "name": {
+            "en": "Research & Problem Solving",
+            "fr": "Recherche et Résolution de Problèmes"
+          },
+          "level": 100,
+          "icon": "lightbulb",
+          "color": "#fbbf24"
+        },
+        {
+          "name": {
+            "en": "Auto-Learning & Adaptability",
+            "fr": "Auto-apprentissage et Adaptabilité"
+          },
+          "level": 95,
+          "icon": "arrow-repeat",
+          "color": "#10b981"
+        },
+        {
+          "name": {
+            "en": "Academic Writing & Communication",
+            "fr": "Rédaction Académique et Communication"
+          },
+          "level": 90,
+          "icon": "file-earmark-text",
+          "color": "#d97706"
+        },
+        {
+          "name": {
+            "en": "Project Management (Scrum)",
+            "fr": "Gestion de Projet (Scrum)"
+          },
+          "level": 85,
+          "icon": "kanban",
+          "color": "#f59e0b"
+        },
+        {
+          "name": {
+            "en": "Mentoring & Teaching",
+            "fr": "Mentorat et Enseignement"
+          },
+          "level": 85,
+          "icon": "people",
+          "color": "#06b6d4"
+        },
+        {
+          "name": {
+            "en": "Collaborative Research",
+            "fr": "Recherche Collaborative"
+          },
+          "level": 90,
+          "icon": "people",
+          "color": "#8b5cf6"
+        }
+      ]
+    }
+  ]
+}

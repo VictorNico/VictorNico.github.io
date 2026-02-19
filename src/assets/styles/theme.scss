@@ -1,0 +1,284 @@
+@import './variables.scss';
+
+// ===========================
+// GOOGLE FONTS - THEME SCIENTIFIQUE
+// ===========================
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+// ===========================
+// GLOBAL STYLES
+// ===========================
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  background: $bg-dark;
+  color: $text-primary;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+// ===========================
+// TYPOGRAPHY
+// ===========================
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: $spacing-md;
+  color: $text-primary;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+p {
+  margin-bottom: $spacing-md;
+  color: $text-secondary;
+}
+
+a {
+  color: $color-secondary;
+  text-decoration: none;
+  transition: color $transition-fast;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+// ===========================
+// GRID BACKGROUND (EFFET SCIENTIFIQUE)
+// ===========================
+.grid-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient($color-secondary 1px, transparent 1px),
+    linear-gradient(90deg, $color-secondary 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.03;
+}
+
+// ===========================
+// GLITCH EFFECT
+// ===========================
+@keyframes glitch {
+  0% {
+    clip-path: inset(40% 0 61% 0);
+    transform: translate(0);
+  }
+  20% {
+    clip-path: inset(92% 0 1% 0);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    clip-path: inset(43% 0 1% 0);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    clip-path: inset(25% 0 58% 0);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    clip-path: inset(54% 0 7% 0);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    clip-path: inset(58% 0 43% 0);
+    transform: translate(0);
+  }
+}
+
+.glitch {
+  position: relative;
+  display: inline-block;
+
+  &::before,
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before {
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+    color: $color-accent;
+    z-index: -1;
+  }
+
+  &::after {
+    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse infinite;
+    color: $data-purple;
+    z-index: -2;
+  }
+}
+
+// ===========================
+// GLOW EFFECTS
+// ===========================
+.glow {
+  box-shadow: $shadow-glow;
+  transition: box-shadow $transition-normal;
+
+  &:hover {
+    box-shadow: 0 0 30px rgba(100, 255, 218, 0.5);
+  }
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+}
+
+// ===========================
+// GRADIENT TEXT
+// ===========================
+.gradient-text {
+  background: linear-gradient(135deg, $gradient-start, $gradient-end);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// ===========================
+// CARDS
+// ===========================
+.card {
+  background: $bg-card;
+  border-radius: $radius-lg;
+  padding: $spacing-xl;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  transition: all $transition-normal;
+
+  &:hover {
+    transform: translateY(-4px);
+    border-color: rgba(100, 255, 218, 0.3);
+    box-shadow: $shadow-glow;
+  }
+}
+
+// ===========================
+// HEXAGON SHAPE (POUR SKILLS)
+// ===========================
+.hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: all $transition-normal;
+
+  &:hover {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+
+// ===========================
+// TERMINAL STYLE
+// ===========================
+.terminal {
+  background: rgba(10, 25, 47, 0.9);
+  border: 1px solid $color-secondary;
+  border-radius: $radius-md;
+  padding: $spacing-md;
+  font-family: $font-mono;
+  font-size: 0.9rem;
+  color: $color-secondary;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '> ';
+    color: $color-accent;
+  }
+
+  &::after {
+    content: '█';
+    animation: blink 1s infinite;
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+// ===========================
+// SCROLLBAR CUSTOM
+// ===========================
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: $bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color-secondary;
+  border-radius: $radius-full;
+
+  &:hover {
+    background: $color-accent;
+  }
+}
+
+// ===========================
+// UTILITY CLASSES
+// ===========================
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-lg;
+}
+
+.section {
+  padding: $spacing-3xl 0;
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: $spacing-lg;
+}

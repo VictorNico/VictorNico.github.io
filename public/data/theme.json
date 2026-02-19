@@ -1,0 +1,34 @@
+{
+  "theme": {
+    "name": "Scientific Tech",
+    "mode": "dark",
+    "colors": {
+      "primary": "#0A192F",
+      "secondary": "#64FFDA",
+      "accent": "#00D9FF",
+      "gradientStart": "#667EEA",
+      "gradientEnd": "#764BA2",
+      "bgDark": "#0A192F",
+      "bgCard": "#112240",
+      "bgHover": "#1D2D44",
+      "textPrimary": "#CCD6F6",
+      "textSecondary": "#8892B0",
+      "textHighlight": "#64FFDA",
+      "dataBlue": "#4DA8DA",
+      "dataPurple": "#9B59B6",
+      "dataGreen": "#16A085",
+      "dataOrange": "#E67E22"
+    },
+    "fonts": {
+      "heading": "'JetBrains Mono', 'Courier New', monospace",
+      "body": "'Inter', -apple-system, sans-serif",
+      "mono": "'JetBrains Mono', monospace"
+    },
+    "effects": {
+      "particles": true,
+      "glitch": true,
+      "gridBackground": true,
+      "animations": true
+    }
+  }
+}

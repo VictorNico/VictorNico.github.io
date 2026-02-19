@@ -1,0 +1,106 @@
+{
+  "intro": {
+    "en": "Research contributions and academic publications in Graph Machine Learning, Multilayer Network Analysis, and Agricultural AI.",
+    "fr": "Contributions à la recherche et publications académiques en Apprentissage Automatique sur Graphes, Analyse de Réseaux Multicouches et IA Agricole."
+  },
+  "publications": [
+    {
+      "id": 1,
+      "status": "published",
+      "title": {
+        "en": "Convolutional Neural Network-Based Xception, MobileNetV2 and InceptionV3 Models for Plant Disease Identification in Sub-Saharan Africa",
+        "fr": "Modèles Xception, MobileNetV2 et InceptionV3 basés sur les Réseaux de Neurones Convolutifs pour l'Identification des Maladies des Plantes en Afrique Subsaharienne"
+      },
+      "authors": [
+        "Halidou, A.",
+        "Mohamadou, Y.",
+        "Apen, P.T.",
+        "Von Kallon, D.V.",
+        "Baraza, W.J.",
+        "Patrick, M.G.",
+        "Djiembou, V.N.",
+        "Mardochée, R."
+      ],
+      "journal": "International Journal of Computer Applications",
+      "volume": "186(78)",
+      "pages": "1-15",
+      "year": 2025,
+      "abstract": {
+        "en": "This paper presents a comprehensive study on plant disease identification using state-of-the-art CNN architectures (Xception, MobileNetV2, InceptionV3) tailored for Sub-Saharan African agricultural contexts. The models were evaluated on real-world datasets and achieved high accuracy in identifying various plant diseases, enabling early detection and intervention.",
+        "fr": "Cet article présente une étude complète sur l'identification des maladies des plantes utilisant des architectures CNN de pointe (Xception, MobileNetV2, InceptionV3) adaptées aux contextes agricoles d'Afrique subsaharienne. Les modèles ont été évalués sur des ensembles de données réelles et ont atteint une grande précision dans l'identification de diverses maladies des plantes, permettant une détection et une intervention précoces."
+      },
+      "doi": "10.5120/ijca2025924642",
+      "url": "https://doi.org/10.5120/ijca2025924642",
+      "tags": ["Deep Learning", "Computer Vision", "Agricultural AI", "Plant Disease", "CNN", "Transfer Learning"]
+    },
+    {
+      "id": 2,
+      "status": "under-review",
+      "title": {
+        "en": "Class-based Multilayer Graph Feature Extraction for Supervised Machine Learning",
+        "fr": "Extraction de Caractéristiques de Graphes Multicouches Basée sur les Classes pour l'Apprentissage Automatique Supervisé"
+      },
+      "authors": [
+        "Nzekon, A.J.* (co-first author)",
+        "Messi, T.",
+        "Djiembou, V.N.* (co-first author)"
+      ],
+      "journal": "Data Mining and Knowledge Discovery (DMKD)",
+      "year": 2026,
+      "submissionDate": "2026-03",
+      "abstract": {
+        "en": "This paper introduces a novel framework for extracting discriminative features from multilayer graphs in supervised learning contexts. We propose the MNIFS (Multilayer Network Inference Feature Selection) protocol for systematic attribute selection and an observation-based Personalized PageRank algorithm that extends global PageRank to capture individual observation characteristics. Validated on 7 benchmark datasets with 6 ML models, our approach achieved up to 99.9% reduction in financial losses on credit risk prediction. SHAP analysis demonstrates that graph-derived features occupy 66% of top-10 importance rankings, validating the effectiveness of our multilayer graph modeling approach.",
+        "fr": "Cet article introduit un cadre novateur pour l'extraction de caractéristiques discriminantes à partir de graphes multicouches dans des contextes d'apprentissage supervisé. Nous proposons le protocole MNIFS (Sélection de Caractéristiques par Inférence de Réseaux Multicouches) pour la sélection systématique d'attributs et un algorithme de PageRank Personnalisé basé sur les observations qui étend le PageRank global pour capturer les caractéristiques individuelles des observations. Validée sur 7 jeux de données de référence avec 6 modèles ML, notre approche a atteint jusqu'à 99,9% de réduction des pertes financières sur la prédiction du risque de crédit. L'analyse SHAP démontre que les caractéristiques dérivées des graphes occupent 66% des classements d'importance top-10, validant l'efficacité de notre approche de modélisation de graphes multicouches."
+      },
+      "note": {
+        "en": "* Co-first authors contributed equally. Manuscript submitted March 2026.",
+        "fr": "* Les co-premiers auteurs ont contribué de manière égale. Manuscrit soumis en mars 2026."
+      },
+      "keyContributions": {
+        "en": [
+          "Novel MNIFS protocol for optimal attribute selection (72.97% performance within 1% error)",
+          "Observation-based Personalized PageRank algorithm for multilayer networks",
+          "99.9% reduction in financial losses on credit risk benchmarks",
+          "Comprehensive validation across 7 datasets and 6 ML models",
+          "SHAP explainability demonstrating 66% graph feature importance"
+        ],
+        "fr": [
+          "Protocole MNIFS novateur pour la sélection optimale d'attributs (performance de 72,97% avec une marge d'erreur de 1%)",
+          "Algorithme de PageRank Personnalisé basé sur les observations pour réseaux multicouches",
+          "Réduction de 99,9% des pertes financières sur les benchmarks de risque de crédit",
+          "Validation complète sur 7 jeux de données et 6 modèles ML",
+          "Explicabilité SHAP démontrant 66% d'importance des caractéristiques de graphe"
+        ]
+      },
+      "tags": ["Graph Machine Learning", "Multilayer Networks", "Feature Extraction", "PageRank", "Supervised Learning", "Credit Risk", "Explainable AI"]
+    },
+    {
+      "id": 3,
+      "status": "under-review",
+      "title": {
+        "en": "Optimized Deep Learning for Plant Disease Classification: A Competition-Winning Approach Balancing Accuracy and Speed",
+        "fr": "Apprentissage Profond Optimisé pour la Classification des Maladies des Plantes : Une Approche Gagnante de Compétition Équilibrant Précision et Vitesse"
+      },
+      "authors": [
+        "Djiembou, V.N.",
+        "[Co-authors]"
+      ],
+      "journal": "IEEE Access",
+      "year": 2026,
+      "submissionDate": "2026-04",
+      "abstract": {
+        "en": "This paper presents an optimized CNN architecture for plant disease classification that achieves superior accuracy while significantly reducing inference time, enabling mobile deployment in resource-constrained agricultural settings. Building upon the baseline models published in IJCA 2025, we introduce novel optimization techniques including advanced data augmentation, model compression, and efficient training pipelines. Our approach won 1st Place at the CONIA Hackathon 2025, demonstrating practical deployment readiness for Sub-Saharan African agricultural contexts.",
+        "fr": "Cet article présente une architecture CNN optimisée pour la classification des maladies des plantes qui atteint une précision supérieure tout en réduisant considérablement le temps d'inférence, permettant le déploiement mobile dans des contextes agricoles aux ressources limitées. En s'appuyant sur les modèles de référence publiés dans IJCA 2025, nous introduisons de nouvelles techniques d'optimisation incluant l'augmentation avancée de données, la compression de modèles et des pipelines d'entraînement efficaces. Notre approche a remporté la 1ère place au Hackathon CONIA 2025, démontrant la préparation au déploiement pratique pour les contextes agricoles d'Afrique subsaharienne."
+      },
+      "achievement": {
+        "en": "1st Place Winner - CONIA Hackathon 2025 (Computational Intelligence & AI Applications)",
+        "fr": "Gagnant 1ère Place - Hackathon CONIA 2025 (Intelligence Computationnelle et Applications IA)"
+      },
+      "note": {
+        "en": "Manuscript in preparation for IEEE Access, target submission April 2026.",
+        "fr": "Manuscrit en préparation pour IEEE Access, soumission prévue en avril 2026."
+      },
+      "tags": ["Deep Learning", "Computer Vision", "Agricultural AI", "Model Optimization", "Mobile Deployment", "Competition Winner"]
+    }
+  ]
+}

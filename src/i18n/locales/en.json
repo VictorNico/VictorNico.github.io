@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "facts": "Facts",
+    "skills": "Skills",
+    "resume": "Resume",
+    "publications": "Publications",
+    "awards": "Awards",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "prefix": "I'm "
+  },
+  "about": {
+    "title": "About",
+    "birthday": "Birthday",
+    "age": "Age",
+    "website": "Website",
+    "degree": "Degree",
+    "phone": "Phone",
+    "freelance": "Freelance",
+    "email": "Email",
+    "city": "City",
+    "available": "Available",
+    "master": "Master"
+  },
+  "facts": {
+    "title": "Facts",
+    "intro": "As a SSI engineer, senior full developer, junior linux administrator and enthusiastic data scientist, I have had to participate or lead projects that can be summarized as follows."
+  },
+  "skills": {
+    "title": "Skills",
+    "intro": "During the last years, I have done many personal projects in various directions in order to sharpen my skills. This is how I was able to build the following benchmark.",
+    "technical": "Technical Skills",
+    "languages": "Languages",
+    "soft": "Soft Skills & Research"
+  },
+  "resume": {
+    "title": "Resume",
+    "intro": "I am a person of {age} years old, passionate about the field of engineering since my childhood.",
+    "education": "Education",
+    "experience": "Professional Experience",
+    "current": "Current"
+  },
+  "publications": {
+    "title": "Scientific Publications",
+    "intro": "Research contributions and academic publications.",
+    "readMore": "Read More",
+    "download": "Download PDF",
+    "published": "Published in"
+  },
+  "awards": {
+    "title": "Awards & Certificates",
+    "intro": "Recognition and certifications obtained throughout my career.",
+    "issued": "Issued by",
+    "date": "Date",
+    "viewCertificate": "View Certificate"
+  },
+  "services": {
+    "title": "Services",
+    "intro": "In order to reach my aspirations, I propose the following services to improve my potential based on real experiences.",
+    "learnMore": "Learn More"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "I am located in Cameroon in the area called headquarters and answers the following coordinates.",
+    "location": "Location",
+    "email": "Email",
+    "call": "Call"
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "designed": "Designed by",
+    "built": "Built with"
+  },
+  "common": {
+    "backToTop": "Back to top"
+  }
+}

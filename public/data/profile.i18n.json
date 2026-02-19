@@ -1,0 +1,170 @@
+{
+  "personal": {
+    "name": "Victor Nico Djiembou Tientcheu",
+    "title": {
+      "en": "MSc in Data Science | PhD Applicant Fall 2027",
+      "fr": "MSc en Science des Données | Candidat PhD Automne 2027"
+    },
+    "subtitle": {
+      "en": "TAKENCO IT Responsible & Senior Fullstack Developer & Graduate Research Assistant",
+      "fr": "Responsable IT TAKENCO & Développeur Fullstack Senior & Assistant de Recherche Diplômé"
+    },
+    "birthdate": "2000-01-28",
+    "location": {
+      "city": "Yaoundé",
+      "country": "CAMEROON",
+      "address": "Quartier Général, Rue 3.719",
+      "coordinates": {
+        "lat": 3.8480,
+        "lng": 11.5021
+      }
+    },
+    "photo": "/assets/profile-img.jpg",
+    "bio": {
+      "en": "Graduate research assistant passionate about Graph Machine Learning, Multilayer Network Analysis, and Agricultural AI. My research focuses on developing novel feature extraction methods for multilayer graphs in supervised learning contexts. With 6+ years of full-stack development experience and a strong foundation in data science, I bridge the gap between theoretical research and practical applications. Currently pursuing PhD opportunities for Fall 2027 while contributing to cutting-edge research in network science and explainable AI.",
+      "fr": "Assistant de recherche diplômé passionné par le Machine Learning sur Graphes, l'Analyse de Réseaux Multicouches et l'IA Agricole. Ma recherche se concentre sur le développement de méthodes d'extraction de caractéristiques novatrices pour les graphes multicouches dans des contextes d'apprentissage supervisé. Avec plus de 6 ans d'expérience en développement full-stack et une solide base en science des données, je fais le pont entre la recherche théorique et les applications pratiques. Actuellement à la recherche d'opportunités de doctorat pour l'automne 2027 tout en contribuant à la recherche de pointe en science des réseaux et IA explicable."
+    },
+    "motto": {
+      "en": "The computer is only a tool, like a brush or a pencil.",
+      "fr": "L'ordinateur n'est qu'un outil, comme un pinceau ou un crayon."
+    },
+    "tagline": {
+      "en": "Work - Discipline - Achievement.",
+      "fr": "Travail - Discipline - Réussite."
+    },
+    "contacts": {
+      "emails": [
+        "nico.djiembou@facsciences-uy1.cm",
+        "Viclegranddab@gmail.com",
+        "victor.djiembou@takenco.com"
+      ],
+      "phones": [
+        "+237 695 449 091",
+        "+237 673 634 375",
+        "+237 620 271 897"
+      ],
+      "website": "https://victornico.github.io/"
+    },
+    "social": [
+      {
+        "platform": "twitter",
+        "url": "https://twitter.com/DjiembouVictor",
+        "icon": "bxl-twitter"
+      },
+      {
+        "platform": "facebook",
+        "url": "https://www.facebook.com/victornico.djiembou/",
+        "icon": "bxl-facebook"
+      },
+      {
+        "platform": "github",
+        "url": "https://github.com/VictorNico/",
+        "icon": "bxl-github"
+      },
+      {
+        "platform": "gitlab",
+        "url": "https://gitlab.com/Viclegrand28/",
+        "icon": "bxl-gitlab"
+      },
+      {
+        "platform": "skype",
+        "url": "https://join.skype.com/invite/durivLzafezr",
+        "icon": "bxl-skype"
+      },
+      {
+        "platform": "linkedin",
+        "url": "https://Linkedin.com/in/victor-djiembou-a73b8820a",
+        "icon": "bxl-linkedin"
+      }
+    ]
+  },
+  "hero": {
+    "roles": {
+      "en": [
+        "Graduate Research Assistant",
+        "Graph ML Researcher",
+        "PhD Applicant Fall 2027",
+        "Senior FullStack Developer",
+        "Data Scientist",
+        "Network Science Researcher",
+        "TAKENCO IT Lead",
+        "Agricultural AI Researcher",
+        "Explainable AI Specialist",
+        "CONIA Hackathon Winner 2025",
+        "Published Researcher",
+        "Open Source Contributor"
+      ],
+      "fr": [
+        "Assistant de Recherche Diplômé",
+        "Chercheur en ML sur Graphes",
+        "Candidat PhD Automne 2027",
+        "Développeur FullStack Senior",
+        "Data Scientist",
+        "Chercheur en Science des Réseaux",
+        "Responsable IT TAKENCO",
+        "Chercheur en IA Agricole",
+        "Spécialiste en IA Explicable",
+        "Gagnant Hackathon CONIA 2025",
+        "Chercheur Publié",
+        "Contributeur Open Source"
+      ]
+    }
+  },
+  "facts": {
+    "intro": {
+      "en": "As a SSI engineer, senior full developer, junior linux administrator and enthusiastic data scientist, I have had to participate or lead projects that can be summarized as follows.",
+      "fr": "En tant qu'ingénieur SSI, développeur full stack senior, administrateur linux junior et data scientist enthousiaste, j'ai eu à participer ou diriger des projets qui peuvent se résumer comme suit."
+    },
+    "items": [
+      {
+        "icon": "bi-emoji-smile",
+        "count": 15,
+        "label": {
+          "en": "Happy Clients",
+          "fr": "Clients Satisfaits"
+        },
+        "description": {
+          "en": "for software, Unix & Linux OS maintenance",
+          "fr": "pour la maintenance logicielle, Unix & Linux"
+        }
+      },
+      {
+        "icon": "bi-journal-richtext",
+        "count": 25,
+        "label": {
+          "en": "Projects",
+          "fr": "Projets"
+        },
+        "description": {
+          "en": "end with success",
+          "fr": "réussis avec succès"
+        }
+      },
+      {
+        "icon": "bi-headset",
+        "count": 1453,
+        "label": {
+          "en": "Hours Of Support",
+          "fr": "Heures de Support"
+        },
+        "description": {
+          "en": "of strong work",
+          "fr": "de travail acharné"
+        }
+      },
+      {
+        "icon": "bi-people",
+        "count": 13,
+        "label": {
+          "en": "Hard Workers",
+          "fr": "Collaborateurs"
+        },
+        "description": {
+          "en": "work with me to trust all these projects",
+          "fr": "ont travaillé avec moi sur ces projets"
+        }
+      }
+    ]
+  },
+  "sections": ["hero", "about", "facts", "skills", "resume", "publications", "awards", "services", "contact"]
+}

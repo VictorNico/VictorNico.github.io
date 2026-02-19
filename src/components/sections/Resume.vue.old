@@ -1,0 +1,226 @@
+<template>
+  <section id="resume" class="resume section">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="gradient-text">{{ t('resume.title') }}</h2>
+        <p class="section-description">
+          {{ t('resume.intro', { age }) }}
+        </p>
+      </div>
+
+      <div class="resume-content">
+        <!-- Education Column (Now First for better responsive) -->
+        <div class="resume-column">
+          <h3 class="column-title">
+            <i class="bx bx-graduation"></i>
+            {{ t('resume.education') }}
+          </h3>
+
+          <div
+            v-for="edu in education?.education"
+            :key="edu.id"
+            class="resume-item"
+          >
+            <h4>{{ edu.degree }}</h4>
+            <h5>{{ edu.field }}</h5>
+            <p class="institution">
+              <i class="bx bx-building"></i>
+              {{ edu.institution }}
+            </p>
+            <p class="period">
+              <i class="bx bx-calendar"></i>
+              {{ formatDate(edu.startDate) }} - {{ formatDate(edu.endDate) }}
+            </p>
+            <p class="description">{{ edu.description }}</p>
+          </div>
+        </div>
+
+        <!-- Experience Column -->
+        <div class="resume-column">
+          <h3 class="column-title">
+            <i class="bx bx-briefcase"></i>
+            {{ t('resume.experience') }}
+          </h3>
+
+          <div
+            v-for="exp in experiences?.experiences"
+            :key="exp.id"
+            class="resume-item"
+          >
+            <h4>{{ exp.title }}</h4>
+            <p class="company">
+              <i class="bx bx-buildings"></i>
+              {{ exp.company }}
+            </p>
+            <p class="period">
+              <i class="bx bx-calendar"></i>
+              {{ formatDate(exp.startDate) }} - {{ formatDate(exp.endDate) }}
+            </p>
+            <ul class="responsibilities">
+              <li v-for="(resp, index) in exp.responsibilities" :key="index">
+                {{ resp }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+import { useDataLoader } from '../../composables/useDataLoader'
+import { useAge } from '../../composables/useAge'
+import { useI18n } from 'vue-i18n'
+
+const { data: education } = useDataLoader('education')
+const { data: experiences } = useDataLoader('experience')
+const { age } = useAge()
+const { t, locale } = useI18n()
+
+const formatDate = (dateString) => {
+  if (!dateString) return ''
+  if (dateString === 'current') return t('resume.current')
+
+  const date = new Date(dateString)
+  return date.toLocaleDateString(locale.value === 'fr' ? 'fr-FR' : 'en-US', { month: 'short', year: 'numeric' })
+}
+</script>
+
+<style lang="scss" scoped>
+@import '../../assets/styles/variables.scss';
+
+.resume {
+  background: $bg-card;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: $spacing-3xl;
+
+  h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: $spacing-lg;
+  }
+}
+
+.resume-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-3xl;
+
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.column-title {
+  display: flex;
+  align-items: center;
+  gap: $spacing-md;
+  font-size: 1.8rem;
+  color: $color-secondary;
+  margin-bottom: $spacing-xl;
+  font-family: $font-heading;
+
+  i {
+    font-size: 2rem;
+  }
+}
+
+.resume-item {
+  position: relative;
+  padding: $spacing-xl;
+  background: $bg-dark;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: $radius-lg;
+  margin-bottom: $spacing-xl;
+  transition: all $transition-normal;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: $color-secondary;
+    border: 3px solid $bg-card;
+    z-index: 2;
+  }
+
+  &:hover {
+    transform: translateX(10px);
+    border-color: $color-secondary;
+    box-shadow: $shadow-glow;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+    color: $text-primary;
+    margin-bottom: $spacing-sm;
+  }
+
+  h5 {
+    font-size: 1rem;
+    color: $color-accent;
+    margin-bottom: $spacing-md;
+    font-style: italic;
+  }
+
+  .institution,
+  .company {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    color: $text-secondary;
+    margin-bottom: $spacing-sm;
+    font-weight: 600;
+
+    i {
+      color: $color-secondary;
+    }
+  }
+
+  .period {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    color: $text-secondary;
+    font-family: $font-mono;
+    font-size: 0.9rem;
+    margin-bottom: $spacing-md;
+
+    i {
+      color: $color-accent;
+    }
+  }
+
+  .description {
+    color: $text-secondary;
+    line-height: 1.7;
+  }
+
+  .responsibilities {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      position: relative;
+      padding-left: $spacing-lg;
+      margin-bottom: $spacing-sm;
+      color: $text-secondary;
+      line-height: 1.6;
+
+      &::before {
+        content: '▹';
+        position: absolute;
+        left: 0;
+        color: $color-secondary;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+</style>

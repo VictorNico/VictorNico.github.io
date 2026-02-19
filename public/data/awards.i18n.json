@@ -1,0 +1,112 @@
+{
+  "intro": {
+    "en": "Recognition and achievements in research, innovation, and academic excellence.",
+    "fr": "Reconnaissances et réalisations en recherche, innovation et excellence académique."
+  },
+  "awards": [
+    {
+      "id": 1,
+      "title": {
+        "en": "1st Place - CONIA Hackathon 2025",
+        "fr": "1ère Place - Hackathon CONIA 2025"
+      },
+      "issuer": "CONIA (Computational Intelligence & AI Applications)",
+      "date": "2025",
+      "description": {
+        "en": "Awarded for developing an optimized plant disease classification system achieving superior accuracy and inference speed. The solution demonstrated practical deployment readiness for resource-constrained agricultural settings in Sub-Saharan Africa, balancing model performance with mobile accessibility.",
+        "fr": "Récompensé pour le développement d'un système optimisé de classification des maladies des plantes atteignant une précision et une vitesse d'inférence supérieures. La solution a démontré une préparation au déploiement pratique pour les contextes agricoles aux ressources limitées en Afrique subsaharienne, équilibrant performance du modèle et accessibilité mobile."
+      },
+      "achievement": {
+        "en": "Competition-winning approach for efficient plant disease classification",
+        "fr": "Approche gagnante de compétition pour la classification efficace des maladies des plantes"
+      },
+      "icon": "bi-trophy-fill",
+      "color": "#FFD700"
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "CANAM Prize for Innovation in AI Applications (2nd Place)",
+        "fr": "Prix CANAM pour l'Innovation en Applications IA (2ème Place)"
+      },
+      "issuer": "CANAM",
+      "date": "2024",
+      "description": {
+        "en": "Recognized for innovative machine learning solutions in agricultural technology. The work focused on developing practical AI applications that address real-world challenges in Sub-Saharan African agriculture, demonstrating both technical excellence and social impact.",
+        "fr": "Reconnu pour les solutions innovantes d'apprentissage automatique dans la technologie agricole. Le travail s'est concentré sur le développement d'applications IA pratiques qui répondent aux défis du monde réel dans l'agriculture d'Afrique subsaharienne, démontrant à la fois l'excellence technique et l'impact social."
+      },
+      "achievement": {
+        "en": "Innovation in agricultural AI and technology transfer",
+        "fr": "Innovation en IA agricole et transfert de technologie"
+      },
+      "icon": "bi-award-fill",
+      "color": "#C0C0C0"
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "Graduate Research Excellence",
+        "fr": "Excellence en Recherche de Niveau Graduate"
+      },
+      "issuer": "University of Yaoundé I",
+      "date": "2023",
+      "description": {
+        "en": "Selected for competitive MSc program in Data Science & AI (Top 10% of applicants). Recognition for outstanding academic performance and research potential in advanced machine learning and data science domains.",
+        "fr": "Sélectionné pour le programme compétitif de MSc en Science des Données et IA (Top 10% des candidats). Reconnaissance pour les performances académiques exceptionnelles et le potentiel de recherche dans les domaines avancés de l'apprentissage automatique et de la science des données."
+      },
+      "achievement": {
+        "en": "Competitive selection for advanced research program",
+        "fr": "Sélection compétitive pour programme de recherche avancé"
+      },
+      "icon": "bi-mortarboard-fill",
+      "color": "#4169E1"
+    }
+  ],
+  "certificates": [
+    {
+      "id": 1,
+      "title": {
+        "en": "Google Cloud Essentials",
+        "fr": "Google Cloud Essentials"
+      },
+      "issuer": "Google Cloud / Qwiklabs",
+      "date": "2022",
+      "description": {
+        "en": "Completed hands-on labs covering core Google Cloud services including Compute Engine, Cloud Storage, and Cloud Shell.",
+        "fr": "Réalisation de labs pratiques couvrant les services Google Cloud fondamentaux : Compute Engine, Cloud Storage et Cloud Shell."
+      },
+      "icon": "bi-cloud-fill",
+      "color": "#4285F4"
+    },
+    {
+      "id": 2,
+      "title": {
+        "en": "Networking in Google Cloud",
+        "fr": "Networking in Google Cloud"
+      },
+      "issuer": "Google Cloud / Qwiklabs",
+      "date": "2022",
+      "description": {
+        "en": "Completed hands-on labs on Virtual Private Cloud networking, load balancing, and Cloud DNS within the Google Cloud platform.",
+        "fr": "Réalisation de labs pratiques sur les réseaux VPC, l'équilibrage de charge et Cloud DNS sur la plateforme Google Cloud."
+      },
+      "icon": "bi-diagram-3-fill",
+      "color": "#34A853"
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "Learning C++",
+        "fr": "Apprentissage du C++"
+      },
+      "issuer": "LinkedIn Learning",
+      "date": "2022",
+      "description": {
+        "en": "Completed a structured course on C++ fundamentals including object-oriented programming, memory management, and the STL.",
+        "fr": "Suivi d'un cours structuré sur les fondamentaux du C++ : programmation orientée objet, gestion mémoire et STL."
+      },
+      "icon": "bi-code-slash",
+      "color": "#00599C"
+    }
+  ]
+}

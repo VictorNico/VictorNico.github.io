@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "facts": "Faits",
+    "skills": "Compétences",
+    "resume": "CV",
+    "publications": "Publications",
+    "awards": "Distinctions",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "prefix": "Je suis "
+  },
+  "about": {
+    "title": "À propos",
+    "birthday": "Anniversaire",
+    "age": "Âge",
+    "website": "Site web",
+    "degree": "Diplôme",
+    "phone": "Téléphone",
+    "freelance": "Freelance",
+    "email": "Email",
+    "city": "Ville",
+    "available": "Disponible",
+    "master": "Master"
+  },
+  "facts": {
+    "title": "Faits marquants",
+    "intro": "En tant qu'ingénieur SSI, développeur full stack senior, administrateur linux junior et data scientist enthousiaste, j'ai eu à participer ou diriger des projets qui peuvent se résumer comme suit."
+  },
+  "skills": {
+    "title": "Compétences",
+    "intro": "Au cours des dernières années, j'ai réalisé de nombreux projets personnels dans diverses directions afin d'aiguiser mes compétences. C'est ainsi que j'ai pu construire ce référentiel.",
+    "technical": "Compétences Techniques",
+    "languages": "Langues",
+    "soft": "Soft Skills & Recherche"
+  },
+  "resume": {
+    "title": "Curriculum Vitae",
+    "intro": "Je suis une personne de {age} ans, passionnée par le domaine de l'ingénierie depuis mon enfance.",
+    "education": "Formation",
+    "experience": "Expérience Professionnelle",
+    "current": "Actuellement"
+  },
+  "publications": {
+    "title": "Publications Scientifiques",
+    "intro": "Contributions à la recherche et publications académiques.",
+    "readMore": "Lire plus",
+    "download": "Télécharger PDF",
+    "published": "Publié dans"
+  },
+  "awards": {
+    "title": "Distinctions & Certificats",
+    "intro": "Reconnaissances et certifications obtenues tout au long de ma carrière.",
+    "issued": "Délivré par",
+    "date": "Date",
+    "viewCertificate": "Voir le certificat"
+  },
+  "services": {
+    "title": "Services",
+    "intro": "Afin d'atteindre mes aspirations, je propose les services suivants pour améliorer mon potentiel basé sur des expériences réelles.",
+    "learnMore": "En savoir plus"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Je suis situé au Cameroun dans la zone appelée quartier général et réponds aux coordonnées suivantes.",
+    "location": "Localisation",
+    "email": "Email",
+    "call": "Appeler"
+  },
+  "footer": {
+    "copyright": "Copyright",
+    "designed": "Conçu par",
+    "built": "Construit avec"
+  },
+  "common": {
+    "backToTop": "Retour en haut"
+  }
+}
