@@ -61,7 +61,7 @@
           </div>
 
           <div class="pub-actions">
-            <a v-if="pub.doi" :href="`https://doi.org/${pub.doi}`" target="_blank" class="btn-action">
+            <a v-if="pub.doi" :href="`https://doi.org/${pub.doi}`" target="_blank" class="btn-action" :aria-label="`DOI – ${getTranslated(pub.title)}`">
               <i class="bx bx-link-external"></i>
               DOI
             </a>

@@ -2,11 +2,13 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { VitePWA } from 'vite-plugin-pwa'
 import { fileURLToPath, URL } from 'node:url'
+import sitemap from 'vite-plugin-sitemap'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
+    sitemap({ hostname: 'https://victornico-github-io.pages.dev/' }),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['assets/favicon.ico', 'assets/apple-touch-icon.png'],
