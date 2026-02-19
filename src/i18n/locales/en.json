@@ -68,7 +68,8 @@
     "intro": "I am located in Cameroon in the area called headquarters and answers the following coordinates.",
     "location": "Location",
     "email": "Email",
-    "call": "Call"
+    "call": "Call",
+    "mapTitle": "Map showing my location in Cameroon"
   },
   "footer": {
     "copyright": "Copyright",

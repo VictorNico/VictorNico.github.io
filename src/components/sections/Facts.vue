@@ -16,7 +16,7 @@
         >
           <i :class="['fact-icon', fact.icon]"></i>
           <div class="fact-count">{{ fact.count }}</div>
-          <h4 class="fact-label">{{ getTranslated(fact.label) }}</h4>
+          <p class="fact-label">{{ getTranslated(fact.label) }}</p>
           <p class="fact-description">{{ getTranslated(fact.description) }}</p>
         </div>
       </div>

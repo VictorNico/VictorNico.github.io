@@ -12,14 +12,14 @@
         <div class="contact-info">
           <div class="info-card">
             <i class="bx bx-map"></i>
-            <h4>{{ t('contact.location') }}</h4>
+            <h3>{{ t('contact.location') }}</h3>
             <p>{{ profile?.personal?.location?.address }}</p>
             <p>{{ profile?.personal?.location?.city }}, {{ profile?.personal?.location?.country }}</p>
           </div>
 
           <div class="info-card">
             <i class="bx bx-envelope"></i>
-            <h4>{{ t('contact.email') }}</h4>
+            <h3>{{ t('contact.email') }}</h3>
             <a
               v-for="email in profile?.personal?.contacts?.emails"
               :key="email"
@@ -31,7 +31,7 @@
 
           <div class="info-card">
             <i class="bx bx-phone"></i>
-            <h4>{{ t('contact.call') }}</h4>
+            <h3>{{ t('contact.call') }}</h3>
             <a
               v-for="phone in profile?.personal?.contacts?.phones"
               :key="phone"
@@ -49,6 +49,7 @@
               style="border:0;"
               allowfullscreen=""
               loading="lazy"
+              :title="t('contact.mapTitle')"
             ></iframe>
           </div>
         </div>

@@ -68,7 +68,8 @@
     "intro": "Je suis situé au Cameroun dans la zone appelée quartier général et réponds aux coordonnées suivantes.",
     "location": "Localisation",
     "email": "Email",
-    "call": "Appeler"
+    "call": "Appeler",
+    "mapTitle": "Carte indiquant ma localisation au Cameroun"
   },
   "footer": {
     "copyright": "Copyright",

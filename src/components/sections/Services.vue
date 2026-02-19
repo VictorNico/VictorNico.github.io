@@ -16,7 +16,7 @@
           <div class="service-icon">
             <i :class="service.icon"></i>
           </div>
-          <h4 class="service-title">{{ getTranslated(service.title) }}</h4>
+          <h3 class="service-title">{{ getTranslated(service.title) }}</h3>
           <p class="service-description">{{ getTranslated(service.description) }}</p>
           <div class="service-overlay">
             <span>{{ t('services.learnMore') }}</span>

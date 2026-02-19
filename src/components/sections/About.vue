@@ -231,8 +231,8 @@ const formatDate = (dateString) => {
   }
 
   .status-badge {
-    background: $data-green;
-    color: white;
+    background: #0d6b57;
+    color: #ffffff;
     padding: 2px 10px;
     border-radius: $radius-full;
     font-size: 0.85rem;

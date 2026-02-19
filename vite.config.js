@@ -39,6 +39,12 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,jpg,svg,json,woff,woff2}'],
+        globIgnores: [
+          '**/android-chrome-*.png',
+          '**/apple-touch-icon.png',
+          '**/favicon*.ico',
+          '**/favicon-*.png',
+        ],
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
