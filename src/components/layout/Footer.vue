@@ -5,14 +5,14 @@
         <div class="copyright">
           &copy; Copyright <strong><span>Victor Nico Djiembou Tientcheu</span></strong>
         </div>
-        <div class="credits">
-          Designed by
-          <a href="https://github.com/VictorNico/" target="_blank" rel="noopener noreferrer">
-            Victor Djiembou
-          </a>
-          <span class="separator">|</span>
-          Built with <span class="tech-stack">Vue 3 + Vite</span>
-        </div>
+<!--        <div class="credits">-->
+<!--          Designed by-->
+<!--          <a href="https://github.com/VictorNico/" target="_blank" rel="noopener noreferrer">-->
+<!--            Victor Djiembou-->
+<!--          </a>-->
+<!--          <span class="separator">|</span>-->
+<!--          Built with <span class="tech-stack">Vue 3 + Vite</span>-->
+<!--        </div>-->
       </div>
     </div>
   </footer>
