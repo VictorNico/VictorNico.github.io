@@ -125,7 +125,7 @@ onMounted(()=>{
 </script>
 
 <style lang="scss">
-@import './assets/styles/theme.scss';
+@use './assets/styles/theme.scss';
 
 #app {
   position: relative;

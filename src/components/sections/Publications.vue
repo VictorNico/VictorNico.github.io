@@ -96,7 +96,6 @@ const { getTranslated } = useI18nData()
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/variables.scss';
 
 .publications {
   background: $bg-dark;

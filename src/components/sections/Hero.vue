@@ -145,7 +145,6 @@ const initParticles = () => {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/variables.scss';
 
 .hero {
   position: relative;

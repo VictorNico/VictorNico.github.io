@@ -107,7 +107,6 @@ const formatDate = (dateString) => {
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/variables.scss';
 
 .about {
   background: $bg-dark;

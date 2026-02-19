@@ -66,7 +66,6 @@ const { t } = useI18n()
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/variables.scss';
 
 .contact {
   background: $bg-card;

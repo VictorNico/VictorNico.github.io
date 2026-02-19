@@ -3,7 +3,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="copyright">
-          &copy; Copyright <strong><span>Victor Nico Djiembou Tientcheu</span></strong>
+          &copy; Copyright <strong><span>{{year}} - Victor Nico Djiembou Tientcheu</span></strong>
         </div>
 <!--        <div class="credits">-->
 <!--          Designed by-->
@@ -20,10 +20,10 @@
 
 <script setup>
 // No additional logic needed for now
+const year = new Date().getFullYear();
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/styles/variables.scss';
 
 .footer {
   background: $bg-card;
