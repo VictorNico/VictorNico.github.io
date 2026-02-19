@@ -65,7 +65,7 @@
               <i class="bx bx-link-external"></i>
               DOI
             </a>
-            <a v-if="pub.url" :href="pub.url" target="_blank" class="btn-action" rel="noopener noreferrer" :aria-label="`${t('publications.readMore')} – ${getTranslated(pub.title)}`">
+            <a v-if="pub.url" :href="pub.url" target="_blank" class="btn-action" rel="noopener noreferrer" :aria-label="`URL – ${getTranslated(pub.title)}`">
               <i class="bx bx-link-external"></i>
               {{ t('publications.readMore') }}
             </a>
