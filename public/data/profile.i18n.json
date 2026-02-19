@@ -2,8 +2,8 @@
   "personal": {
     "name": "Victor Nico Djiembou Tientcheu",
     "title": {
-      "en": "MSc in Data Science | PhD Applicant Fall 2027",
-      "fr": "MSc en Science des Données | Candidat PhD Automne 2027"
+      "en": "MSc in Data Science | Senior FullStack Engineer | PhD Applicant Fall 2027",
+      "fr": "MSc en Science des Données | Ingénieur FullStack Senior | Candidat PhD Automne 2027"
     },
     "subtitle": {
       "en": "TAKENCO IT Responsible & Senior Fullstack Developer & Graduate Research Assistant",
@@ -36,12 +36,12 @@
       "emails": [
         "nico.djiembou@facsciences-uy1.cm",
         "Viclegranddab@gmail.com",
-        "victor.djiembou@takenco.com"
+        "victor.djiembou@takenco.com",
+        "victor.djiembou@dba-solutions.com"
       ],
       "phones": [
         "+237 695 449 091",
-        "+237 673 634 375",
-        "+237 620 271 897"
+        "+237 673 634 375"
       ],
       "website": "https://victornico-github-io.pages.dev/"
     },
@@ -118,7 +118,7 @@
     "items": [
       {
         "icon": "bi-emoji-smile",
-        "count": 15,
+        "count": 7,
         "label": {
           "en": "Happy Clients",
           "fr": "Clients Satisfaits"
@@ -130,7 +130,7 @@
       },
       {
         "icon": "bi-journal-richtext",
-        "count": 25,
+        "count": 15,
         "label": {
           "en": "Projects",
           "fr": "Projets"

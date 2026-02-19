@@ -359,62 +359,6 @@
   ],
   "experiences": [
     {
-      "id": 1,
-      "type": "internship",
-      "title": {
-        "en": "Intern - Computer scientist",
-        "fr": "Stagiaire - Informaticien"
-      },
-      "company": "MINISTRY OF POSTS AND TELECOMMUNICATION (MINPOSTEL)",
-      "location": "Yaoundé, CMR",
-      "startDate": "2018-07",
-      "endDate": "2018-08",
-      "responsibilities": [
-        {
-          "en": "Study of the information system (IS)",
-          "fr": "Étude du système d'information (SI)"
-        },
-        {
-          "en": "Critique of the existing IS",
-          "fr": "Critique du SI existant"
-        },
-        {
-          "en": "Proposed solutions",
-          "fr": "Propositions de solutions"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "type": "internship",
-      "title": {
-        "en": "Intern - Computer scientist",
-        "fr": "Stagiaire - Informaticien"
-      },
-      "company": "MINISTRY OF WATER AND ENERGY (MINEE)",
-      "location": "Yaoundé, CMR",
-      "startDate": "2018-08",
-      "endDate": "2018-09",
-      "responsibilities": [
-        {
-          "en": "Study of the information system (IS)",
-          "fr": "Étude du système d'information (SI)"
-        },
-        {
-          "en": "Critique of the existing IS",
-          "fr": "Critique du SI existant"
-        },
-        {
-          "en": "Proposed solutions",
-          "fr": "Propositions de solutions"
-        },
-        {
-          "en": "Design and implementation of a personnel management software",
-          "fr": "Conception et implémentation d'un logiciel de gestion du personnel"
-        }
-      ]
-    },
-    {
       "id": 3,
       "type": "project",
       "title": {
@@ -514,7 +458,7 @@
       "company": "Takenco",
       "location": "Yaoundé, CMR",
       "startDate": "2021-09",
-      "endDate": "current",
+      "endDate": "2022-03",
       "responsibilities": [
         {
           "en": "Design and Implementation of a Mobility and Transportation Information System (MIS)",
@@ -535,7 +479,7 @@
       },
       "company": "Takenco",
       "location": "Yaoundé, CMR",
-      "startDate": "2021-09",
+      "startDate": "2022-03",
       "endDate": "current",
       "responsibilities": [
         {
@@ -565,7 +509,7 @@
       },
       "company": "Takenco",
       "location": "Yaoundé, CMR",
-      "startDate": "2021-03",
+      "startDate": "2022-03",
       "endDate": "current",
       "responsibilities": [
         {
@@ -605,52 +549,6 @@
       ]
     },
     {
-      "id": 12,
-      "type": "research",
-      "title": {
-        "en": "Graduate Research Assistant",
-        "fr": "Assistant de Recherche Diplômé"
-      },
-      "company": "University of Yaoundé I",
-      "location": "Yaoundé, CMR",
-      "startDate": "2023-09",
-      "endDate": "current",
-      "project": {
-        "en": "Class-based Multilayer Graph Feature Extraction for Supervised Learning",
-        "fr": "Extraction de Caractéristiques de Graphes Multicouches Basée sur les Classes pour l'Apprentissage Supervisé"
-      },
-      "responsibilities": [
-        {
-          "en": "Developed MNIFS (Multilayer Network Inference Feature Selection) protocol for systematic attribute selection in graph construction, achieving 72.97% optimal performance within 1% error margin",
-          "fr": "Développé le protocole MNIFS (Sélection de Caractéristiques par Inférence de Réseaux Multicouches) pour la sélection systématique d'attributs dans la construction de graphes, atteignant une performance optimale de 72,97% avec une marge d'erreur de 1%"
-        },
-        {
-          "en": "Designed class-aware multilayer bipartite graph modeling framework integrating target class information into graph topology",
-          "fr": "Conçu un cadre de modélisation de graphes bipartites multicouches conscient des classes intégrant les informations de classe cible dans la topologie du graphe"
-        },
-        {
-          "en": "Implemented observation-based Personalized PageRank extending global PageRank to capture individual observation characteristics in multilayer networks",
-          "fr": "Implémenté un PageRank Personnalisé basé sur les observations étendant le PageRank global pour capturer les caractéristiques individuelles des observations dans les réseaux multicouches"
-        },
-        {
-          "en": "Conducted comprehensive experiments across 7 benchmark datasets (credit risk, bank marketing, car evaluation, adult income, nursery, student performance) with 6 ML models (LDA, LR, SVM, DT, RF, XGB)",
-          "fr": "Conduit des expériences complètes sur 7 jeux de données de référence (risque de crédit, marketing bancaire, évaluation de voitures, revenu adulte, garderie, performance étudiante) avec 6 modèles ML (LDA, LR, SVM, DT, RF, XGB)"
-        },
-        {
-          "en": "Achieved 51.1%, 99.9%, 94.2%, and 99.6% financial loss reductions on 4 credit risk datasets",
-          "fr": "Atteint 51,1%, 99,9%, 94,2% et 99,6% de réductions de pertes financières sur 4 jeux de données de risque de crédit"
-        },
-        {
-          "en": "Employed SHAP explainability analysis demonstrating graph features occupy 65-66% of top-10 importance rankings",
-          "fr": "Utilisé l'analyse d'explicabilité SHAP démontrant que les caractéristiques de graphe occupent 65-66% des classements d'importance top-10"
-        },
-        {
-          "en": "Manuscript submitted to Data Mining and Knowledge Discovery (DMKD) journal, March 2026",
-          "fr": "Manuscrit soumis à la revue Data Mining and Knowledge Discovery (DMKD), mars 2026"
-        }
-      ]
-    },
-    {
       "id": 13,
       "type": "research",
       "title": {
@@ -659,8 +557,8 @@
       },
       "company": "CONIA Hackathon",
       "location": "Cameroon",
-      "startDate": "2024-10",
-      "endDate": "2025-01",
+      "startDate": "2025-07-04",
+      "endDate": "2025-07-09",
       "achievement": {
         "en": "1st Place Winner",
         "fr": "Gagnant 1ère Place"
@@ -685,32 +583,6 @@
         {
           "en": "Manuscript in preparation for IEEE Access, target submission April 2026",
           "fr": "Manuscrit en préparation pour IEEE Access, soumission prévue avril 2026"
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "type": "teaching",
-      "title": {
-        "en": "Peer Tutor - Data Science & Machine Learning",
-        "fr": "Tuteur Pair - Science des Données et Apprentissage Automatique"
-      },
-      "company": "University of Yaoundé I",
-      "location": "Yaoundé, CMR",
-      "startDate": "2024-09",
-      "endDate": "current",
-      "responsibilities": [
-        {
-          "en": "Mentored 5+ undergraduate students in machine learning projects and thesis research",
-          "fr": "Encadré plus de 5 étudiants de premier cycle dans des projets d'apprentissage automatique et de recherche de thèse"
-        },
-        {
-          "en": "Delivered 2-hour workshop on 'Introduction to Graph Neural Networks' for 30+ students",
-          "fr": "Animé un atelier de 2 heures sur 'Introduction aux Réseaux de Neurones sur Graphes' pour plus de 30 étudiants"
-        },
-        {
-          "en": "Provided guidance on research methodology, experiment design, and academic writing",
-          "fr": "Fourni des conseils sur la méthodologie de recherche, la conception d'expériences et la rédaction académique"
         }
       ]
     }
