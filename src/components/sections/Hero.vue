@@ -15,15 +15,16 @@
         </div>
 
         <div class="hero-cta">
-          <a
-            v-if="profile?.personal?.cvUrl"
-            :href="profile.personal.cvUrl"
-            download
-            class="cta-btn cta-primary"
-          >
-            <i class="bx bx-download"></i>
-            {{ t('hero.downloadCV') }}
-          </a>
+          <label v-if="profile?.personal?.cvs?.length" @click.prevent class="cta-btn cta-primary cta-select-label">
+            <i class="bx bx-show"></i>
+            <select @change="onCVSelect" class="cv-select">
+              <option value="" disabled selected>{{ t('hero.viewCV') }}</option>
+              <option v-for="(cv, i) in profile.personal.cvs" :key="i" :value="i">
+                {{ getTranslated(cv.title) }}
+              </option>
+            </select>
+            <i class="bx bx-chevron-down"></i>
+          </label>
           <a href="#projects" class="cta-btn cta-secondary">
             <i class="bx bx-code-block"></i>
             {{ t('hero.viewProjects') }}
@@ -39,10 +40,21 @@ import { ref, onMounted, onUnmounted, computed } from 'vue'
 import { useDataLoader } from '../../composables/useDataLoader'
 import { useI18n } from 'vue-i18n'
 import { useI18nData } from '../../composables/useI18nData'
+import { useCVModal } from '../../composables/useCVModal'
 
 const { data: profile } = useDataLoader('profile.i18n')
 const { t } = useI18n()
-const { getTranslatedArray } = useI18nData()
+const { getTranslatedArray, getTranslated } = useI18nData()
+const { open } = useCVModal()
+
+const onCVSelect = (e) => {
+  const i = parseInt(e.target.value)
+  const cvs = profile.value?.personal?.cvs
+  if (!isNaN(i) && cvs?.[i]) {
+    open(cvs[i])
+    e.target.value = ''
+  }
+}
 const particleCanvas = ref(null)
 const currentRoleIndex = ref(0)
 
@@ -332,6 +344,7 @@ const initParticles = () => {
   text-decoration: none;
   transition: all $transition-normal;
   letter-spacing: 0.03em;
+  cursor: pointer;
 
   i {
     font-size: 1.1rem;
@@ -359,6 +372,26 @@ const initParticles = () => {
       transform: translateY(-3px);
       box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
     }
+  }
+}
+
+.cta-select-label { cursor: pointer; }
+
+.cv-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  flex: 1;
+  min-width: 0;
+  outline: none;
+
+  option {
+    background: $bg-card;
+    color: $text-primary;
   }
 }
 </style>

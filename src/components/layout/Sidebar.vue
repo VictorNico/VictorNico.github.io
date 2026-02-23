@@ -33,15 +33,16 @@
         <LanguageSwitcher />
       </div>
 
-      <a
-        v-if="profile?.personal?.cvUrl"
-        :href="profile.personal.cvUrl"
-        download
-        class="cv-download-btn"
-      >
-        <i class="bx bx-download"></i>
-        {{ t('hero.downloadCV') }}
-      </a>
+      <label v-if="profile?.personal?.cvs?.length" class="cv-download-btn cv-select-label">
+        <i class="bx bx-show"></i>
+        <select @change="onCVSelect" class="cv-select">
+          <option value="" disabled selected>{{ t('hero.viewCV') }}</option>
+          <option v-for="(cv, i) in profile.personal.cvs" :key="i" :value="i">
+            {{ getTranslated(cv.title) }}
+          </option>
+        </select>
+        <i class="bx bx-chevron-down"></i>
+      </label>
     </div>
 
     <nav class="nav-menu">
@@ -74,10 +75,23 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useDataLoader } from '../../composables/useDataLoader'
 import { useI18n } from 'vue-i18n'
+import { useCVModal } from '../../composables/useCVModal'
+import { useI18nData } from '../../composables/useI18nData'
 import LanguageSwitcher from '../ui/LanguageSwitcher.vue'
 
 const { data: profile } = useDataLoader('profile.i18n')
 const { t } = useI18n()
+const { open } = useCVModal()
+const { getTranslated } = useI18nData()
+
+const onCVSelect = (e) => {
+  const i = parseInt(e.target.value)
+  const cvs = profile.value?.personal?.cvs
+  if (!isNaN(i) && cvs?.[i]) {
+    open(cvs[i])
+    e.target.value = ''
+  }
+}
 
 const mobileMenuOpen = ref(false)
 const activeSection = ref('hero')
@@ -238,6 +252,7 @@ onUnmounted(() => {
   font-weight: 600;
   text-decoration: none;
   transition: all $transition-fast;
+  cursor: pointer;
 
   i {
     font-size: 1.1rem;
@@ -248,6 +263,28 @@ onUnmounted(() => {
     color: $bg-dark;
     transform: translateY(-2px);
     box-shadow: $shadow-glow;
+  }
+}
+
+.cv-select-label {
+  cursor: pointer;
+}
+
+.cv-select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  flex: 1;
+  min-width: 0;
+  outline: none;
+
+  option {
+    background: $bg-card;
+    color: $text-primary;
   }
 }
 

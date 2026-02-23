@@ -19,6 +19,8 @@
 
     <Footer />
 
+    <CVModal />
+
     <a href="#hero" class="back-to-top" :class="{ 'show': showBackToTop }">
       <i class="bx bx-up-arrow-alt"></i>
     </a>
@@ -33,6 +35,7 @@ import { useSEO } from './composables/useSEO'
 
 import Sidebar from './components/layout/Sidebar.vue'
 import Footer from './components/layout/Footer.vue'
+import CVModal from './components/ui/CVModal.vue'
 import Hero from './components/sections/Hero.vue'
 import About from './components/sections/About.vue'
 import Skills from './components/sections/Skills.vue'

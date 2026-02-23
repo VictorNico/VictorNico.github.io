@@ -43,7 +43,9 @@
       ],
       "website": "https://victornico-github-io.pages.dev/"
     },
-    "cvUrl": "/assets/cvs/cv.pdf",
+    "cvs": [
+      { "title": { "en": "Data Scientist & AI Student Reasearcher", "fr": "Data Scientist et étudiant chercheur en IA" }, "path": "/assets/cvs/cv.pdf" }
+    ],
     "social": [
       {
         "platform": "github",

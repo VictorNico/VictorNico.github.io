@@ -14,7 +14,15 @@
   "hero": {
     "prefix": "I'm ",
     "downloadCV": "Download CV",
+    "viewCV": "View CV",
     "viewProjects": "View Projects"
+  },
+  "cv": {
+    "title": "Curriculum Vitae",
+    "download": "Download",
+    "close": "Close",
+    "notSupported": "PDF preview not supported in this browser.",
+    "openNewTab": "Open in new tab"
   },
   "projects": {
     "title": "Projects",
