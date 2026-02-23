@@ -1,0 +1,300 @@
+{
+  "intro": {
+    "en": "A selection of research and engineering projects — from graph ML experiments to production-grade fullstack systems.",
+    "fr": "Une sélection de projets de recherche et d'ingénierie — des expériences en Graph ML aux systèmes fullstack en production."
+  },
+  "categories": [
+    { "id": "all",      "en": "All",        "fr": "Tous" },
+    { "id": "research", "en": "Research",   "fr": "Recherche" },
+    { "id": "fullstack","en": "FullStack",  "fr": "FullStack" },
+    { "id": "ai",       "en": "AI / ML",    "fr": "IA / ML" }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "category": "research",
+      "featured": true,
+      "title": {
+        "en": "MNIFS — Multilayer Graph Based Feature Engineering",
+        "fr": "MNIFS — Extraction de Caractéristiques basé sur des Graphes Multicouches"
+      },
+      "description": {
+        "en": "Novel framework for extracting discriminative features from multilayer graphs in supervised learning. Introduces the MNIFS protocol and an observation-based Personalized PageRank. Validated on 7 benchmark datasets with 6 ML models — achieving up to 99.9% financial loss reduction. Paper submitted to DMKD (March 2026).",
+        "fr": "Cadre novateur pour l'extraction de caractéristiques discriminantes de graphes multicouches en apprentissage supervisé. Introduit le protocole MNIFS et un PageRank Personnalisé basé sur les observations. Validé sur 7 jeux de données avec 6 modèles ML — jusqu'à 99,9% de réduction des pertes financières. Soumis à DMKD (mars 2026)."
+      },
+      "stack": ["Python", "NetworkX", "scikit-learn", "XGBoost", "SHAP", "Pandas", "Numpy", "Scipy"],
+      "highlights": {
+        "en": ["99.9% financial loss reduction on credit risk", "72.97% optimal attribute selection (MNIFS)", "66% graph feature importance (SHAP top-10)"],
+        "fr": ["99,9% de réduction des pertes financières (risque crédit)", "72,97% sélection optimale d'attributs (MNIFS)", "66% d'importance des features graphe (SHAP top-10)"]
+      },
+      "github": "https://github.com/Graph-based-ML/multilayer-graph-based-feature-engineering",
+      "paper": "",
+      "color": "#64FFDA",
+      "icon": "bi-diagram-3"
+    },
+    {
+      "id": 2,
+      "category": "ai",
+      "featured": true,
+      "title": {
+        "en": "Plant Disease CNN — CONIA Hackathon 2025 Winner",
+        "fr": "CNN Maladies des Plantes — Gagnant CONIA Hackathon 2025"
+      },
+      "description": {
+        "en": "Optimized CNN architecture for plant disease classification in Sub-Saharan Africa. Surpasses the IJCA 2025 baseline while significantly reducing inference time for mobile deployment. 1st Place at CONIA Hackathon 2025. Paper in preparation for IEEE Access.",
+        "fr": "Architecture CNN optimisée pour la classification des maladies des plantes en Afrique subsaharienne. Surpasse la référence IJCA 2025 tout en réduisant le temps d'inférence pour déploiement mobile. 1ère Place au CONIA Hackathon 2025. Article en préparation pour IEEE Access."
+      },
+      "stack": ["Python", "PyTorch", "TensorFlow", "Keras", "Transfer Learning", "Model Compression"],
+      "highlights": {
+        "en": ["1st Place — CONIA Hackathon 2025", "Superior accuracy vs IJCA 2025 baseline", "Mobile-ready for resource-constrained settings"],
+        "fr": ["1ère Place — Hackathon CONIA 2025", "Précision supérieure à la référence IJCA 2025", "Mobile-ready pour contextes aux ressources limitées"]
+      },
+      "github": "https://github.com/VictorNico/agriguard",
+      "paper": "",
+      "color": "#10B981",
+      "icon": "bi-flower1"
+    },
+    {
+      "id": 3,
+      "category": "fullstack",
+      "featured": true,
+      "title": {
+        "en": "Mobility & Transportation Information System (MIS)",
+        "fr": "Système d'Information de Mobilité et Transport (MIS)"
+      },
+      "description": {
+        "en": "End-to-end mobility information system built at Takenco, including an airport taxi reservation application developed in cooperation with ADC (Airports of Cameroon). Covers firmware, backend APIs, and mobile interfaces.",
+        "fr": "Système d'information de mobilité complet développé chez Takenco, incluant une application de réservation de taxis aéroport en coopération avec l'ADC (Aéroports du Cameroun). Couvre firmware, APIs backend et interfaces mobiles."
+      },
+      "stack": ["Vue.js", "Node.js", "Express", "MongoDB", "Firmware", "REST API"],
+      "highlights": {
+        "en": ["Production system deployed in Cameroon", "Airport taxi management with ADC partnership", "Firmware + fullstack integration"],
+        "fr": ["Système en production au Cameroun", "Gestion taxis aéroport avec partenariat ADC", "Intégration firmware + fullstack"]
+      },
+      "github": "https://github.com/VictorNico/",
+      "paper": "",
+      "color": "#42B883",
+      "icon": "bi-truck"
+    },
+    {
+      "id": 4,
+      "category": "fullstack",
+      "featured": false,
+      "title": {
+        "en": "Financial Document Certification Platform",
+        "fr": "Plateforme de Certification de Documents Financiers"
+      },
+      "description": {
+        "en": "Certification platform with a virtual agent for university fee payment receipts at the University of Yaoundé I. Provides automated verification and digital certification of financial documents.",
+        "fr": "Plateforme de certification avec agent virtuel pour les reçus de paiement des frais universitaires à l'Université de Yaoundé I. Fournit une vérification automatisée et une certification numérique des documents financiers."
+      },
+      "stack": ["Vue.js", "Node.js", "PostgreSQL", "Chatbot", "REST API"],
+      "highlights": {
+        "en": ["Virtual agent for automated verification", "University of Yaoundé I deployment", "Secure document certification"],
+        "fr": ["Agent virtuel pour vérification automatisée", "Déploiement à l'Université de Yaoundé I", "Certification de documents sécurisée"]
+      },
+      "github": "https://github.com/VictorNico/",
+      "paper": "",
+      "color": "#667EEA",
+      "icon": "bi-file-earmark-check"
+    },
+    {
+      "id": 5,
+      "category": "fullstack",
+      "featured": false,
+      "title": {
+        "en": "Business Process Management — Law Firm ERP",
+        "fr": "Gestion des Processus Métiers — ERP Cabinet d'Avocats"
+      },
+      "description": {
+        "en": "Custom BPM application designed for a law firm's internal processes at Phoenix Studio & Design. Handles case management, document workflows, billing, and team coordination.",
+        "fr": "Application BPM sur mesure pour les processus internes d'un cabinet d'avocats chez Phoenix Studio & Design. Gestion des dossiers, workflows documentaires, facturation et coordination d'équipe."
+      },
+      "stack": ["Vue.js", "Node.js", "MongoDB", "REST API"],
+      "highlights": {
+        "en": ["End-to-end BPM for legal workflows", "Custom ERP architecture", "Phoenix Studio & Design deployment"],
+        "fr": ["BPM bout en bout pour workflows juridiques", "Architecture ERP sur mesure", "Déploiement Phoenix Studio & Design"]
+      },
+      "github": "https://github.com/VictorNico/",
+      "paper": "",
+      "color": "#764BA2",
+      "icon": "bi-briefcase"
+    },
+    {
+      "id": 6,
+      "category": "ai",
+      "featured": true,
+      "title": {
+        "en": "Aurore NLP — Yemba Language Speech Recognition",
+        "fr": "Aurore NLP — Reconnaissance Vocale de la Langue Yemba"
+      },
+      "description": {
+        "en": "Speech recognition system for Yemba, an endangered Cameroonian language. Built during the Aurore Hackathon (December 2024), this NLP project addresses low-resource language preservation using deep learning audio processing.",
+        "fr": "Système de reconnaissance vocale pour le Yemba, une langue camerounaise menacée. Développé lors du Hackathon Aurore (décembre 2024), ce projet NLP aborde la préservation des langues à faibles ressources via le traitement audio deep learning."
+      },
+      "stack": ["Python", "NLP", "Speech Recognition", "Jupyter Notebook", "Deep Learning"],
+      "highlights": {
+        "en": ["Low-resource African language NLP", "Built at Aurore Hackathon 2024", "Speech-to-text for endangered Yemba language"],
+        "fr": ["NLP pour langue africaine à faibles ressources", "Développé au Hackathon Aurore 2024", "Parole-vers-texte pour la langue Yemba menacée"]
+      },
+      "github": "https://github.com/VictorNico/auroreHackaton1812_NLP",
+      "paper": "",
+      "color": "#F59E0B",
+      "icon": "bi-mic"
+    },
+    {
+      "id": 7,
+      "category": "ai",
+      "featured": false,
+      "title": {
+        "en": "Plant Disease Detection & Classification (Deep Learning)",
+        "fr": "Détection et Classification des Maladies des Plantes (Deep Learning)"
+      },
+      "description": {
+        "en": "Deep learning pipeline for plant disease detection and classification. The project includes model training notebooks (DL4PDDC) and a deployment module (PD_D_C_Based_DL) for serving predictions in production, targeting agricultural use cases in Sub-Saharan Africa.",
+        "fr": "Pipeline de deep learning pour la détection et classification des maladies des plantes. Le projet inclut des notebooks d'entraînement (DL4PDDC) et un module de déploiement (PD_D_C_Based_DL) pour servir les prédictions en production, ciblant l'agriculture en Afrique subsaharienne."
+      },
+      "stack": ["Python", "TensorFlow", "Keras", "CNN", "HTML", "Jupyter Notebook"],
+      "highlights": {
+        "en": ["End-to-end training to deployment pipeline", "Agricultural disease classification for Sub-Saharan Africa", "Model serving module for production inference"],
+        "fr": ["Pipeline bout en bout de l'entraînement au déploiement", "Classification des maladies agricoles en Afrique subsaharienne", "Module de serving pour inférence en production"]
+      },
+      "github": "https://github.com/VictorNico/DL4PDDC",
+      "paper": "",
+      "color": "#22C55E",
+      "icon": "bi-flower2"
+    },
+    {
+      "id": 8,
+      "category": "ai",
+      "featured": false,
+      "title": {
+        "en": "Hate Speech & Offensive Language Detection",
+        "fr": "Détection du Discours Haineux et du Langage Offensant"
+      },
+      "description": {
+        "en": "NLP classification system for detecting hate speech and offensive language in text. Applies text preprocessing, feature engineering, and machine learning classifiers to identify harmful content, addressing online safety challenges.",
+        "fr": "Système de classification NLP pour détecter le discours haineux et le langage offensant dans les textes. Applique le prétraitement de texte, l'ingénierie de caractéristiques et des classificateurs ML pour identifier les contenus nuisibles."
+      },
+      "stack": ["Python", "NLP", "scikit-learn", "Pandas", "Jupyter Notebook"],
+      "highlights": {
+        "en": ["Text classification for online safety", "Hate speech vs offensive language distinction", "NLP feature engineering pipeline"],
+        "fr": ["Classification de texte pour la sécurité en ligne", "Distinction discours haineux vs langage offensant", "Pipeline d'ingénierie de caractéristiques NLP"]
+      },
+      "github": "https://github.com/VictorNico/HateSpeechDetection",
+      "paper": "",
+      "color": "#EF4444",
+      "icon": "bi-shield-exclamation"
+    },
+    {
+      "id": 9,
+      "category": "ai",
+      "featured": false,
+      "title": {
+        "en": "Secondary School Dropout Prediction",
+        "fr": "Prédiction de l'Abandon Scolaire au Secondaire"
+      },
+      "description": {
+        "en": "AI-driven system to identify students at risk of dropping out of secondary school. Uses machine learning models trained on socio-academic indicators to provide early warnings and support targeted interventions.",
+        "fr": "Système basé sur l'IA pour identifier les élèves à risque d'abandon scolaire au secondaire. Utilise des modèles ML entraînés sur des indicateurs socio-académiques pour fournir des alertes précoces et orienter les interventions."
+      },
+      "stack": ["Python", "scikit-learn", "Pandas", "SCSS", "Machine Learning"],
+      "highlights": {
+        "en": ["Early dropout risk detection with ML", "Trained on socio-academic indicators", "Supports educational intervention planning"],
+        "fr": ["Détection précoce du risque d'abandon avec ML", "Entraîné sur des indicateurs socio-académiques", "Aide à la planification des interventions éducatives"]
+      },
+      "github": "https://github.com/VictorNico/secondarySchoolDropOut",
+      "paper": "",
+      "color": "#8B5CF6",
+      "icon": "bi-mortarboard"
+    },
+    {
+      "id": 10,
+      "category": "research",
+      "featured": false,
+      "title": {
+        "en": "Neural Networks from Scratch",
+        "fr": "Réseaux de Neurones from Scratch"
+      },
+      "description": {
+        "en": "Implementation of neural networks from the ground up using only NumPy and Pandas — no Keras or PyTorch. Covers forward and backward propagation, activation functions, and gradient descent, aimed at deep understanding of the mathematical foundations of deep learning.",
+        "fr": "Implémentation de réseaux de neurones from scratch en utilisant uniquement NumPy et Pandas — sans Keras ni PyTorch. Couvre la propagation avant/arrière, les fonctions d'activation et la descente de gradient, pour une compréhension profonde des fondations mathématiques du deep learning."
+      },
+      "stack": ["Python", "NumPy", "Pandas", "Jupyter Notebook"],
+      "highlights": {
+        "en": ["Pure NumPy neural network (no frameworks)", "Forward & backward propagation from scratch", "Mathematical deep learning foundations"],
+        "fr": ["Réseau de neurones pur NumPy (sans frameworks)", "Propagation avant et arrière from scratch", "Fondations mathématiques du deep learning"]
+      },
+      "github": "https://github.com/VictorNico/NNs_from_scratch",
+      "paper": "",
+      "color": "#06B6D4",
+      "icon": "bi-cpu"
+    },
+    {
+      "id": 11,
+      "category": "fullstack",
+      "featured": false,
+      "title": {
+        "en": "Vue3 Reactive Tel Input — Open Source Library",
+        "fr": "Vue3 Reactive Tel Input — Bibliothèque Open Source"
+      },
+      "description": {
+        "en": "Open source Vue 3 component library providing a reactive international telephone input with country flag selection, dial code detection, and full Vue 3 Composition API support. Published for the Vue ecosystem.",
+        "fr": "Bibliothèque de composants Vue 3 open source fournissant un champ de saisie téléphonique international réactif avec sélection du drapeau, détection du préfixe et support complet de la Composition API Vue 3."
+      },
+      "stack": ["Vue.js", "JavaScript", "Vue 3", "Composition API", "npm"],
+      "highlights": {
+        "en": ["International phone input with flag selector", "Vue 3 Composition API native support", "Open source npm package"],
+        "fr": ["Champ téléphonique international avec sélecteur de drapeau", "Support natif Vue 3 Composition API", "Package npm open source"]
+      },
+      "github": "https://github.com/VictorNico/vue3-reactive-tel-input",
+      "paper": "",
+      "color": "#42B883",
+      "icon": "bi-telephone"
+    },
+    {
+      "id": 12,
+      "category": "fullstack",
+      "featured": false,
+      "title": {
+        "en": "Manzhie — Transport Data Platform (Cameroon)",
+        "fr": "Manzhie — Plateforme de Données Transport (Cameroun)"
+      },
+      "description": {
+        "en": "Full-stack platform for collecting and querying transportation route data in Cameroon. The server exposes a REST API for route and schedule data while the client provides a user interface for travelers to find transport options across Cameroonian cities.",
+        "fr": "Plateforme full-stack pour la collecte et la consultation de données sur les trajets de transport au Cameroun. Le serveur expose une API REST pour les données de trajets et horaires, tandis que le client offre une interface aux voyageurs pour trouver des options de transport."
+      },
+      "stack": ["Node.js", "Express", "JavaScript", "REST API", "MongoDB"],
+      "highlights": {
+        "en": ["Transport route data aggregation for Cameroon", "REST API + client interface", "Real-world mobility data platform"],
+        "fr": ["Agrégation des données de trajets au Cameroun", "API REST + interface client", "Plateforme de données de mobilité réelle"]
+      },
+      "github": "https://github.com/VictorNico/manzhie-server",
+      "paper": "",
+      "color": "#F97316",
+      "icon": "bi-bus-front"
+    },
+    {
+      "id": 13,
+      "category": "fullstack",
+      "featured": false,
+      "title": {
+        "en": "Dino Chrome Game — Vanilla JS Recreation",
+        "fr": "Dino Chrome Game — Recréation en Vanilla JS"
+      },
+      "description": {
+        "en": "Browser-based recreation of the Chrome offline dinosaur game using only HTML, CSS, and JavaScript (no frameworks). Adds extra features including a live weather widget via API, a scoreboard, and a chronometer — all built with OOP principles.",
+        "fr": "Recréation dans le navigateur du jeu dinosaure hors ligne de Chrome, uniquement avec HTML, CSS et JavaScript (sans framework). Ajoute des fonctionnalités supplémentaires : widget météo en direct via API, tableau des scores et chronomètre — entièrement en POO."
+      },
+      "stack": ["HTML", "CSS", "JavaScript", "Weather API", "OOP"],
+      "highlights": {
+        "en": ["Pure vanilla JS, no frameworks", "Live weather widget via external API", "Scoreboard & chronometre features"],
+        "fr": ["Vanilla JS pur, sans framework", "Widget météo en direct via API externe", "Tableau des scores et chronomètre"]
+      },
+      "github": "https://github.com/VictorNico/DinoChromeGame",
+      "paper": "",
+      "color": "#A3A3A3",
+      "icon": "bi-controller"
+    }
+  ]
+}

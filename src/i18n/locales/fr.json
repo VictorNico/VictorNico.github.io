@@ -7,11 +7,20 @@
     "resume": "CV",
     "publications": "Publications",
     "awards": "Distinctions",
+    "projects": "Projets",
     "services": "Services",
     "contact": "Contact"
   },
   "hero": {
-    "prefix": "Je suis "
+    "prefix": "Je suis ",
+    "downloadCV": "Télécharger CV",
+    "viewProjects": "Voir les Projets"
+  },
+  "projects": {
+    "title": "Projets",
+    "featured": "Mis en avant",
+    "code": "Code",
+    "paper": "Article"
   },
   "about": {
     "title": "À propos",

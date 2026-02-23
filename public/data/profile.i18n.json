@@ -35,9 +35,7 @@
     "contacts": {
       "emails": [
         "nico.djiembou@facsciences-uy1.cm",
-        "Viclegranddab@gmail.com",
-        "victor.djiembou@takenco.com",
-        "victor.djiembou@dba-solutions.com"
+        "Viclegranddab@gmail.com"
       ],
       "phones": [
         "+237 695 449 091",
@@ -45,17 +43,8 @@
       ],
       "website": "https://victornico-github-io.pages.dev/"
     },
+    "cvUrl": "/assets/cvs/cv.pdf",
     "social": [
-      {
-        "platform": "twitter",
-        "url": "https://twitter.com/DjiembouVictor",
-        "icon": "bxl-twitter"
-      },
-      {
-        "platform": "facebook",
-        "url": "https://www.facebook.com/victornico.djiembou/",
-        "icon": "bxl-facebook"
-      },
       {
         "platform": "github",
         "url": "https://github.com/VictorNico/",
@@ -67,103 +56,102 @@
         "icon": "bxl-gitlab"
       },
       {
-        "platform": "skype",
-        "url": "https://join.skype.com/invite/durivLzafezr",
-        "icon": "bxl-skype"
+        "platform": "google-scholar",
+        "url": "https://scholar.google.com/citations?hl=fr&user=xz70eREAAAAJ",
+        "icon": "bxs-graduation"
+      },
+      {
+        "platform": "researchgate",
+        "url": "https://www.researchgate.net/profile/Djiembou-Victor-Nico",
+        "icon": "bxs-book-reader"
+      },
+      {
+        "platform": "kaggle",
+        "url": "https://www.kaggle.com/victornicofac",
+        "icon": "bxs-bar-chart-alt-2"
       },
       {
         "platform": "linkedin",
         "url": "https://Linkedin.com/in/victor-djiembou-a73b8820a",
         "icon": "bxl-linkedin"
+      },
+      {
+        "platform": "twitter",
+        "url": "https://twitter.com/DjiembouVictor",
+        "icon": "bxl-twitter"
       }
     ]
   },
   "hero": {
     "roles": {
       "en": [
-        "Local-Context-Integrated and Inclusive-Promoted AI Researcher",
-        "CONIA Hackathon Winner 2025",
-        "Graduate Research Assistant",
-        "PhD Applicant Fall 2027",
-        "Graph ML Researcher",
-        "Network Science Researcher",
-        "Explainable AI Specialist",
-        "Agricultural AI Researcher",
-        "Data Scientist",
+        "Graph ML Researcher & PhD Applicant",
+        "CONIA Hackathon 2025 — 1st Place Winner",
+        "Graduate Research Assistant @ UY1",
         "Senior FullStack Developer",
-        "ISS Engineer",
-        "TAKENCO IT Lead",
-        "Open Source Contributor"
+        "Explainable AI Specialist"
       ],
       "fr": [
-        "Chercheur en IA intégré au contexte local et favorisant l'inclusion",
-        "Gagnant Hackathon CONIA 2025",
-        "Assistant de Recherche Diplômé",
-        "Candidat PhD Automne 2027",
-        "Chercheur en ML sur Graphes",
-        "Chercheur en Science des Réseaux",
-        "Spécialiste en IA Explicable",
-        "Chercheur en IA Agricole",
-        "Data Scientist",
+        "Chercheur en ML sur Graphes & Candidat PhD",
+        "Hackathon CONIA 2025 — Gagnant 1ère Place",
+        "Assistant de Recherche Diplômé @ UY1",
         "Développeur FullStack Senior",
-        "Responsable IT TAKENCO",
-        "Ingénieur en SSI",
-        "Contributeur Open Source"
+        "Spécialiste en IA Explicable"
       ]
     }
   },
   "facts": {
     "intro": {
-      "en": "As a SSI engineer, senior full developer, junior linux administrator and enthusiastic data scientist, I have had to participate or lead projects that can be summarized as follows.",
-      "fr": "En tant qu'ingénieur SSI, développeur full stack senior, administrateur linux junior et data scientist enthousiaste, j'ai eu à participer ou diriger des projets qui peuvent se résumer comme suit."
+      "en": "Bridging cutting-edge research and practical engineering — here are some milestones that define my journey.",
+      "fr": "À la croisée de la recherche de pointe et de l'ingénierie pratique — voici quelques jalons qui définissent mon parcours."
     },
     "items": [
       {
-        "icon": "bi-emoji-smile",
-        "count": 7,
+        "icon": "bi-file-earmark-text",
+        "count": 3,
         "label": {
-          "en": "Happy Clients",
-          "fr": "Clients Satisfaits"
+          "en": "Research Contributions",
+          "fr": "Contributions de Recherche"
         },
         "description": {
-          "en": "for software, Unix & Linux OS maintenance",
-          "fr": "pour la maintenance logicielle, Unix & Linux"
+          "en": "1 published · 1 under review · 1 in preparation",
+          "fr": "1 publié · 1 en révision · 1 en préparation"
         }
       },
       {
-        "icon": "bi-journal-richtext",
-        "count": 15,
+        "icon": "bi-diagram-3",
+        "count": 11,
         "label": {
-          "en": "Projects",
-          "fr": "Projets"
+          "en": "Benchmark Datasets",
+          "fr": "Jeux de Données Benchmark"
         },
         "description": {
-          "en": "end with success",
-          "fr": "réussis avec succès"
+          "en": "validated in multilayer graph ML research",
+          "fr": "validés en recherche ML sur graphes multicouches"
         }
       },
       {
-        "icon": "bi-headset",
-        "count": 1453,
+        "icon": "bi-code-slash",
+        "count": 6,
         "label": {
-          "en": "Hours Of Support",
-          "fr": "Heures de Support"
+          "en": "Years of Dev Experience",
+          "fr": "Ans d'Expérience Dev"
         },
         "description": {
-          "en": "of strong work",
-          "fr": "de travail acharné"
+          "en": "fullstack engineering across 15+ projects",
+          "fr": "ingénierie fullstack sur 15+ projets"
         }
       },
       {
         "icon": "bi-people",
-        "count": 13,
+        "count": 5,
         "label": {
-          "en": "Hard Workers",
-          "fr": "Collaborateurs"
+          "en": "Students Mentored",
+          "fr": "Étudiants Encadrés"
         },
         "description": {
-          "en": "work with me to trust all these projects",
-          "fr": "ont travaillé avec moi sur ces projets"
+          "en": "in ML, GNN research & thesis projects",
+          "fr": "en ML, recherche GNN et projets de thèse"
         }
       }
     ]

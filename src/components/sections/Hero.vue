@@ -13,6 +13,22 @@
           <span class="typed-text">{{ currentRole }}</span>
           <span class="cursor">|</span>
         </div>
+
+        <div class="hero-cta">
+          <a
+            v-if="profile?.personal?.cvUrl"
+            :href="profile.personal.cvUrl"
+            download
+            class="cta-btn cta-primary"
+          >
+            <i class="bx bx-download"></i>
+            {{ t('hero.downloadCV') }}
+          </a>
+          <a href="#projects" class="cta-btn cta-secondary">
+            <i class="bx bx-code-block"></i>
+            {{ t('hero.viewProjects') }}
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -213,27 +229,29 @@ const initParticles = () => {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0;
   }
 
   &::before {
-    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
     color: $color-accent;
     z-index: -1;
     clip-path: inset(0);
   }
 
   &::after {
-    animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse infinite;
     color: $data-purple;
     z-index: -2;
     clip-path: inset(0);
   }
 
   &:hover {
-    &::before,
+    &::before {
+      opacity: 0.8;
+      animation: glitch 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+    }
     &::after {
-      animation-duration: 0.15s;
+      opacity: 0.8;
+      animation: glitch 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse infinite;
     }
   }
 }
@@ -291,6 +309,56 @@ const initParticles = () => {
   }
   51%, 100% {
     opacity: 0;
+  }
+}
+
+.hero-cta {
+  display: flex;
+  gap: $spacing-md;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: $spacing-2xl;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+  padding: $spacing-md $spacing-xl;
+  border-radius: $radius-md;
+  font-family: $font-mono;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all $transition-normal;
+  letter-spacing: 0.03em;
+
+  i {
+    font-size: 1.1rem;
+  }
+
+  &.cta-primary {
+    background: $color-secondary;
+    color: $bg-dark;
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.3);
+
+    &:hover {
+      background: $color-accent;
+      box-shadow: 0 0 30px rgba(0, 217, 255, 0.4);
+      transform: translateY(-3px);
+    }
+  }
+
+  &.cta-secondary {
+    background: transparent;
+    color: $color-secondary;
+    border: 1px solid $color-secondary;
+
+    &:hover {
+      background: rgba(100, 255, 218, 0.1);
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+    }
   }
 }
 </style>

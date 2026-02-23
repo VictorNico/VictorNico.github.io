@@ -32,6 +32,16 @@
       <div class="language-switcher-wrapper">
         <LanguageSwitcher />
       </div>
+
+      <a
+        v-if="profile?.personal?.cvUrl"
+        :href="profile.personal.cvUrl"
+        download
+        class="cv-download-btn"
+      >
+        <i class="bx bx-download"></i>
+        {{ t('hero.downloadCV') }}
+      </a>
     </div>
 
     <nav class="nav-menu">
@@ -80,6 +90,7 @@ const sections = computed(() => [
   { id: 'resume', label: t('nav.resume'), icon: 'bx-file-blank' },
   { id: 'publications', label: t('nav.publications'), icon: 'bx-book-bookmark' },
   { id: 'awards', label: t('nav.awards'), icon: 'bx-trophy' },
+  { id: 'projects', label: t('nav.projects'), icon: 'bx-layer' },
   { id: 'services', label: t('nav.services'), icon: 'bx-server' },
   { id: 'contact', label: t('nav.contact'), icon: 'bx-envelope' }
 ])
@@ -209,6 +220,35 @@ onUnmounted(() => {
   justify-content: center;
   padding-top: $spacing-md;
   border-top: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.cv-download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+  margin: $spacing-md $spacing-lg 0;
+  padding: $spacing-sm $spacing-md;
+  background: rgba(100, 255, 218, 0.1);
+  border: 1px solid $color-secondary;
+  border-radius: $radius-md;
+  color: $color-secondary;
+  font-family: $font-mono;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all $transition-fast;
+
+  i {
+    font-size: 1.1rem;
+  }
+
+  &:hover {
+    background: $color-secondary;
+    color: $bg-dark;
+    transform: translateY(-2px);
+    box-shadow: $shadow-glow;
+  }
 }
 
 .nav-menu {

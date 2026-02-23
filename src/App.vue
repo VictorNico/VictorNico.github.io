@@ -12,6 +12,7 @@
       <Resume />
       <Publications />
       <Awards />
+      <Projects />
       <Services />
       <Contact />
     </main>
@@ -41,6 +42,7 @@ import Facts from './components/sections/Facts.vue'
 import Resume from './components/sections/Resume.vue'
 import Publications from './components/sections/Publications.vue'
 import Awards from './components/sections/Awards.vue'
+import Projects from './components/sections/Projects.vue'
 import Services from './components/sections/Services.vue'
 import Contact from './components/sections/Contact.vue'
 

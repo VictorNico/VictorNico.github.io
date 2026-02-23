@@ -1,4 +1,104 @@
 # Changelog - Portfolio v2
+## Version 2.2.0 (2026-02-23)
+
+Refonte du positionnement et du contenu : identité académique clarifiée, nouvelles fonctionnalités (section Projects, boutons CTA, CV download), corrections de bugs et mise à jour des données sociales/métriques.
+
+---
+
+### ✨ Nouvelles Fonctionnalités
+
+#### Section Projects
+Nouvelle section complète permettant de présenter les projets de recherche et d'ingénierie avec filtre par catégorie.
+
+**Fichiers ajoutés :**
+- `public/data/projects.i18n.json` — 5 projets documentés (MNIFS Graph ML, Plant Disease CNN, Takenco MIS, Document Certification Platform, Law Firm BPM ERP)
+- `src/components/sections/Projects.vue` — composant avec filtre par catégorie (All / Research / FullStack / AI / ML), cards avec stack technique, highlights clés, liens GitHub et Paper
+
+**Intégration :**
+- `src/App.vue` — `<Projects />` ajouté entre `<Awards />` et `<Services />`
+- `src/components/layout/Sidebar.vue` — entrée nav "Projects" (`bx-layer`) ajoutée
+- `src/i18n/locales/en.json` / `fr.json` — clés `nav.projects`, `projects.title/featured/code/paper` ajoutées
+
+#### Boutons CTA dans le Hero
+Deux boutons d'action principale ajoutés sous le titre rotatif dans `Hero.vue` :
+- **Download CV** (primaire) — déclenche le téléchargement de `/assets/cv.pdf` (à déposer dans `public/assets/`)
+- **View Projects** (secondaire) — scroll vers la section `#projects`
+
+**Clés i18n ajoutées :** `hero.downloadCV`, `hero.viewProjects`
+
+#### Bouton Download CV dans la Sidebar
+Bouton Download CV persistent dans la Sidebar (`src/components/layout/Sidebar.vue`), visible en permanence sous le sélecteur de langue. Activé conditionnellement via `profile.personal.cvUrl`.
+
+---
+
+### 🔧 Corrections de Bugs
+
+#### Glitch animation — `Hero.vue`
+**Problème :** L'animation glitch tournait en continu (`infinite`) dès le chargement, créant une distraction visuelle permanente.
+**Fix :** Suppression de l'animation continue sur `::before`/`::after`. L'animation ne se déclenche plus qu'au hover avec `animation-duration: 0.15s`.
+
+#### `formatDate` ignorait la locale active — `About.vue`
+**Problème :** `toLocaleDateString('en-US', ...)` forçait le format anglais même quand l'utilisateur était en français.
+**Fix :** `locale.value === 'fr' ? 'fr-FR' : 'en-US'` — la date s'affiche maintenant selon la langue sélectionnée.
+
+#### Dates contradictoires — `experience.i18n.json`
+**Problème :** L'expérience CONIA Hackathon (id=13) avait des dates incohérentes entre les deux tableaux : `2025-07-04 → 2025-07-09` dans `experiences` vs `2024-10 → 2025-01` dans `_experiences`.
+**Fix :** Uniformisation sur `startDate: "2024-10"`, `endDate: "2025-01"` (dates réelles de la compétition).
+
+---
+
+### 📝 Contenu mis à jour
+
+#### `profile.i18n.json`
+
+**Liens sociaux :** Facebook et Skype supprimés (non pertinents pour profil académique/senior dev). Ajout de :
+- Google Scholar (`https://scholar.google.com/citations?hl=fr&user=xz70eREAAAAJ`)
+- ResearchGate (`https://www.researchgate.net/profile/Djiembou-Victor-Nico`)
+- Kaggle (`https://www.kaggle.com/victornicofac`)
+
+Ordre revu : GitHub, LinkedIn, Scholar, ResearchGate, Kaggle, GitLab, Twitter.
+
+**Rôles rotatifs (Hero) :** Réduits de 13 à 5 rôles clés pour éviter la dilution du message :
+```
+Graph ML Researcher & PhD Applicant
+CONIA Hackathon 2025 - 1st Place Winner
+Graduate Research Assistant @ UY1
+Senior FullStack Developer
+Explainable AI Specialist
+```
+
+**Facts :** Métriques orientées freelancer remplacées par métriques orientées recherche :
+| Avant | Après |
+|---|---|
+| 7 Happy Clients | 3 Research Contributions (1 publié · 1 en révision · 1 en préparation) |
+| 15 Projects | 11 Benchmark Datasets validés |
+| 1453 Hours of Support | 6 Years of Dev Experience |
+| 13 Hard Workers | 5+ Students Mentored |
+
+**Contacts :** Emails réduits de 4 à 2, téléphones de 2 à 1.
+
+**Ajout :** champ `personal.cvUrl` → `"/assets/cv.pdf"` (activer en déposant le PDF dans `public/assets/`).
+
+#### `services.i18n.json`
+Descriptions génériques et obsolètes remplacées par descriptions concrètes et à jour :
+- "Project Management — 1 year" → "Scrum PM — 4+ ans chez Takenco"
+- "Development trainer" → "Senior FullStack Development — 6+ ans en production"
+- Nouveau : "Graph ML & Data Science Consulting" (MNIFS, PageRank, SHAP)
+- Nouveau : "AI Research for African Agriculture" (CONIA winner, déploiement mobile)
+- "Article and report writing" → "Information System Security" (CIA, network architecture, mirroring)
+- Ajout : "Teaching & Research Mentoring" (5+ étudiants encadrés, GNN workshops)
+
+---
+
+### ⚠️ Action requise
+
+| Action | Fichier cible |
+|---|---|
+| Déposer le CV PDF | `public/assets/cv.pdf` |
+| Vérifier les liens GitHub des projets | `public/data/projects.i18n.json` — champ `github` de chaque projet |
+| Ajouter lien Paper CNN (IEEE Access) | `public/data/projects.i18n.json` — projet id=2, champ `paper` |
+
+---
 
 ## Version 2.1.0 (2026-02-19)
 

@@ -96,13 +96,13 @@ import { useI18nData } from '../../composables/useI18nData'
 
 const { data: profile } = useDataLoader('profile.i18n')
 const { age } = useAge()
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const { getTranslated } = useI18nData()
 
 const formatDate = (dateString) => {
   if (!dateString) return ''
   const date = new Date(dateString)
-  return date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
+  return date.toLocaleDateString(locale.value === 'fr' ? 'fr-FR' : 'en-US', { month: 'long', day: 'numeric', year: 'numeric' })
 }
 </script>
 
