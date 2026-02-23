@@ -55,28 +55,6 @@
       "icon": "bi-flower1"
     },
     {
-      "id": 3,
-      "category": "fullstack",
-      "featured": true,
-      "title": {
-        "en": "Mobility & Transportation Information System (MIS)",
-        "fr": "Système d'Information de Mobilité et Transport (MIS)"
-      },
-      "description": {
-        "en": "End-to-end mobility information system built at Takenco, including an airport taxi reservation application developed in cooperation with ADC (Airports of Cameroon). Covers firmware, backend APIs, and mobile interfaces.",
-        "fr": "Système d'information de mobilité complet développé chez Takenco, incluant une application de réservation de taxis aéroport en coopération avec l'ADC (Aéroports du Cameroun). Couvre firmware, APIs backend et interfaces mobiles."
-      },
-      "stack": ["Vue.js", "Node.js", "Express", "MongoDB", "Firmware", "REST API"],
-      "highlights": {
-        "en": ["Production system deployed in Cameroon", "Airport taxi management with ADC partnership", "Firmware + fullstack integration"],
-        "fr": ["Système en production au Cameroun", "Gestion taxis aéroport avec partenariat ADC", "Intégration firmware + fullstack"]
-      },
-      "github": "https://github.com/VictorNico/",
-      "paper": "",
-      "color": "#42B883",
-      "icon": "bi-truck"
-    },
-    {
       "id": 4,
       "category": "fullstack",
       "featured": false,

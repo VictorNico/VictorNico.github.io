@@ -35,13 +35,14 @@
 
       <label v-if="profile?.personal?.cvs?.length" class="cv-download-btn cv-select-label">
         <i class="bx bx-show"></i>
+        <span>{{ t('hero.viewCV') }}</span>
+        <i class="bx bx-chevron-down"></i>
         <select @change="onCVSelect" class="cv-select">
           <option value="" disabled selected>{{ t('hero.viewCV') }}</option>
           <option v-for="(cv, i) in profile.personal.cvs" :key="i" :value="i">
             {{ getTranslated(cv.title) }}
           </option>
         </select>
-        <i class="bx bx-chevron-down"></i>
       </label>
     </div>
 
@@ -267,20 +268,17 @@ onUnmounted(() => {
 }
 
 .cv-select-label {
+  position: relative;
   cursor: pointer;
 }
 
 .cv-select {
-  appearance: none;
-  -webkit-appearance: none;
-  background: transparent;
-  border: none;
-  color: inherit;
-  font: inherit;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
   cursor: pointer;
-  flex: 1;
-  min-width: 0;
-  outline: none;
 
   option {
     background: $bg-card;
