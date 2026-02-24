@@ -104,15 +104,22 @@ function offset(i) {
 function cardStyle(i) {
   const off = offset(i)
   const absOff = Math.abs(off)
+  const vw = window.innerWidth
+  const isMobileView = vw < 640
+
+  // On mobile: only show center card — side cards cause viewport overflow
+  if (isMobileView && absOff >= 1) {
+    return { opacity: 0, pointerEvents: 'none', zIndex: 0 }
+  }
 
   if (absOff > 2) {
     return { opacity: 0, pointerEvents: 'none', zIndex: 0 }
   }
 
-  const sign  = off >= 0 ? 1 : -1
-  const tx    = off * 210          // horizontal spread (px in 3D space)
-  const tz    = -absOff * 90       // push back proportionally
-  const ry    = -off * 48          // rotate toward viewer
+  // Responsive horizontal spread: never exceed 38% of viewport
+  const tx    = off * Math.min(210, vw * 0.38)
+  const tz    = -absOff * 90
+  const ry    = -off * 48
   const scale = absOff === 0 ? 1 : absOff === 1 ? 0.82 : 0.65
   const op    = absOff === 0 ? 1 : absOff === 1 ? 0.7 : 0.3
   const zi    = 10 - absOff * 3

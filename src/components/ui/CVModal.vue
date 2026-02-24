@@ -22,7 +22,14 @@
           </div>
 
           <div class="cv-modal-body">
-            <div v-if="isMobile" class="cv-mobile-fallback">
+            <iframe
+              v-if="selectedCV?.path"
+              :src="iframeSrc"
+              class="cv-iframe"
+              :title="selectedCV?.title ? getTranslated(selectedCV.title) : t('cv.title')"
+              @error="onIframeError"
+            ></iframe>
+            <div v-if="iframeError" class="cv-mobile-fallback">
               <i class="bx bx-file-blank cv-file-icon"></i>
               <p>{{ t('cv.notSupported') }}</p>
               <a v-if="selectedCV?.path" :href="selectedCV.path" target="_blank" rel="noopener noreferrer" class="cv-open-link">
@@ -30,24 +37,6 @@
                 {{ t('cv.openNewTab') }}
               </a>
             </div>
-            <template v-else>
-              <iframe
-                v-if="selectedCV?.path"
-                :src="`${selectedCV.path}#toolbar=1`"
-                type="application/pdf"
-                class="cv-iframe"
-                :title="selectedCV?.title ? getTranslated(selectedCV.title) : t('cv.title')"
-                @error="onIframeError"
-              ></iframe>
-              <div v-if="iframeError" class="cv-mobile-fallback">
-                <i class="bx bx-file-blank cv-file-icon"></i>
-                <p>{{ t('cv.notSupported') }}</p>
-                <a v-if="selectedCV?.path" :href="selectedCV.path" target="_blank" rel="noopener noreferrer" class="cv-open-link">
-                  <i class="bx bx-link-external"></i>
-                  {{ t('cv.openNewTab') }}
-                </a>
-              </div>
-            </template>
           </div>
         </div>
       </div>
@@ -66,7 +55,16 @@ const { t } = useI18n()
 const { getTranslated } = useI18nData()
 
 const iframeError = ref(false)
-const isMobile = computed(() => window.innerWidth < 768)
+
+// Google Docs Viewer works on all platforms including iOS/Android.
+// On localhost the PDF URL is not publicly reachable, so fall back to the direct path.
+const iframeSrc = computed(() => {
+  if (!selectedCV.value?.path) return ''
+  const isLocalhost = /^https?:\/\/localhost|127\.0\.0\.1/.test(window.location.href)
+  if (isLocalhost) return `${selectedCV.value.path}#toolbar=1`
+  const absUrl = `${window.location.origin}${selectedCV.value.path}`
+  return `https://docs.google.com/viewer?url=${encodeURIComponent(absUrl)}&embedded=true`
+})
 
 const onIframeError = () => {
   iframeError.value = true
