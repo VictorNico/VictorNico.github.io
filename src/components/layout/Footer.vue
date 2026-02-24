@@ -3,7 +3,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="copyright">
-          &copy; Copyright <strong><span>{{year}} - Victor Nico Djiembou Tientcheu</span></strong>
+          &copy; <strong><span>{{year}}  Victor Nico Djiembou Tientcheu</span></strong>
         </div>
 <!--        <div class="credits">-->
 <!--          Designed by-->
