@@ -1,7 +1,7 @@
 {
   "name": "portfolio-v2",
   "private": true,
-  "version": "0.2.2",
+  "version": "0.3.0",
   "type": "module",
   "homepage": "https://victornico.github.io/",
   "scripts": {
