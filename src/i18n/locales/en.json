@@ -97,7 +97,8 @@
   "footer": {
     "copyright": "Copyright",
     "designed": "Designed by",
-    "built": "Built with"
+    "built": "Built with",
+    "law": "All rights reserved"
   },
   "common": {
     "backToTop": "Back to top"

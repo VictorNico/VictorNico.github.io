@@ -3,7 +3,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="copyright">
-          &copy; <strong><span>{{year}}  Victor Nico Djiembou Tientcheu</span></strong>
+          &copy; <strong><span>{{year}} Victor Nico Djiembou Tientcheu</span></strong>. {{t('footer.law')}}
         </div>
 <!--        <div class="credits">-->
 <!--          Designed by-->
@@ -20,6 +20,9 @@
 
 <script setup>
 // No additional logic needed for now
+import {useI18n} from "vue-i18n";
+
+const { t, locale } = useI18n()
 const year = new Date().getFullYear();
 </script>
 
