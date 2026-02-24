@@ -79,7 +79,7 @@
               rel="noopener noreferrer"
               class="link-btn link-paper"
             >
-              <i class="bi bi-file-earmark-text"></i>
+              <i class="bi bi-box-arrow-up-right"></i>
               {{ t('projects.paper') }}
             </a>
           </div>

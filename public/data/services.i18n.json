@@ -1,19 +1,19 @@
 {
   "intro": {
-    "en": "Open to collaboration in research, engineering, and teaching — here is what I bring to the table.",
-    "fr": "Ouvert à la collaboration en recherche, ingénierie et enseignement — voici ce que j'apporte."
+    "en": "Open to collaboration in research, engineering, and teaching: here is what I bring to the table.",
+    "fr": "Ouvert à la collaboration en recherche, ingénierie et enseignement: voici ce que j'apporte."
   },
   "services": [
     {
       "id": 1,
       "title": {
-        "en": "Graph ML & Data Science Consulting",
-        "fr": "Conseil en Graph ML & Data Science"
+        "en": "AI & Data Science Consulting",
+        "fr": "Conseil en IA & Data Science"
       },
       "icon": "bi-diagram-3",
       "description": {
-        "en": "From multilayer network modeling to explainable AI — I help teams design and validate ML pipelines grounded in rigorous research (MNIFS, PageRank, SHAP). Available for academic collaborations and industry R&D.",
-        "fr": "Du modelage de réseaux multicouches à l'IA explicable — j'aide les équipes à concevoir et valider des pipelines ML ancrés dans une recherche rigoureuse (MNIFS, PageRank, SHAP). Disponible pour collaborations académiques et R&D industrielle."
+        "en": "From modelling to explainable AI: I help teams design and validate ML pipelines grounded in rigorous research. Available for academic collaborations and industrial R&D.",
+        "fr": "Du modelage à l'IA explicable: j'aide les équipes à concevoir et valider des pipelines ML ancrés dans une recherche rigoureuse. Disponible pour collaborations académiques et R&D industrielle."
       },
       "color": "#64FFDA"
     },
@@ -25,21 +25,21 @@
       },
       "icon": "bi-code-slash",
       "description": {
-        "en": "6+ years building production-grade systems with Vue.js, Node.js, Flask, PostgreSQL, and MongoDB. From mobile-ready REST APIs to full ERP solutions — I architect, build, and ship.",
-        "fr": "6+ ans à construire des systèmes de production avec Vue.js, Node.js, Flask, PostgreSQL et MongoDB. Des APIs REST mobiles aux solutions ERP complètes — je conçois, construis et livre."
+        "en": "6+ years building production-grade systems with Vue.js, Node.js, Flask, PostgreSQL, and MongoDB. From mobile-ready REST APIs to full ERP solutions: I architect, build, and ship.",
+        "fr": "6+ ans à construire des systèmes de production avec Vue.js, Node.js, Flask, PostgreSQL et MongoDB. Des APIs REST mobiles aux solutions ERP complètes: je conçois, construis et livre."
       },
       "color": "#42B883"
     },
     {
       "id": 3,
       "title": {
-        "en": "AI Research for African Agriculture",
-        "fr": "Recherche IA pour l'Agriculture Africaine"
+        "en": "Contextual, inclusive and sovereign AI for African agriculture",
+        "fr": "IA contextuelles, inclusives et souveraines pour l'Agriculture Africaine"
       },
       "icon": "bi-flower1",
       "description": {
-        "en": "Winner of CONIA Hackathon 2025 with an optimized CNN for plant disease classification designed for resource-constrained mobile deployment in Sub-Saharan Africa. Open to NGO and research partnerships.",
-        "fr": "Gagnant du Hackathon CONIA 2025 avec un CNN optimisé pour la classification des maladies des plantes, conçu pour un déploiement mobile dans les contextes agricoles d'Afrique subsaharienne. Ouvert aux partenariats ONG et recherche."
+        "en": "Winner of CONIA Hackathon 2025 with an optimized CNN for plant disease classification designed for resource-constrained mobile deployment in Sub-Saharan Africa. Open to NGO and research partnerships for contextual, inclusive and sovereign AI",
+        "fr": "Gagnant du Hackathon CONIA 2025 avec un CNN optimisé pour la classification des maladies des plantes, conçu pour un déploiement mobile dans les contextes agricoles d'Afrique subsaharienne. Ouvert aux partenariats ONG et recherche pour des IA contextuelles, inclusives et souveraines."
       },
       "color": "#10B981"
     },
@@ -51,8 +51,8 @@
       },
       "icon": "bi-kanban",
       "description": {
-        "en": "4+ years leading cross-functional dev teams at Takenco — ensuring delivery, transparency, and alignment between technical teams and top management. Comfortable with distributed and hybrid teams.",
-        "fr": "4+ ans à diriger des équipes de développement pluridisciplinaires chez Takenco — garantissant la livraison, la transparence et l'alignement entre les équipes techniques et la direction. À l'aise avec les équipes distribuées et hybrides."
+        "en": "4+ years leading cross-functional dev teams at Takenco: ensuring delivery, transparency, and alignment between technical teams and top management. Comfortable with distributed and hybrid teams.",
+        "fr": "4+ ans à diriger des équipes de développement pluridisciplinaires chez Takenco: garantissant la livraison, la transparence et l'alignement entre les équipes techniques et la direction. À l'aise avec les équipes distribuées et hybrides."
       },
       "color": "#F59E0B"
     },
@@ -64,8 +64,8 @@
       },
       "icon": "bi-mortarboard",
       "description": {
-        "en": "Peer tutor in Data Science & ML at UY1 — mentored 5+ students in thesis research, delivered GNN workshops for 30+ students. Available for online tutoring, ML bootcamps, and academic writing guidance.",
-        "fr": "Tuteur pair en Data Science & ML à l'UY1 — encadré 5+ étudiants en recherche de thèse, animé des ateliers GNN pour 30+ étudiants. Disponible pour tutorat en ligne, bootcamps ML et guide de rédaction académique."
+        "en": "Peer tutor in Data Science & ML at UY1: Assisted 5+ students with master's thesis research, led ML and CV workshops for 15+ students. Available for online tutoring, ML bootcamps, and academic writing guidance.",
+        "fr": "Tuteur pair en Data Science & ML à l'UY1: Assisté 5+ étudiants en recherche de thèse de master, animé des ateliers ML et CV pour 15+ étudiants. Disponible pour tutorat en ligne, bootcamps ML et guide de rédaction académique."
       },
       "color": "#8B5CF6"
     },
@@ -77,7 +77,7 @@
       },
       "icon": "bi-shield-lock",
       "description": {
-        "en": "ISS-trained engineer experienced in CIA-compliant security policy design, network architecture with mirroring, preventive and corrective maintenance, and system/network administration.",
+        "en": "Engineer trained in SSI, experienced in designing CIA-compliant security policies, network architecture with mirroring, preventive and corrective maintenance, and system/network administration.",
         "fr": "Ingénieur formé en SSI, expérimenté dans la conception de politiques de sécurité conformes CIA, l'architecture réseau avec mirroring, la maintenance préventive et corrective, et l'administration système/réseau."
       },
       "color": "#EF4444"

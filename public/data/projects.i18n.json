@@ -1,7 +1,7 @@
 {
   "intro": {
-    "en": "A selection of research and engineering projects — from graph ML experiments to production-grade fullstack systems.",
-    "fr": "Une sélection de projets de recherche et d'ingénierie — des expériences en Graph ML aux systèmes fullstack en production."
+    "en": "A selection of research and engineering projects: from graph ML experiments to production-grade fullstack systems.",
+    "fr": "Une sélection de projets de recherche et d'ingénierie: des expériences en Graph ML aux systèmes fullstack en production."
   },
   "categories": [
     { "id": "all",      "en": "All",        "fr": "Tous" },
@@ -15,12 +15,12 @@
       "category": "research",
       "featured": true,
       "title": {
-        "en": "MNIFS — Multilayer Graph Based Feature Engineering",
-        "fr": "MNIFS — Extraction de Caractéristiques basé sur des Graphes Multicouches"
+        "en": "MNIFS: Multilayer Graph Based Feature Engineering",
+        "fr": "MNIFS: Extraction de Caractéristiques basé sur des Graphes Multicouches"
       },
       "description": {
-        "en": "Novel framework for extracting discriminative features from multilayer graphs in supervised learning. Introduces the MNIFS protocol and an observation-based Personalized PageRank. Validated on 7 benchmark datasets with 6 ML models — achieving up to 99.9% financial loss reduction. Paper submitted to DMKD (March 2026).",
-        "fr": "Cadre novateur pour l'extraction de caractéristiques discriminantes de graphes multicouches en apprentissage supervisé. Introduit le protocole MNIFS et un PageRank Personnalisé basé sur les observations. Validé sur 7 jeux de données avec 6 modèles ML — jusqu'à 99,9% de réduction des pertes financières. Soumis à DMKD (mars 2026)."
+        "en": "Novel framework for extracting discriminative features from multilayer graphs in supervised learning. Introduces the MNIFS protocol and an observation-based Personalized PageRank. Validated on 7 benchmark datasets with 6 ML models: achieving up to 99.9% financial loss reduction. Paper submitted to DMKD (March 2026).",
+        "fr": "Cadre novateur pour l'extraction de caractéristiques discriminantes de graphes multicouches en apprentissage supervisé. Introduit le protocole MNIFS et un PageRank Personnalisé basé sur les observations. Validé sur 7 jeux de données avec 6 modèles ML: jusqu'à 99,9% de réduction des pertes financières. Soumis à DMKD (mars 2026)."
       },
       "stack": ["Python", "NetworkX", "scikit-learn", "XGBoost", "SHAP", "Pandas", "Numpy", "Scipy"],
       "highlights": {
@@ -37,8 +37,8 @@
       "category": "ai",
       "featured": true,
       "title": {
-        "en": "Plant Disease CNN — CONIA Hackathon 2025 Winner",
-        "fr": "CNN Maladies des Plantes — Gagnant CONIA Hackathon 2025"
+        "en": "Plant Disease CNN: CONIA Hackathon 2025 Winner",
+        "fr": "CNN Maladies des Plantes: Gagnant CONIA Hackathon 2025"
       },
       "description": {
         "en": "Optimized CNN architecture for plant disease classification in Sub-Saharan Africa. Surpasses the IJCA 2025 baseline while significantly reducing inference time for mobile deployment. 1st Place at CONIA Hackathon 2025. Paper in preparation for IEEE Access.",
@@ -46,8 +46,8 @@
       },
       "stack": ["Python", "PyTorch", "TensorFlow", "Keras", "Transfer Learning", "Model Compression"],
       "highlights": {
-        "en": ["1st Place — CONIA Hackathon 2025", "Superior accuracy vs IJCA 2025 baseline", "Mobile-ready for resource-constrained settings"],
-        "fr": ["1ère Place — Hackathon CONIA 2025", "Précision supérieure à la référence IJCA 2025", "Mobile-ready pour contextes aux ressources limitées"]
+        "en": ["1st Place: CONIA Hackathon 2025", "Superior accuracy vs IJCA 2025 baseline", "Mobile-ready for resource-constrained settings"],
+        "fr": ["1ère Place: Hackathon CONIA 2025", "Précision supérieure à la référence IJCA 2025", "Mobile-ready pour contextes aux ressources limitées"]
       },
       "github": "https://github.com/VictorNico/agriguard",
       "paper": "",
@@ -55,56 +55,12 @@
       "icon": "bi-flower1"
     },
     {
-      "id": 4,
-      "category": "fullstack",
-      "featured": false,
-      "title": {
-        "en": "Financial Document Certification Platform",
-        "fr": "Plateforme de Certification de Documents Financiers"
-      },
-      "description": {
-        "en": "Certification platform with a virtual agent for university fee payment receipts at the University of Yaoundé I. Provides automated verification and digital certification of financial documents.",
-        "fr": "Plateforme de certification avec agent virtuel pour les reçus de paiement des frais universitaires à l'Université de Yaoundé I. Fournit une vérification automatisée et une certification numérique des documents financiers."
-      },
-      "stack": ["Vue.js", "Node.js", "PostgreSQL", "Chatbot", "REST API"],
-      "highlights": {
-        "en": ["Virtual agent for automated verification", "University of Yaoundé I deployment", "Secure document certification"],
-        "fr": ["Agent virtuel pour vérification automatisée", "Déploiement à l'Université de Yaoundé I", "Certification de documents sécurisée"]
-      },
-      "github": "https://github.com/VictorNico/",
-      "paper": "",
-      "color": "#667EEA",
-      "icon": "bi-file-earmark-check"
-    },
-    {
-      "id": 5,
-      "category": "fullstack",
-      "featured": false,
-      "title": {
-        "en": "Business Process Management — Law Firm ERP",
-        "fr": "Gestion des Processus Métiers — ERP Cabinet d'Avocats"
-      },
-      "description": {
-        "en": "Custom BPM application designed for a law firm's internal processes at Phoenix Studio & Design. Handles case management, document workflows, billing, and team coordination.",
-        "fr": "Application BPM sur mesure pour les processus internes d'un cabinet d'avocats chez Phoenix Studio & Design. Gestion des dossiers, workflows documentaires, facturation et coordination d'équipe."
-      },
-      "stack": ["Vue.js", "Node.js", "MongoDB", "REST API"],
-      "highlights": {
-        "en": ["End-to-end BPM for legal workflows", "Custom ERP architecture", "Phoenix Studio & Design deployment"],
-        "fr": ["BPM bout en bout pour workflows juridiques", "Architecture ERP sur mesure", "Déploiement Phoenix Studio & Design"]
-      },
-      "github": "https://github.com/VictorNico/",
-      "paper": "",
-      "color": "#764BA2",
-      "icon": "bi-briefcase"
-    },
-    {
       "id": 6,
       "category": "ai",
       "featured": true,
       "title": {
-        "en": "Aurore NLP — Yemba Language Speech Recognition",
-        "fr": "Aurore NLP — Reconnaissance Vocale de la Langue Yemba"
+        "en": "Aurore NLP: Yemba Language Speech Recognition",
+        "fr": "Aurore NLP: Reconnaissance Vocale de la Langue Yemba"
       },
       "description": {
         "en": "Speech recognition system for Yemba, an endangered Cameroonian language. Built during the Aurore Hackathon (December 2024), this NLP project addresses low-resource language preservation using deep learning audio processing.",
@@ -195,8 +151,8 @@
         "fr": "Réseaux de Neurones from Scratch"
       },
       "description": {
-        "en": "Implementation of neural networks from the ground up using only NumPy and Pandas — no Keras or PyTorch. Covers forward and backward propagation, activation functions, and gradient descent, aimed at deep understanding of the mathematical foundations of deep learning.",
-        "fr": "Implémentation de réseaux de neurones from scratch en utilisant uniquement NumPy et Pandas — sans Keras ni PyTorch. Couvre la propagation avant/arrière, les fonctions d'activation et la descente de gradient, pour une compréhension profonde des fondations mathématiques du deep learning."
+        "en": "Implementation of neural networks from the ground up using only NumPy and Pandas: no Keras or PyTorch. Covers forward and backward propagation, activation functions, and gradient descent, aimed at deep understanding of the mathematical foundations of deep learning.",
+        "fr": "Implémentation de réseaux de neurones from scratch en utilisant uniquement NumPy et Pandas: sans Keras ni PyTorch. Couvre la propagation avant/arrière, les fonctions d'activation et la descente de gradient, pour une compréhension profonde des fondations mathématiques du deep learning."
       },
       "stack": ["Python", "NumPy", "Pandas", "Jupyter Notebook"],
       "highlights": {
@@ -213,8 +169,8 @@
       "category": "fullstack",
       "featured": false,
       "title": {
-        "en": "Vue3 Reactive Tel Input — Open Source Library",
-        "fr": "Vue3 Reactive Tel Input — Bibliothèque Open Source"
+        "en": "Vue3 Reactive Tel Input: Open Source Library",
+        "fr": "Vue3 Reactive Tel Input: Bibliothèque Open Source"
       },
       "description": {
         "en": "Open source Vue 3 component library providing a reactive international telephone input with country flag selection, dial code detection, and full Vue 3 Composition API support. Published for the Vue ecosystem.",
@@ -226,7 +182,7 @@
         "fr": ["Champ téléphonique international avec sélecteur de drapeau", "Support natif Vue 3 Composition API", "Package npm open source"]
       },
       "github": "https://github.com/VictorNico/vue3-reactive-tel-input",
-      "paper": "",
+      "paper": "https://www.jsdelivr.com/package/npm/vue3-reactive-tel-input",
       "color": "#42B883",
       "icon": "bi-telephone"
     },
@@ -235,14 +191,14 @@
       "category": "fullstack",
       "featured": false,
       "title": {
-        "en": "Manzhie — Transport Data Platform (Cameroon)",
-        "fr": "Manzhie — Plateforme de Données Transport (Cameroun)"
+        "en": "Manzhie: Transport Data Platform (Cameroon)",
+        "fr": "Manzhie: Plateforme de Données Transport (Cameroun)"
       },
       "description": {
         "en": "Full-stack platform for collecting and querying transportation route data in Cameroon. The server exposes a REST API for route and schedule data while the client provides a user interface for travelers to find transport options across Cameroonian cities.",
         "fr": "Plateforme full-stack pour la collecte et la consultation de données sur les trajets de transport au Cameroun. Le serveur expose une API REST pour les données de trajets et horaires, tandis que le client offre une interface aux voyageurs pour trouver des options de transport."
       },
-      "stack": ["Node.js", "Express", "JavaScript", "REST API", "MongoDB"],
+      "stack": ["Node.js", "Express", "JavaScript", "REST API", "Neo4J", "CQL"],
       "highlights": {
         "en": ["Transport route data aggregation for Cameroon", "REST API + client interface", "Real-world mobility data platform"],
         "fr": ["Agrégation des données de trajets au Cameroun", "API REST + interface client", "Plateforme de données de mobilité réelle"]
@@ -257,12 +213,12 @@
       "category": "fullstack",
       "featured": false,
       "title": {
-        "en": "Dino Chrome Game — Vanilla JS Recreation",
-        "fr": "Dino Chrome Game — Recréation en Vanilla JS"
+        "en": "Dino Chrome Game: Vanilla JS Recreation",
+        "fr": "Dino Chrome Game: Recréation en Vanilla JS"
       },
       "description": {
-        "en": "Browser-based recreation of the Chrome offline dinosaur game using only HTML, CSS, and JavaScript (no frameworks). Adds extra features including a live weather widget via API, a scoreboard, and a chronometer — all built with OOP principles.",
-        "fr": "Recréation dans le navigateur du jeu dinosaure hors ligne de Chrome, uniquement avec HTML, CSS et JavaScript (sans framework). Ajoute des fonctionnalités supplémentaires : widget météo en direct via API, tableau des scores et chronomètre — entièrement en POO."
+        "en": "Browser-based recreation of the Chrome offline dinosaur game using only HTML, CSS, and JavaScript (no frameworks). Adds extra features including a live weather widget via API, a scoreboard, and a chronometer: all built with OOP principles.",
+        "fr": "Recréation dans le navigateur du jeu dinosaure hors ligne de Chrome, uniquement avec HTML, CSS et JavaScript (sans framework). Ajoute des fonctionnalités supplémentaires : widget météo en direct via API, tableau des scores et chronomètre: entièrement en POO."
       },
       "stack": ["HTML", "CSS", "JavaScript", "Weather API", "OOP"],
       "highlights": {
@@ -270,7 +226,7 @@
         "fr": ["Vanilla JS pur, sans framework", "Widget météo en direct via API externe", "Tableau des scores et chronomètre"]
       },
       "github": "https://github.com/VictorNico/DinoChromeGame",
-      "paper": "",
+      "paper": "https://dinochromegame.pages.dev/",
       "color": "#A3A3A3",
       "icon": "bi-controller"
     }
