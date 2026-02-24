@@ -75,15 +75,68 @@ onUnmounted(() => {
 // ============================================================================
 // HASH URL HANDLING
 // ============================================================================
+// const scrollToSection = (sectionId) => {
+//   nextTick(() => {
+//     const element = document.getElementById(sectionId)
+//     if (element) {
+//       element.scrollIntoView({
+//         behavior: 'smooth',
+//         block: 'start'
+//       })
+//     }
+//   })
+// }
+
 const scrollToSection = (sectionId) => {
   nextTick(() => {
     const element = document.getElementById(sectionId)
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      })
+    if (!element) return
+
+    const start = window.scrollY
+    const target = element.getBoundingClientRect().top + window.scrollY
+    const distance = Math.abs(target - start)
+
+    // Durée dynamique selon la distance
+    const minDuration = 1500
+    const maxDuration = 3000
+    const duration = Math.min(maxDuration, Math.max(minDuration, distance * 0.5))
+
+    let startTime = null
+
+    const cubicBezier = (p1x, p1y, p2x, p2y) => {
+      return (t) => {
+        const cx = 3 * p1x, bx = 3 * (p2x - p1x) - cx, ax = 1 - cx - bx
+        const cy = 3 * p1y, by = 3 * (p2y - p1y) - cy, ay = 1 - cy - by
+
+        const solveCurveX = (x) => {
+          let t2 = x
+          for (let i = 0; i < 8; i++) {
+            const x2 = ax * t2 ** 3 + bx * t2 ** 2 + cx * t2 - x
+            const dx = 3 * ax * t2 ** 2 + 2 * bx * t2 + cx
+            if (Math.abs(dx) < 1e-6) break
+            t2 -= x2 / dx
+          }
+          return t2
+        }
+
+        const t2 = solveCurveX(t)
+        return ay * t2 ** 3 + by * t2 ** 2 + cy * t2
+      }
     }
+
+    const ease = cubicBezier(0.42, 0, 0.58, 1)
+
+    const animation = (currentTime) => {
+      if (!startTime) startTime = currentTime
+      const elapsed = currentTime - startTime
+      const progress = Math.min(elapsed / duration, 1)
+
+      window.scrollTo(0, start + (target - start) * ease(progress))
+
+      if (progress < 1) requestAnimationFrame(animation)
+    }
+
+    requestAnimationFrame(animation)
   })
 }
 

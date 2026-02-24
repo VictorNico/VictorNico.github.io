@@ -88,14 +88,14 @@
     "roles": {
       "en": [
         "Graph ML Researcher & PhD Applicant",
-        "CONIA Hackathon 2025 — 1st Place Winner",
+        "CONIA Hackathon 2025: 1st Place Winner",
         "Graduate Research Assistant @ UY1",
         "Senior FullStack Developer",
         "Explainable AI Specialist"
       ],
       "fr": [
         "Chercheur en ML sur Graphes & Candidat PhD",
-        "Hackathon CONIA 2025 — Gagnant 1ère Place",
+        "Hackathon CONIA 2025: Gagnant 1ère Place",
         "Assistant de Recherche Diplômé @ UY1",
         "Développeur FullStack Senior",
         "Spécialiste en IA Explicable"
@@ -104,8 +104,8 @@
   },
   "facts": {
     "intro": {
-      "en": "Bridging cutting-edge research and practical engineering — here are some milestones that define my journey.",
-      "fr": "À la croisée de la recherche de pointe et de l'ingénierie pratique — voici quelques jalons qui définissent mon parcours."
+      "en": "Bridging cutting-edge research and practical engineering: here are some milestones that define my journey.",
+      "fr": "À la croisée de la recherche de pointe et de l'ingénierie pratique: voici quelques jalons qui définissent mon parcours."
     },
     "items": [
       {
