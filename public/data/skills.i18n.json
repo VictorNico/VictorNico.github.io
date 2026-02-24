@@ -299,15 +299,15 @@
         },
         {
           "name": {
-            "en": "English (Fluent)",
-            "fr": "Anglais (Courant)"
+            "en": "English (Intermediary)",
+            "fr": "Anglais (Intermediaire)"
           },
           "level": 85,
           "icon": "chat-left-text",
           "color": "#012169",
           "description": {
-            "en": "Target: IELTS Band 8.0",
-            "fr": "Objectif : IELTS Band 8.0"
+            "en": "Target: IELTS Band 6.0",
+            "fr": "Objectif : IELTS Band 6.0"
           }
         },
         {

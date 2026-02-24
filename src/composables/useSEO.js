@@ -42,7 +42,7 @@ export function useSEO(profileData) {
     // Basic meta tags
     updateMeta('description', bio)
     updateMeta('author', personal.name)
-    updateMeta('keywords', 'Victor Djiembou, Portfolio, Full Stack Developer, Data Scientist, Vue.js, Cameroon, SSI, Security')
+    updateMeta('keywords', 'Victor Djiembou, Portfolio, Full Stack Developer, Data Scientist, Vue.js, Cameroon, SSI, Security, Cameroon, Cameroun, CMR, 237, genious, Engineer, Security, Linux')
 
     // Open Graph tags
     updateProperty('og:title', `${personal.name} - Portfolio`)
