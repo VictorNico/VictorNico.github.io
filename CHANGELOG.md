@@ -1,4 +1,66 @@
 # Changelog - Portfolio v2
+
+## Version 2.3.0 (2026-02-24)
+
+Refonte complète de la section **Skills** : remplacement du grid de cards générique par 5 visualisations interactives dédiées à chaque catégorie de compétences.
+
+---
+
+### ✨ Nouvelles Fonctionnalités
+
+#### Carrousel horizontal — Programming Languages
+Défilement CSS infini automatique avec pause au survol. Chaque carte affiche un anneau SVG de progression circulaire, le logo Devicon officiel du langage (avec fallback Bootstrap Icon en cas d'échec de chargement), le nom et le pourcentage de maîtrise.
+
+**Fichier ajouté :** `src/components/skills/LanguagesCarousel.vue`
+
+#### Graphe physique interactif — ML/DL Frameworks & Research
+6 nœuds SVG en mouvement brownien aléatoire. Chaque nœud est repoussé par la position du curseur (rayon d'influence 140px) — le visiteur peut donc « jouer » avec le graphe. Des lignes pointillées apparaissent dynamiquement entre les nœuds proches (opacité proportionnelle à la distance). Un tooltip au survol affiche le nom complet du framework et son niveau. La boucle `requestAnimationFrame` est automatiquement suspendue quand la section quitte le viewport (IntersectionObserver) pour économiser le CPU.
+
+**Fichier ajouté :** `src/components/skills/MLFrameworkGraph.vue`
+
+#### Diagramme radial annoté — Specialized Research Skills
+Diagramme SVG en étoile avec un hub central « RESEARCH HUB » et 6 nœuds disposés en cercle. Chaque nœud porte un arc de progression et une abréviation 2 lettres. Au survol, une boîte d'annotation flottante apparaît avec le nom complet, une barre de niveau et le pourcentage. La position de l'annotation s'adapte automatiquement pour ne pas sortir des bords du SVG.
+
+**Fichier ajouté :** `src/components/skills/ResearchDiagram.vue`
+
+#### Carrousel 3D coverflow — Full-Stack Development
+Perspective CSS 1100px avec `rotateY` et `translateZ`. 3 cartes visibles simultanément : la carte centrale est pleine taille, les cartes latérales (±1) sont inclinées à 48°, mises en retrait et semi-transparentes. Les cartes au-delà de ±1 sont masquées derrière. Un **effet miroir** est rendu via `scaleY(-1)` + gradient mask en dessous de chaque carte. Navigation : boutons précédent/suivant, indicateurs dots, swipe tactile, auto-avance toutes les 3,5 s avec pause au survol.
+
+**Fichier ajouté :** `src/components/skills/FullStackCarousel.vue`
+
+#### Graphique polaire en rose de Nightingale — Data Science & Tools
+6 secteurs SVG de 60° chacun dont le rayon est proportionnel au niveau de maîtrise (polar area chart). Grille de référence aux 25 / 50 / 75 / 100 %. Animation de tracé progressif (1,4 s) déclenchée par IntersectionObserver au moment où la section entre dans le viewport. Au survol d'un secteur : agrandissement `scale(1.06)` + tooltip centré avec nom et niveau.
+
+**Fichier ajouté :** `src/components/skills/DataSciencePolarChart.vue`
+
+---
+
+### 🔧 Modifications
+
+#### `src/components/sections/Skills.vue`
+Refactorisé pour router vers le bon sous-composant selon `category.type` :
+
+| `type`         | Composant rendu            |
+|----------------|----------------------------|
+| `programming`  | `LanguagesCarousel`        |
+| `ml-research`  | `MLFrameworkGraph`         |
+| `specialized`  | `ResearchDiagram`          |
+| `fullstack`    | `FullStackCarousel`        |
+| `data-science` | `DataSciencePolarChart`    |
+| `language` / `soft` | Grid de cards original |
+
+#### `public/data/skills.i18n.json`
+Ajout d'un champ `image` (URL Devicon CDN, optionnel) sur les compétences suivantes : Python, JavaScript, C++, Java, R, SQL/Cypher, PyTorch, TensorFlow, scikit-learn, Vue.js, Node.js, Django, MongoDB, Neo4j, Docker. Les couleurs Pandas et Matplotlib ont été légèrement éclaircies (`#150458` → `#6b7ec2`, `#11557c` → `#4a9aba`) pour une meilleure visibilité sur le fond sombre du polar chart.
+
+#### `src/i18n/locales/en.json` / `fr.json`
+Nouvelles clés dans le namespace `skills` :
+- `mlGraphAria`, `mlHint` (graphe ML)
+- `researchDiagramAria` (diagramme recherche)
+- `prevCard`, `nextCard` (carrousel fullstack)
+- `polarChartAria` (polar chart)
+
+---
+
 ## Version 2.2.0 (2026-02-23)
 
 Refonte du positionnement et du contenu : identité académique clarifiée, nouvelles fonctionnalités (section Projects, boutons CTA, CV download), corrections de bugs et mise à jour des données sociales/métriques.

@@ -14,7 +14,38 @@
         >
           <h3 class="category-title">{{ getTranslated(category.name) }}</h3>
 
-          <div class="skills-grid" :class="`grid-${category.type}`">
+          <!-- ① Programming Languages → auto-scrolling carousel -->
+          <LanguagesCarousel
+            v-if="category.type === 'programming'"
+            :skills="category.skills"
+          />
+
+          <!-- ② ML/DL Frameworks → physics-based node graph -->
+          <MLFrameworkGraph
+            v-else-if="category.type === 'ml-research'"
+            :skills="category.skills"
+          />
+
+          <!-- ③ Specialized Research → annotated SVG mind map -->
+          <ResearchDiagram
+            v-else-if="category.type === 'specialized'"
+            :skills="category.skills"
+          />
+
+          <!-- ④ Full-Stack → 3-D coverflow carousel -->
+          <FullStackCarousel
+            v-else-if="category.type === 'fullstack'"
+            :skills="category.skills"
+          />
+
+          <!-- ⑤ Data Science & Tools → polar area chart -->
+          <DataSciencePolarChart
+            v-else-if="category.type === 'data-science'"
+            :skills="category.skills"
+          />
+
+          <!-- ⑥⑦ Languages & Soft Skills → original card grid -->
+          <div v-else class="skills-grid" :class="`grid-${category.type}`">
             <div
               v-for="skill in category.skills"
               :key="getTranslated(skill.name)"
@@ -24,9 +55,11 @@
               <div class="skill-icon" v-if="skill.icon">
                 <i :class="['bi', `bi-${skill.icon}`]"></i>
               </div>
-
               <div class="skill-info">
                 <h4 class="skill-name">{{ getTranslated(skill.name) }}</h4>
+                <p v-if="skill.description" class="skill-desc">
+                  {{ getTranslated(skill.description) }}
+                </p>
                 <div class="skill-bar">
                   <div
                     class="skill-progress"
@@ -45,14 +78,18 @@
 
 <script setup>
 import { useDataLoader } from '../../composables/useDataLoader'
-import { useAge } from '../../composables/useAge'
 import { useI18n } from 'vue-i18n'
 import { useI18nData } from '../../composables/useI18nData'
 
+import LanguagesCarousel    from '../skills/LanguagesCarousel.vue'
+import MLFrameworkGraph     from '../skills/MLFrameworkGraph.vue'
+import ResearchDiagram      from '../skills/ResearchDiagram.vue'
+import FullStackCarousel    from '../skills/FullStackCarousel.vue'
+import DataSciencePolarChart from '../skills/DataSciencePolarChart.vue'
+
 const { data: skillsData } = useDataLoader('skills.i18n')
-const { yearsOfExperience } = useAge()
-const { t } = useI18n()
-const { getTranslated } = useI18nData()
+const { t }               = useI18n()
+const { getTranslated }   = useI18nData()
 </script>
 
 <style lang="scss" scoped>
@@ -120,13 +157,10 @@ const { getTranslated } = useI18nData()
   }
 }
 
+/* ---- Fallback card grid (language / soft) ---- */
 .skills-grid {
   display: grid;
   gap: $spacing-lg;
-
-  &.grid-technical {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
 
   &.grid-language,
   &.grid-soft {
@@ -163,13 +197,8 @@ const { getTranslated } = useI18nData()
     border-color: var(--skill-color, $color-secondary);
     box-shadow: 0 10px 30px rgba(100, 255, 218, 0.2);
 
-    &::before {
-      transform: scaleY(1);
-    }
-
-    .skill-icon {
-      transform: scale(1.1) rotate(5deg);
-    }
+    &::before { transform: scaleY(1); }
+    .skill-icon { transform: scale(1.1) rotate(5deg); }
   }
 }
 
@@ -188,15 +217,19 @@ const { getTranslated } = useI18nData()
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.skill-info {
-  flex: 1;
-}
+.skill-info { flex: 1; }
 
 .skill-name {
   font-size: 1rem;
   color: $text-primary;
   margin-bottom: $spacing-sm;
   font-weight: 600;
+}
+
+.skill-desc {
+  font-size: 0.82rem;
+  color: $text-secondary;
+  margin-bottom: $spacing-sm;
 }
 
 .skill-bar {
@@ -210,21 +243,21 @@ const { getTranslated } = useI18nData()
 
 .skill-progress {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   height: 100%;
-  background: linear-gradient(90deg, var(--skill-color, $color-secondary), var(--skill-color, $color-accent));
+  background: linear-gradient(
+    90deg,
+    var(--skill-color, $color-secondary),
+    var(--skill-color, $color-accent)
+  );
   border-radius: $radius-full;
   transition: width 1s ease-out;
   box-shadow: 0 0 10px var(--skill-color, $color-secondary);
-
   animation: slideIn 1.5s ease-out;
 }
 
 @keyframes slideIn {
-  from {
-    width: 0;
-  }
+  from { width: 0; }
 }
 
 .skill-level {

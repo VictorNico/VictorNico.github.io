@@ -52,7 +52,13 @@
     "intro": "Au cours des dernières années, j'ai réalisé de nombreux projets personnels dans diverses directions afin d'aiguiser mes compétences. C'est ainsi que j'ai pu construire ce référentiel.",
     "technical": "Compétences Techniques",
     "languages": "Langues",
-    "soft": "Soft Skills & Recherche"
+    "soft": "Soft Skills & Recherche",
+    "mlGraphAria": "Graphe interactif des frameworks ML/DL — déplacez le curseur pour interagir",
+    "mlHint": "Déplacez le curseur pour interagir avec les nœuds",
+    "researchDiagramAria": "Diagramme des compétences de recherche spécialisées",
+    "prevCard": "Carte précédente",
+    "nextCard": "Carte suivante",
+    "polarChartAria": "Graphique polaire — Science des Données et Outils"
   },
   "resume": {
     "title": "Curriculum Vitae",

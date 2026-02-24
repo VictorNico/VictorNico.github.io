@@ -52,7 +52,13 @@
     "intro": "During the last years, I have done many personal projects in various directions in order to sharpen my skills. This is how I was able to build the following benchmark.",
     "technical": "Technical Skills",
     "languages": "Languages",
-    "soft": "Soft Skills & Research"
+    "soft": "Soft Skills & Research",
+    "mlGraphAria": "ML/DL frameworks interactive graph — move your cursor to interact",
+    "mlHint": "Move cursor to interact with nodes",
+    "researchDiagramAria": "Specialized research skills diagram",
+    "prevCard": "Previous card",
+    "nextCard": "Next card",
+    "polarChartAria": "Data Science & Tools polar area chart"
   },
   "resume": {
     "title": "Resume",

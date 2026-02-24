@@ -12,58 +12,46 @@
       "type": "programming",
       "skills": [
         {
-          "name": {
-            "en": "Python",
-            "fr": "Python"
-          },
+          "name": { "en": "Python", "fr": "Python" },
           "level": 95,
           "icon": "code-slash",
-          "color": "#3776ab"
+          "color": "#3776ab",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
         },
         {
-          "name": {
-            "en": "JavaScript / TypeScript",
-            "fr": "JavaScript / TypeScript"
-          },
+          "name": { "en": "JavaScript / TypeScript", "fr": "JavaScript / TypeScript" },
           "level": 95,
           "icon": "code-slash",
-          "color": "#f7df1e"
+          "color": "#f7df1e",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
         },
         {
-          "name": {
-            "en": "C++",
-            "fr": "C++"
-          },
+          "name": { "en": "C++", "fr": "C++" },
           "level": 75,
           "icon": "code-slash",
-          "color": "#00599c"
+          "color": "#00599c",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
         },
         {
-          "name": {
-            "en": "Java",
-            "fr": "Java"
-          },
+          "name": { "en": "Java", "fr": "Java" },
           "level": 85,
           "icon": "code-slash",
-          "color": "#007396"
+          "color": "#007396",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
         },
         {
-          "name": {
-            "en": "R",
-            "fr": "R"
-          },
+          "name": { "en": "R", "fr": "R" },
           "level": 80,
           "icon": "code-slash",
-          "color": "#276dc3"
+          "color": "#276dc3",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg"
         },
         {
-          "name": {
-            "en": "SQL / Cypher",
-            "fr": "SQL / Cypher"
-          },
+          "name": { "en": "SQL / Cypher", "fr": "SQL / Cypher" },
           "level": 85,
           "icon": "database",
-          "color": "#cc2927"
+          "color": "#cc2927",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
         }
       ]
     },
@@ -75,37 +63,28 @@
       "type": "ml-research",
       "skills": [
         {
-          "name": {
-            "en": "PyTorch",
-            "fr": "PyTorch"
-          },
+          "name": { "en": "PyTorch", "fr": "PyTorch" },
           "level": 90,
           "icon": "cpu",
-          "color": "#ee4c2c"
+          "color": "#ee4c2c",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
         },
         {
-          "name": {
-            "en": "TensorFlow / Keras",
-            "fr": "TensorFlow / Keras"
-          },
+          "name": { "en": "TensorFlow / Keras", "fr": "TensorFlow / Keras" },
           "level": 85,
           "icon": "cpu",
-          "color": "#ff6f00"
+          "color": "#ff6f00",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
         },
         {
-          "name": {
-            "en": "scikit-learn",
-            "fr": "scikit-learn"
-          },
+          "name": { "en": "scikit-learn", "fr": "scikit-learn" },
           "level": 95,
           "icon": "graph-up",
-          "color": "#f7931e"
+          "color": "#f7931e",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
         },
         {
-          "name": {
-            "en": "XGBoost",
-            "fr": "XGBoost"
-          },
+          "name": { "en": "XGBoost", "fr": "XGBoost" },
           "level": 90,
           "icon": "bar-chart",
           "color": "#1a73e8"
@@ -201,40 +180,32 @@
       "type": "fullstack",
       "skills": [
         {
-          "name": {
-            "en": "Vue.js / Nuxt.js",
-            "fr": "Vue.js / Nuxt.js"
-          },
+          "name": { "en": "Vue.js / Nuxt.js", "fr": "Vue.js / Nuxt.js" },
           "level": 95,
           "icon": "code-slash",
-          "color": "#42b883"
+          "color": "#42b883",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
         },
         {
-          "name": {
-            "en": "Node.js / Express.js",
-            "fr": "Node.js / Express.js"
-          },
+          "name": { "en": "Node.js / Express.js", "fr": "Node.js / Express.js" },
           "level": 95,
           "icon": "server",
-          "color": "#68a063"
+          "color": "#68a063",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
         },
         {
-          "name": {
-            "en": "Flask / Django",
-            "fr": "Flask / Django"
-          },
+          "name": { "en": "Flask / Django", "fr": "Flask / Django" },
           "level": 90,
           "icon": "server",
-          "color": "#092e20"
+          "color": "#092e20",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg"
         },
         {
-          "name": {
-            "en": "MongoDB / PostgreSQL",
-            "fr": "MongoDB / PostgreSQL"
-          },
+          "name": { "en": "MongoDB / PostgreSQL", "fr": "MongoDB / PostgreSQL" },
           "level": 90,
           "icon": "database",
-          "color": "#47a248"
+          "color": "#47a248",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
         },
         {
           "name": {
@@ -243,7 +214,8 @@
           },
           "level": 85,
           "icon": "diagram-3",
-          "color": "#008cc1"
+          "color": "#008cc1",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neo4j/neo4j-original.svg"
         },
         {
           "name": {
@@ -255,13 +227,11 @@
           "color": "#667eea"
         },
         {
-          "name": {
-            "en": "Docker",
-            "fr": "Docker"
-          },
+          "name": { "en": "Docker", "fr": "Docker" },
           "level": 80,
           "icon": "box",
-          "color": "#2496ed"
+          "color": "#2496ed",
+          "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
         }
       ]
     },
@@ -273,37 +243,25 @@
       "type": "data-science",
       "skills": [
         {
-          "name": {
-            "en": "Pandas / NumPy",
-            "fr": "Pandas / NumPy"
-          },
+          "name": { "en": "Pandas / NumPy", "fr": "Pandas / NumPy" },
           "level": 95,
           "icon": "table",
-          "color": "#150458"
+          "color": "#6b7ec2"
         },
         {
-          "name": {
-            "en": "Matplotlib / Seaborn",
-            "fr": "Matplotlib / Seaborn"
-          },
+          "name": { "en": "Matplotlib / Seaborn", "fr": "Matplotlib / Seaborn" },
           "level": 90,
           "icon": "bar-chart",
-          "color": "#11557c"
+          "color": "#4a9aba"
         },
         {
-          "name": {
-            "en": "Jupyter Notebooks",
-            "fr": "Jupyter Notebooks"
-          },
+          "name": { "en": "Jupyter Notebooks", "fr": "Jupyter Notebooks" },
           "level": 95,
           "icon": "journal-code",
           "color": "#f37626"
         },
         {
-          "name": {
-            "en": "Git / GitHub / GitLab",
-            "fr": "Git / GitHub / GitLab"
-          },
+          "name": { "en": "Git / GitHub / GitLab", "fr": "Git / GitHub / GitLab" },
           "level": 95,
           "icon": "git",
           "color": "#f05032"
@@ -318,10 +276,7 @@
           "color": "#fcc624"
         },
         {
-          "name": {
-            "en": "AWS (Basic)",
-            "fr": "AWS (Basique)"
-          },
+          "name": { "en": "AWS (Basic)", "fr": "AWS (Basique)" },
           "level": 60,
           "icon": "cloud",
           "color": "#ff9900"
@@ -329,10 +284,7 @@
       ]
     },
     {
-      "name": {
-        "en": "Languages",
-        "fr": "Langues"
-      },
+      "name": { "en": "Languages", "fr": "Langues" },
       "type": "language",
       "skills": [
         {
@@ -343,10 +295,7 @@
           "level": 100,
           "icon": "chat-left-text",
           "color": "#0055a4",
-          "description": {
-            "en": "Native speaker",
-            "fr": "Locuteur natif"
-          }
+          "description": { "en": "Native speaker", "fr": "Locuteur natif" }
         },
         {
           "name": {
