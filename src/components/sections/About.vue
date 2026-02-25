@@ -36,13 +36,13 @@
               <span>{{ age }}</span>
             </div>
 
-            <div class="info-item">
-              <i class="bx bx-globe"></i>
-              <strong>{{ t('about.website') }}:</strong>
-              <a :href="profile?.personal?.contacts?.website" target="_blank">
-                {{ profile?.personal?.contacts?.website }}
-              </a>
-            </div>
+<!--            <div class="info-item">-->
+<!--              <i class="bx bx-globe"></i>-->
+<!--              <strong>{{ t('about.website') }}:</strong>-->
+<!--              <a :href="profile?.personal?.contacts?.website" target="_blank">-->
+<!--                {{ profile?.personal?.contacts?.website }}-->
+<!--              </a>-->
+<!--            </div>-->
 
             <div class="info-item">
               <i class="bx bx-graduation"></i>
