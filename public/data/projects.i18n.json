@@ -145,7 +145,7 @@
     {
       "id": 10,
       "category": "research",
-      "featured": false,
+      "featured": true,
       "title": {
         "en": "Neural Networks from Scratch",
         "fr": "Réseaux de Neurones from Scratch"
