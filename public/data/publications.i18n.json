@@ -4,47 +4,7 @@
     "fr": "Contributions à la recherche et publications académiques en Apprentissage Automatique sur Graphes, Analyse de Réseaux Multicouches et IA Agricole."
   },
   "_publications": [
-    {
-      "id": 2,
-      "status": "under-review",
-      "title": {
-        "en": "Class-based Multilayer Graph Feature Extraction for Supervised Machine Learning",
-        "fr": "Extraction de Caractéristiques de Graphes Multicouches Basée sur les Classes pour l'Apprentissage Automatique Supervisé"
-      },
-      "authors": [
-        "Nzekon, A.J.* (co-first author)",
-        "Messi, T.",
-        "Djiembou, V.N.* (co-first author)"
-      ],
-      "journal": "Data Mining and Knowledge Discovery (DMKD)",
-      "year": 2026,
-      "submissionDate": "2026-03",
-      "abstract": {
-        "en": "This paper introduces a novel framework for extracting discriminative features from multilayer graphs in supervised learning contexts. We propose the MNIFS (Multilayer Network Inference Feature Selection) protocol for systematic attribute selection and an observation-based Personalized PageRank algorithm that extends global PageRank to capture individual observation characteristics. Validated on 7 benchmark datasets with 6 ML models, our approach achieved up to 99.9% reduction in financial losses on credit risk prediction. SHAP analysis demonstrates that graph-derived features occupy 66% of top-10 importance rankings, validating the effectiveness of our multilayer graph modeling approach.",
-        "fr": "Cet article introduit un cadre novateur pour l'extraction de caractéristiques discriminantes à partir de graphes multicouches dans des contextes d'apprentissage supervisé. Nous proposons le protocole MNIFS (Sélection de Caractéristiques par Inférence de Réseaux Multicouches) pour la sélection systématique d'attributs et un algorithme de PageRank Personnalisé basé sur les observations qui étend le PageRank global pour capturer les caractéristiques individuelles des observations. Validée sur 7 jeux de données de référence avec 6 modèles ML, notre approche a atteint jusqu'à 99,9% de réduction des pertes financières sur la prédiction du risque de crédit. L'analyse SHAP démontre que les caractéristiques dérivées des graphes occupent 66% des classements d'importance top-10, validant l'efficacité de notre approche de modélisation de graphes multicouches."
-      },
-      "note": {
-        "en": "* Co-first authors contributed equally. Manuscript submitted March 2026.",
-        "fr": "* Les co-premiers auteurs ont contribué de manière égale. Manuscrit soumis en mars 2026."
-      },
-      "keyContributions": {
-        "en": [
-          "Novel MNIFS protocol for optimal attribute selection (72.97% performance within 1% error)",
-          "Observation-based Personalized PageRank algorithm for multilayer networks",
-          "99.9% reduction in financial losses on credit risk benchmarks",
-          "Comprehensive validation across 7 datasets and 6 ML models",
-          "SHAP explainability demonstrating 66% graph feature importance"
-        ],
-        "fr": [
-          "Protocole MNIFS novateur pour la sélection optimale d'attributs (performance de 72,97% avec une marge d'erreur de 1%)",
-          "Algorithme de PageRank Personnalisé basé sur les observations pour réseaux multicouches",
-          "Réduction de 99,9% des pertes financières sur les benchmarks de risque de crédit",
-          "Validation complète sur 7 jeux de données et 6 modèles ML",
-          "Explicabilité SHAP démontrant 66% d'importance des caractéristiques de graphe"
-        ]
-      },
-      "tags": ["Graph Machine Learning", "Multilayer Networks", "Feature Extraction", "PageRank", "Supervised Learning", "Credit Risk", "Explainable AI"]
-    },
+
     {
       "id": 3,
       "status": "under-review",
@@ -75,6 +35,36 @@
     }
   ],
   "publications": [
+    {
+      "id": 2,
+      "status": "under-review",
+      "title": {
+        "en": "Automatic Categorical Attribute Selection and Class-Based Personalized Multilayer Graph Feature Engineering for Supervised Machine Learning",
+        "fr": "Sélection automatique d'attributs catégoriels et ingénierie personnalisée des caractéristiques de graphes multicouches basée sur les classes pour l'apprentissage automatique supervisé"
+      },
+      "authors": [
+        "Nzekon, A.J.N.N ",
+        "Messi, T.M.N",
+        "Djiembou, V.N.D.T",
+        "Akamba, C.C.A.M"
+      ],
+      "journal": "Data Mining and Knowledge Discovery (DMKD)",
+      "year": 2026,
+      "submissionDate": "2026-02",
+      "_abstract": {
+        "en": "We extend existing work with three contributions: the Multilayer Network Importance-based Feature Selection (MNIFS) protocol for selecting optimal categorical attributes; integration of class labels as additional structural layers during graph construction; and observation-level Personalized PageRank to extract instance-specific descriptors. An end-to-end project implementing this pipeline is also released and applicable in any domain within tabular dataset entry point. Experiments span four benchmark datasets with six supervised classifiers, evaluated on accuracy and F1-score, with SHAPley analysis to assess feature quality. The MNIFS protocol achieves near-optimal performance, matching exhaustive exploration within less than 2%. Our approach strictly outperforms the classic baseline in 68.8% of cases and the reference multilayer framework in 72.9% of the 48 model-metric pairs tested, with gains reaching up to 38.3% in F1-score and 18.7% in accuracy. Descriptors from Class-aware graphs consistently rank among the most decision-relevant features across all datasets, reaching SHAPley importance scores up to 9 times higher than those of the reference multilayer framework, confirming the discriminative signal introduced by class integration and observation-level personalization.",
+        "fr": "Nous enrichissons les travaux existants avec trois contributions : le protocole MNIFS (Multilayer Network Importance-based Feature Selection) pour la sélection d'attributs catégoriels optimaux ; l'intégration d'étiquettes de classe comme couches structurelles supplémentaires lors de la construction du graphe ; et le PageRank personnalisé au niveau de l'observation pour extraire des descripteurs spécifiques à chaque instance. Un projet de bout en bout mettant en œuvre ce pipeline est également publié et applicable dans n'importe quel domaine à partir d'un point d'entrée de données tabulaires. Les expériences couvrent quatre ensembles de données de référence avec six classificateurs supervisés, évalués en termes de précision et de score F1, avec une analyse SHAPley pour évaluer la qualité des caractéristiques. Le protocole MNIFS atteint des performances quasi optimales, correspondant à une exploration exhaustive à moins de 2 %. Notre approche surpasse largement la base de référence classique dans 68,8 % des cas et le cadre multicouche de référence dans 72,9 % des 48 paires modèle-métrique testées, avec des gains atteignant jusqu'à 38,3 % en score F1 et 18,7 % en précision. Les descripteurs des graphes sensibles aux classes se classent systématiquement parmi les caractéristiques les plus pertinentes pour la prise de décision dans tous les ensembles de données, atteignant des scores d'importance SHAPley jusqu'à 9 fois supérieurs à ceux du cadre multicouche de référence, ce qui confirme le signal discriminant introduit par l'intégration des classes et la personnalisation au niveau de l'observation."
+      },
+      "_note": {
+        "en": "* Co-first authors contributed equally. Manuscript submitted March 2026.",
+        "fr": "* Les co-premiers auteurs ont contribué de manière égale. Manuscrit soumis en mars 2026."
+      },
+      "_keyContributions": {
+        "en": ["Propose the Multilayer Network Importance-based Feature Selection (MNIFS) protocol", "Extend the foundational multilayer graph work by integrating historical class labels as dedicated structural layers", "Introduce an observation-based personalized PageRank (PER)"],
+        "fr": ["Proposer le protocole MNIFS (Multilayer Network Importance-based Feature Selection)", "Étendre les travaux fondamentaux sur les graphes multicouches en intégrant les étiquettes de classe historiques en tant que couches structurelles dédiées", "Introduire un PageRank personnalisé basé sur l'observation (PER)"]
+      },
+      "tags": ["Graph Machine Learning", "Multilayer Networks", "Feature Extraction", "PageRank", "Supervised Learning", "Multi Domains", "Explainable AI"]
+    },
     {
       "id": 1,
       "status": "published",

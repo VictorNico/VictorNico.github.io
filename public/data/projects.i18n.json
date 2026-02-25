@@ -15,19 +15,19 @@
       "category": "research",
       "featured": true,
       "title": {
-        "en": "MNIFS: Multilayer Graph Based Feature Engineering",
-        "fr": "MNIFS: Extraction de Caractéristiques basé sur des Graphes Multicouches"
+        "en": "Automatic Categorical Attribute Selection and Class-Based Personalized Multilayer Graph Feature Engineering for Supervised Machine Learning",
+        "fr": "Sélection automatique d'attributs catégoriels et ingénierie personnalisée des caractéristiques de graphes multicouches basée sur les classes pour l'apprentissage automatique supervisé"
       },
-      "description": {
-        "en": "Novel framework for extracting discriminative features from multilayer graphs in supervised learning. Introduces the MNIFS protocol and an observation-based Personalized PageRank. Validated on 7 benchmark datasets with 6 ML models: achieving up to 99.9% financial loss reduction. Paper submitted to DMKD (March 2026).",
-        "fr": "Cadre novateur pour l'extraction de caractéristiques discriminantes de graphes multicouches en apprentissage supervisé. Introduit le protocole MNIFS et un PageRank Personnalisé basé sur les observations. Validé sur 7 jeux de données avec 6 modèles ML: jusqu'à 99,9% de réduction des pertes financières. Soumis à DMKD (mars 2026)."
+      "_description": {
+        "en": "Innovative framework for extracting discriminative features from multilayer graphs in supervised learning. Introduces the MNIFS (Multilayer Network Importance-based Feature Selection) protocol and a customised PageRank based on observations. Validated on four public datasets of supervised classification tasks with six traditional ML models (LDA, LR, SVM, DT, RF, XGBoost): The MNIFS protocol achieves near-optimal performance, matching exhaustive exploration by less than 2%. With gains of up to 38.3% in F1 score and 18.7% in accuracy. Submitted to DMKD (February 2026).",
+        "fr": "Cadre novateur pour l'extraction de caractéristiques discriminantes de graphes multicouches en apprentissage supervisé. Introduit le protocole MNIFS (Multilayer Network Importance-based Feature Selection) et un PageRank Personnalisé basé sur les observations. Validé sur 4 jeux de données publique de tâches de classification supervisé avec 6 modèles ML traditionnel (LDA, LR, SVM, DT, RF, XGBoost): Le protocole MNIFS atteint des performances quasi optimales, égalant l'exploration exhaustive à moins de 2 %. Avec des gains atteignant jusqu'à 38,3 % en score F1 et 18,7 % en précision. Soumis à DMKD (Fevrier 2026)."
       },
       "stack": ["Python", "NetworkX", "scikit-learn", "XGBoost", "SHAP", "Pandas", "Numpy", "Scipy"],
-      "highlights": {
-        "en": ["99.9% financial loss reduction on credit risk", "72.97% optimal attribute selection (MNIFS)", "66% graph feature importance (SHAP top-10)"],
-        "fr": ["99,9% de réduction des pertes financières (risque crédit)", "72,97% sélection optimale d'attributs (MNIFS)", "66% d'importance des features graphe (SHAP top-10)"]
+      "_highlights": {
+        "en": ["Propose the Multilayer Network Importance-based Feature Selection (MNIFS) protocol", "Extend the foundational multilayer graph work by integrating historical class labels as dedicated structural layers", "Introduce an observation-based personalized PageRank (PER)"],
+        "fr": ["Proposer le protocole MNIFS (Multilayer Network Importance-based Feature Selection)", "Étendre les travaux fondamentaux sur les graphes multicouches en intégrant les étiquettes de classe historiques en tant que couches structurelles dédiées", "Introduire un PageRank personnalisé basé sur l'observation (PER)"]
       },
-      "github": "https://github.com/Graph-based-ML/multilayer-graph-based-feature-engineering",
+      "_github": "https://github.com/Graph-based-ML/multilayer-graph-based-feature-engineering",
       "paper": "",
       "color": "#64FFDA",
       "icon": "bi-diagram-3"
@@ -44,12 +44,12 @@
         "en": "Optimized CNN architecture for plant disease classification in Sub-Saharan Africa. Surpasses the IJCA 2025 baseline while significantly reducing inference time for mobile deployment. 1st Place at CONIA Hackathon 2025. Paper in preparation for IEEE Access.",
         "fr": "Architecture CNN optimisée pour la classification des maladies des plantes en Afrique subsaharienne. Surpasse la référence IJCA 2025 tout en réduisant le temps d'inférence pour déploiement mobile. 1ère Place au CONIA Hackathon 2025. Article en préparation pour IEEE Access."
       },
-      "stack": ["Python", "PyTorch", "TensorFlow", "Keras", "Transfer Learning", "Model Compression"],
+      "stack": ["Python", "PyTorch", "TensorFlow", "Keras", "Transfer Learning", "Model Compression", "AI-Governance-Inclusivity","Local-Context-ML"],
       "highlights": {
         "en": ["1st Place: CONIA Hackathon 2025", "Superior accuracy vs IJCA 2025 baseline", "Mobile-ready for resource-constrained settings"],
         "fr": ["1ère Place: Hackathon CONIA 2025", "Précision supérieure à la référence IJCA 2025", "Mobile-ready pour contextes aux ressources limitées"]
       },
-      "github": "https://github.com/VictorNico/agriguard",
+      "_github": "https://github.com/VictorNico/agriguard",
       "paper": "",
       "color": "#10B981",
       "icon": "bi-flower1"
@@ -94,7 +94,7 @@
         "fr": ["Pipeline bout en bout de l'entraînement au déploiement", "Classification des maladies agricoles en Afrique subsaharienne", "Module de serving pour inférence en production"]
       },
       "github": "https://github.com/VictorNico/DL4PDDC",
-      "paper": "",
+      "paper": "https://dl4pddc.pages.dev/",
       "color": "#22C55E",
       "icon": "bi-flower2"
     },
