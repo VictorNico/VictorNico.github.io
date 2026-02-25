@@ -167,7 +167,7 @@
     {
       "id": 11,
       "category": "fullstack",
-      "featured": false,
+      "featured": true,
       "title": {
         "en": "Vue3 Reactive Tel Input: Open Source Library",
         "fr": "Vue3 Reactive Tel Input: Bibliothèque Open Source"
