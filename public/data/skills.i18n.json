@@ -299,13 +299,13 @@
         },
         {
           "name": {
-            "en": "English (Intermediary)",
-            "fr": "Anglais (Intermediaire)"
+            "en": "English (Fluent / Professional Working Proficiency)",
+            "fr": "Anglais (Maîtrise courante / Maîtrise professionnelle)"
           },
           "level": 85,
           "icon": "chat-left-text",
           "color": "#012169",
-          "description": {
+          "_description": {
             "en": "Target: IELTS Band 6.0",
             "fr": "Objectif : IELTS Band 6.0"
           }
