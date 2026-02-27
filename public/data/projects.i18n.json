@@ -22,10 +22,20 @@
         "en": "Innovative framework for extracting discriminative features from multilayer graphs in supervised learning. Introduces the MNIFS (Multilayer Network Importance-based Feature Selection) protocol and a customised PageRank based on observations. Validated on four public datasets of supervised classification tasks with six traditional ML models (LDA, LR, SVM, DT, RF, XGBoost): The MNIFS protocol achieves near-optimal performance, matching exhaustive exploration by less than 2%. With gains of up to 38.3% in F1 score and 18.7% in accuracy. Submitted to DMKD (February 2026).",
         "fr": "Cadre novateur pour l'extraction de caractéristiques discriminantes de graphes multicouches en apprentissage supervisé. Introduit le protocole MNIFS (Multilayer Network Importance-based Feature Selection) et un PageRank Personnalisé basé sur les observations. Validé sur 4 jeux de données publique de tâches de classification supervisé avec 6 modèles ML traditionnel (LDA, LR, SVM, DT, RF, XGBoost): Le protocole MNIFS atteint des performances quasi optimales, égalant l'exploration exhaustive à moins de 2 %. Avec des gains atteignant jusqu'à 38,3 % en score F1 et 18,7 % en précision. Soumis à DMKD (Fevrier 2026)."
       },
-      "stack": ["Python", "NetworkX", "scikit-learn", "XGBoost", "SHAP", "Pandas", "Numpy", "Scipy"],
+      "stack": ["Python", "NetworkX", "scikit-learn", "XGBoost", "SHAP", "Pandas", "NumPy", "SciPy"],
       "_highlights": {
-        "en": ["Propose the Multilayer Network Importance-based Feature Selection (MNIFS) protocol", "Extend the foundational multilayer graph work by integrating historical class labels as dedicated structural layers", "Introduce an observation-based personalized PageRank (PER)"],
-        "fr": ["Proposer le protocole MNIFS (Multilayer Network Importance-based Feature Selection)", "Étendre les travaux fondamentaux sur les graphes multicouches en intégrant les étiquettes de classe historiques en tant que couches structurelles dédiées", "Introduire un PageRank personnalisé basé sur l'observation (PER)"]
+        "en": ["Propose the Multilayer Network Importance-based Feature Selection (MNIFS) protocol", "Extend foundational multilayer graph work by integrating historical class labels as structural layers", "Introduce an observation-based personalized PageRank (PER) — gains up to 38.3% F1"],
+        "fr": ["Proposer le protocole MNIFS (Multilayer Network Importance-based Feature Selection)", "Étendre les travaux fondamentaux sur les graphes multicouches en intégrant les étiquettes de classe historiques en tant que couches structurelles dédiées", "Introduire un PageRank personnalisé basé sur l'observation (PER) — gains jusqu'à 38,3 % en F1"]
+      },
+      "concepts": {
+        "theoretical": {
+          "en": ["Graph Theory", "Multilayer Networks", "PageRank", "Feature Selection", "Information Theory", "Linear Algebra"],
+          "fr": ["Théorie des graphes", "Réseaux multicouches", "PageRank", "Sélection de caractéristiques", "Théorie de l'information", "Algèbre linéaire"]
+        },
+        "methods": {
+          "en": ["k-Fold Cross-validation", "Ablation Study", "Comparative Benchmarking", "Statistical Significance Testing"],
+          "fr": ["Validation croisée k-Fold", "Étude d'ablation", "Benchmarking comparatif", "Test de significativité statistique"]
+        }
       },
       "_github": "https://github.com/Graph-based-ML/multilayer-graph-based-feature-engineering",
       "paper": "",
@@ -44,10 +54,20 @@
         "en": "Optimized CNN architecture for plant disease classification in Sub-Saharan Africa. Surpasses the IJCA 2025 baseline while significantly reducing inference time for mobile deployment. 1st Place at CONIA Hackathon 2025. Paper in preparation for IEEE Access.",
         "fr": "Architecture CNN optimisée pour la classification des maladies des plantes en Afrique subsaharienne. Surpasse la référence IJCA 2025 tout en réduisant le temps d'inférence pour déploiement mobile. 1ère Place au CONIA Hackathon 2025. Article en préparation pour IEEE Access."
       },
-      "stack": ["Python", "PyTorch", "TensorFlow", "Keras", "Transfer Learning", "Model Compression", "AI-Governance-Inclusivity","Local-Context-ML"],
+      "stack": ["Python", "PyTorch", "TensorFlow", "Keras", "Transfer Learning", "Model Compression", "AI-Governance-Inclusivity", "Local-Context-ML"],
       "highlights": {
         "en": ["1st Place: CONIA Hackathon 2025", "Superior accuracy vs IJCA 2025 baseline", "Mobile-ready for resource-constrained settings"],
         "fr": ["1ère Place: Hackathon CONIA 2025", "Précision supérieure à la référence IJCA 2025", "Mobile-ready pour contextes aux ressources limitées"]
+      },
+      "concepts": {
+        "theoretical": {
+          "en": ["Convolutional Neural Networks", "Transfer Learning", "Knowledge Distillation", "Model Compression"],
+          "fr": ["Réseaux de neurones convolutifs", "Apprentissage par transfert", "Distillation de connaissances", "Compression de modèles"]
+        },
+        "methods": {
+          "en": ["Hyperparameter Tuning", "Data Augmentation", "Baseline Comparison", "Inference Optimization"],
+          "fr": ["Optimisation des hyperparamètres", "Augmentation de données", "Comparaison aux références", "Optimisation d'inférence"]
+        }
       },
       "_github": "https://github.com/VictorNico/agriguard",
       "paper": "",
@@ -71,6 +91,16 @@
         "en": ["Low-resource African language NLP", "Built at Aurore Hackathon 2024", "Speech-to-text for endangered Yemba language"],
         "fr": ["NLP pour langue africaine à faibles ressources", "Développé au Hackathon Aurore 2024", "Parole-vers-texte pour la langue Yemba menacée"]
       },
+      "concepts": {
+        "theoretical": {
+          "en": ["Acoustic Modeling", "Sequence-to-Sequence Learning", "Low-Resource NLP", "Phonological Analysis"],
+          "fr": ["Modélisation acoustique", "Apprentissage séquence-à-séquence", "TAL à faibles ressources", "Analyse phonologique"]
+        },
+        "methods": {
+          "en": ["Fine-tuning Pre-trained Models", "Data Collection & Annotation", "Cross-lingual Transfer"],
+          "fr": ["Ajustement fin de modèles pré-entraînés", "Collecte et annotation de données", "Transfert cross-lingue"]
+        }
+      },
       "github": "https://github.com/VictorNico/auroreHackaton1812_NLP",
       "paper": "",
       "color": "#F59E0B",
@@ -92,6 +122,16 @@
       "highlights": {
         "en": ["End-to-end training to deployment pipeline", "Agricultural disease classification for Sub-Saharan Africa", "Model serving module for production inference"],
         "fr": ["Pipeline bout en bout de l'entraînement au déploiement", "Classification des maladies agricoles en Afrique subsaharienne", "Module de serving pour inférence en production"]
+      },
+      "concepts": {
+        "theoretical": {
+          "en": ["Deep Learning", "Computer Vision", "CNN Architectures"],
+          "fr": ["Apprentissage profond", "Vision par ordinateur", "Architectures CNN"]
+        },
+        "methods": {
+          "en": ["End-to-end Pipeline Design", "Model Serving", "Production Deployment"],
+          "fr": ["Conception de pipeline bout en bout", "Serving de modèles", "Déploiement en production"]
+        }
       },
       "github": "https://github.com/VictorNico/DL4PDDC",
       "paper": "https://dl4pddc.pages.dev/",
@@ -115,6 +155,16 @@
         "en": ["Text classification for online safety", "Hate speech vs offensive language distinction", "NLP feature engineering pipeline"],
         "fr": ["Classification de texte pour la sécurité en ligne", "Distinction discours haineux vs langage offensant", "Pipeline d'ingénierie de caractéristiques NLP"]
       },
+      "concepts": {
+        "theoretical": {
+          "en": ["Text Classification", "NLP Feature Engineering", "Imbalanced Learning"],
+          "fr": ["Classification de texte", "Ingénierie de caractéristiques NLP", "Apprentissage déséquilibré"]
+        },
+        "methods": {
+          "en": ["Preprocessing Pipeline", "Multi-class Classification", "Threshold Optimization"],
+          "fr": ["Pipeline de prétraitement", "Classification multi-classes", "Optimisation de seuil"]
+        }
+      },
       "github": "https://github.com/VictorNico/HateSpeechDetection",
       "paper": "",
       "color": "#EF4444",
@@ -136,6 +186,16 @@
       "highlights": {
         "en": ["Early dropout risk detection with ML", "Trained on socio-academic indicators", "Supports educational intervention planning"],
         "fr": ["Détection précoce du risque d'abandon avec ML", "Entraîné sur des indicateurs socio-académiques", "Aide à la planification des interventions éducatives"]
+      },
+      "concepts": {
+        "theoretical": {
+          "en": ["Predictive Analytics", "Risk Modeling", "Socio-academic Feature Analysis"],
+          "fr": ["Analytique prédictive", "Modélisation du risque", "Analyse des indicateurs socio-académiques"]
+        },
+        "methods": {
+          "en": ["Feature Engineering", "Binary Classification", "Early Warning Systems Design"],
+          "fr": ["Ingénierie de caractéristiques", "Classification binaire", "Conception de systèmes d'alerte précoce"]
+        }
       },
       "github": "https://github.com/VictorNico/secondarySchoolDropOut",
       "paper": "",
@@ -159,6 +219,16 @@
         "en": ["Pure NumPy neural network (no frameworks)", "Forward & backward propagation from scratch", "Mathematical deep learning foundations"],
         "fr": ["Réseau de neurones pur NumPy (sans frameworks)", "Propagation avant et arrière from scratch", "Fondations mathématiques du deep learning"]
       },
+      "concepts": {
+        "theoretical": {
+          "en": ["Backpropagation", "Gradient Descent", "Activation Functions", "Chain Rule", "Linear Algebra", "Calculus"],
+          "fr": ["Rétropropagation", "Descente de gradient", "Fonctions d'activation", "Règle de la chaîne", "Algèbre linéaire", "Calcul différentiel"]
+        },
+        "methods": {
+          "en": ["Mathematical Derivation", "Step-by-step Implementation", "Numerical Validation"],
+          "fr": ["Dérivation mathématique", "Implémentation pas à pas", "Validation numérique"]
+        }
+      },
       "github": "https://github.com/VictorNico/NNs_from_scratch",
       "paper": "",
       "color": "#06B6D4",
@@ -180,6 +250,16 @@
       "highlights": {
         "en": ["International phone input with flag selector", "Vue 3 Composition API native support", "Open source npm package"],
         "fr": ["Champ téléphonique international avec sélecteur de drapeau", "Support natif Vue 3 Composition API", "Package npm open source"]
+      },
+      "concepts": {
+        "theoretical": {
+          "en": ["Reactive Programming", "Component Architecture", "API Design Patterns"],
+          "fr": ["Programmation réactive", "Architecture de composants", "Patrons de conception d'API"]
+        },
+        "methods": {
+          "en": ["Open Source Development", "npm Publishing", "Documentation-Driven Design"],
+          "fr": ["Développement open source", "Publication sur npm", "Conception pilotée par la documentation"]
+        }
       },
       "github": "https://github.com/VictorNico/vue3-reactive-tel-input",
       "paper": "https://www.jsdelivr.com/package/npm/vue3-reactive-tel-input",
@@ -203,6 +283,16 @@
         "en": ["Transport route data aggregation for Cameroon", "REST API + client interface", "Real-world mobility data platform"],
         "fr": ["Agrégation des données de trajets au Cameroun", "API REST + interface client", "Plateforme de données de mobilité réelle"]
       },
+      "concepts": {
+        "theoretical": {
+          "en": ["Graph Databases", "REST API Design", "Data Modeling", "Mobility Analytics"],
+          "fr": ["Bases de données graphe", "Conception d'API REST", "Modélisation des données", "Analytique de mobilité"]
+        },
+        "methods": {
+          "en": ["Full-stack Architecture", "Real-world Data Collection", "Graph Query (CQL)"],
+          "fr": ["Architecture full-stack", "Collecte de données réelles", "Requêtes graphe (CQL)"]
+        }
+      },
       "github": "https://github.com/VictorNico/manzhie-server",
       "paper": "",
       "color": "#F97316",
@@ -224,6 +314,16 @@
       "highlights": {
         "en": ["Pure vanilla JS, no frameworks", "Live weather widget via external API", "Scoreboard & chronometre features"],
         "fr": ["Vanilla JS pur, sans framework", "Widget météo en direct via API externe", "Tableau des scores et chronomètre"]
+      },
+      "concepts": {
+        "theoretical": {
+          "en": ["OOP Principles", "Game Loop", "Event-Driven Architecture", "DOM Manipulation"],
+          "fr": ["Principes POO", "Boucle de jeu", "Architecture orientée événements", "Manipulation du DOM"]
+        },
+        "methods": {
+          "en": ["Vanilla JS Architecture", "External API Integration", "Browser Game Design"],
+          "fr": ["Architecture Vanilla JS", "Intégration d'API externe", "Conception de jeu navigateur"]
+        }
       },
       "github": "https://github.com/VictorNico/DinoChromeGame",
       "paper": "https://dinochromegame.pages.dev/",

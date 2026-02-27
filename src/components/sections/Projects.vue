@@ -53,11 +53,41 @@
             </li>
           </ul>
 
-          <!-- Stack -->
-          <div class="stack">
-            <span v-for="tech in project.stack" :key="tech" class="tech-tag">
-              {{ tech }}
-            </span>
+          <!-- Competencies: Theory / Methods / Tools -->
+          <div class="competencies">
+            <div class="comp-row" v-if="getTranslatedArray(project.concepts?.theoretical)?.length">
+              <span class="comp-label comp-label--theory">
+                <i class="bi bi-lightbulb"></i>
+                {{ t('projects.theory') }}
+              </span>
+              <span
+                v-for="c in getTranslatedArray(project.concepts.theoretical)"
+                :key="c"
+                class="comp-tag comp-tag--theory"
+              >{{ c }}</span>
+            </div>
+            <div class="comp-row" v-if="getTranslatedArray(project.concepts?.methods)?.length">
+              <span class="comp-label comp-label--method">
+                <i class="bi bi-eyedropper"></i>
+                {{ t('projects.methods') }}
+              </span>
+              <span
+                v-for="m in getTranslatedArray(project.concepts.methods)"
+                :key="m"
+                class="comp-tag comp-tag--method"
+              >{{ m }}</span>
+            </div>
+            <div class="comp-row" v-if="project.stack?.length">
+              <span class="comp-label comp-label--tool">
+                <i class="bi bi-cpu"></i>
+                {{ t('projects.tools') }}
+              </span>
+              <span
+                v-for="tech in project.stack"
+                :key="tech"
+                class="comp-tag comp-tag--tool"
+              >{{ tech }}</span>
+            </div>
           </div>
 
           <!-- Links -->
@@ -312,20 +342,63 @@ const filteredProjects = computed(() => {
   }
 }
 
-.stack {
+.competencies {
   display: flex;
-  flex-wrap: wrap;
-  gap: $spacing-xs;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: $spacing-sm;
+  border-top: 1px solid rgba(100, 255, 218, 0.08);
 }
 
-.tech-tag {
-  padding: 3px 10px;
-  background: rgba(100, 255, 218, 0.06);
-  border: 1px solid rgba(100, 255, 218, 0.2);
-  border-radius: $radius-full;
-  font-size: 0.8rem;
+.comp-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.comp-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
   font-family: $font-mono;
-  color: $text-secondary;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding: 2px 6px 2px 0;
+
+  &--theory { color: #A78BFA; }
+  &--method  { color: #FCD34D; }
+  &--tool    { color: $color-secondary; }
+}
+
+.comp-tag {
+  padding: 2px 8px;
+  border-radius: $radius-full;
+  font-size: 0.72rem;
+  font-family: $font-mono;
+  line-height: 1.6;
+
+  &--theory {
+    background: rgba(139, 92, 246, 0.1);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    color: #C4B5FD;
+  }
+
+  &--method {
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.25);
+    color: #FDE68A;
+  }
+
+  &--tool {
+    background: rgba(100, 255, 218, 0.06);
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    color: $text-secondary;
+  }
 }
 
 .project-links {

@@ -1,5 +1,82 @@
 # Changelog - Portfolio v2
 
+## [Unreleased]
+
+---
+
+## Version 2.4.0 (2026-02-27)
+
+Refonte de la section **Projects** : chaque carte expose désormais les compétences R&D sur trois axes distincts — théoriques, méthodologiques et techniques — plutôt qu'une liste plate d'outils.
+
+---
+
+### ✨ Nouvelles Fonctionnalités
+
+#### Décomposition des compétences en 3 axes — Projects
+Les cartes projet affichent maintenant trois lignes labellisées et colorées distinctement, remplaçant l'ancienne rangée `stack` monochrome :
+
+| Axe | Couleur | Contenu |
+|---|---|---|
+| `🔮 Theory` | Violet `#A78BFA` | Fondements théoriques et mathématiques |
+| `⚗ Methods` | Ambre `#FCD34D` | Méthodes scientifiques et protocoles de recherche |
+| `⚙ Tools` | Cyan `#64FFDA` | Stack technique (inchangé) |
+
+**Fichier modifié :** `src/components/sections/Projects.vue`
+- Remplacement de `<div class="stack">` par un bloc `<div class="competencies">` à trois rangées
+- Chaque rangée utilise `getTranslatedArray()` pour le changement de langue dynamique
+- Nouvelles classes SCSS : `.competencies`, `.comp-row`, `.comp-label`, `.comp-tag` (variants `--theory`, `--method`, `--tool`)
+
+#### Champ `concepts` i18n dans les données projets
+Champ `concepts: { theoretical, methods }` ajouté aux 10 projets de `projects.i18n.json`, chaque axe étant pleinement bilingue (`{ "en": [...], "fr": [...] }`) :
+
+- **Multilayer Graph ML** — Graph Theory, Multilayer Networks, PageRank, k-Fold Cross-validation, Ablation Study…
+- **Plant Disease CNN** — Convolutional Neural Networks, Transfer Learning, Knowledge Distillation, Data Augmentation…
+- **Aurore NLP** — Acoustic Modeling, Sequence-to-Sequence Learning, Low-Resource NLP, Cross-lingual Transfer…
+- **Neural Networks from Scratch** — Backpropagation, Gradient Descent, Chain Rule, Calcul différentiel…
+- *(+ 6 autres projets)*
+
+**Fichier modifié :** `public/data/projects.i18n.json`
+
+#### Nouvelles clés i18n
+**Fichiers modifiés :** `src/i18n/locales/en.json`, `src/i18n/locales/fr.json`
+```json
+"projects": {
+  "theory":  "Theory"   / "Théorie",
+  "methods": "Methods"  / "Méthodes",
+  "tools":   "Tools"    / "Outils"
+}
+```
+
+---
+
+## Version 2.3.1 (2026-02-27)
+
+Corrections et mises à jour de contenu post-2.3.0.
+
+---
+
+### 🔧 Contenu & Corrections
+
+#### Photo de profil remplacée
+- Ancien fichier `profile-img.jpg` (197 Ko) supprimé
+- Nouveaux fichiers `profile.jpg` / `victor.jpg` (181 Ko) en remplacement
+- `profile.i18n.json` mis à jour avec le nouveau chemin d'image
+
+#### SEO affiné
+- `useSEO.js` — description et mots-clés enrichis
+- `profile.i18n.json` — titre et description mis à jour
+
+#### Données publications condensées
+- `publications.i18n.json` — entrées révisées et allégées
+
+#### Labels EN skills mis à jour
+- `skills.i18n.json` — libellés anglais harmonisés
+
+#### Section About — affichage dynamique de l'âge
+- `About.vue` — calcul et affichage de l'âge corrigés
+
+---
+
 ## Version 2.3.0 (2026-02-24)
 
 Refonte complète de la section **Skills** : remplacement du grid de cards générique par 5 visualisations interactives dédiées à chaque catégorie de compétences.

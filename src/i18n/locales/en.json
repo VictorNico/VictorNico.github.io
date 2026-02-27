@@ -28,7 +28,10 @@
     "title": "Projects",
     "featured": "Featured",
     "code": "Code",
-    "paper": "Visit"
+    "paper": "Visit",
+    "theory": "Theory",
+    "methods": "Methods",
+    "tools": "Tools"
   },
   "about": {
     "title": "About",

@@ -28,7 +28,10 @@
     "title": "Projets",
     "featured": "Mis en avant",
     "code": "Code",
-    "paper": "Visite"
+    "paper": "Visite",
+    "theory": "Théorie",
+    "methods": "Méthodes",
+    "tools": "Outils"
   },
   "about": {
     "title": "À propos",
