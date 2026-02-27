@@ -312,8 +312,8 @@
       },
       "stack": ["HTML", "CSS", "JavaScript", "Weather API", "OOP"],
       "highlights": {
-        "en": ["Pure vanilla JS, no frameworks", "Live weather widget via external API", "Scoreboard & chronometre features"],
-        "fr": ["Vanilla JS pur, sans framework", "Widget météo en direct via API externe", "Tableau des scores et chronomètre"]
+        "en": ["Pure vanilla JS, no frameworks", "Live weather widget via external API", "Augmented reality via weather and time", "Scoreboard & chronometre features","60 FPS constant","Effective collision management"],
+        "fr": ["Vanilla JS pur, sans framework", "Widget météo en direct via API externe", "Réalité augmenté via la météo et la temps", "Tableau des scores et chronomètre","60 FPS constants","Gestion efficace des collisions"]
       },
       "concepts": {
         "theoretical": {

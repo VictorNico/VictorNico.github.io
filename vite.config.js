@@ -40,6 +40,8 @@ export default defineConfig({
         ]
       },
       workbox: {
+        skipWaiting: true,
+        clientsClaim: true,
         globPatterns: ['**/*.{js,css,html,ico,png,jpg,svg,json,woff,woff2}'],
         globIgnores: [
           '**/android-chrome-*.png',
