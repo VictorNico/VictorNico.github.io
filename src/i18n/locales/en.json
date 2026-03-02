@@ -15,6 +15,7 @@
     "prefix": "I'm ",
     "downloadCV": "Download CV",
     "viewCV": "View CV",
+    "selectCV": "Select a CV",
     "viewProjects": "View Projects"
   },
   "cv": {

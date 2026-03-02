@@ -38,7 +38,7 @@
         <span>{{ t('hero.viewCV') }}</span>
         <i class="bx bx-chevron-down"></i>
         <select @change="onCVSelect" class="cv-select">
-          <option value="" disabled selected>{{ t('hero.viewCV') }}</option>
+          <option value="" disabled selected>{{ t('hero.selectCV') }}</option>
           <option v-for="(cv, i) in profile.personal.cvs" :key="i" :value="i">
             {{ getTranslated(cv.title) }}
           </option>
