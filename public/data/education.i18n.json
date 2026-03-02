@@ -133,7 +133,7 @@
       "location": "Yaoundé, CMR",
       "startDate": "2023-09",
       "endDate": "current",
-      "gpa": "3.17/4.0",
+      "gpa": "3.62/4.0",
       "description": {
         "en": "Master's thesis on 'Class-based Multilayer Graph Feature Extraction for Supervised Machine Learning'. Developed novel MNIFS protocol for optimal attribute selection and observation-based Personalized PageRank algorithm. Achieved up to 99.9% reduction in financial losses on credit risk prediction benchmarks. Validated approach on 7 benchmark datasets with 6 ML models. Manuscript submitted to Data Mining and Knowledge Discovery (DMKD) journal. Selected coursework: Advanced Data Mining, Computer Vision, Distributed Learning, AI, Advanced Algorithms & Optimization.",
         "fr": "Thèse de master sur 'Extraction de Caractéristiques de Graphes Multicouches Basée sur les Classes pour l'Apprentissage Automatique Supervisé'. Développement du protocole MNIFS novateur pour la sélection optimale d'attributs et algorithme de PageRank Personnalisé basé sur les observations. Réduction jusqu'à 99,9% des pertes financières sur les benchmarks de prédiction du risque de crédit. Validation sur 7 jeux de données avec 6 modèles ML. Manuscrit soumis à la revue Data Mining and Knowledge Discovery (DMKD). Cours sélectionnés : Fouille de Données Avancée, Vision par Ordinateur, Apprentissage Distribué, IA, Algorithmes Avancés & Optimisation."
