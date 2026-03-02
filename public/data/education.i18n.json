@@ -122,8 +122,8 @@
     {
       "id": 5,
       "degree": {
-        "en": "MSc in Data Science and Artificial Intelligence",
-        "fr": "MSc en Science des Données et Intelligence Artificielle"
+        "en": "MSc in Data Science",
+        "fr": "MSc en Science des Données"
       },
       "field": {
         "en": "Graph Machine Learning & Multilayer Network Analysis",
