@@ -44,7 +44,7 @@
       "website": "https://victornico-github-io.pages.dev/"
     },
     "cvs": [
-      { "title": { "en": "Data Scientist & AI Student Reasearcher", "fr": "Data Scientist et étudiant chercheur en IA" }, "path": "/assets/cvs/cv.pdf" }
+      { "title": { "en": "Data Scientist - ML & Customer Analytics", "fr": "Data Scientist - ML et analyse client" }, "path": "/assets/cvs/cv.pdf" }
     ],
     "social": [
       {
@@ -87,14 +87,14 @@
   "hero": {
     "roles": {
       "en": [
-        "AI/ML/DL Researcher & PhD Applicant",
+        "AI/DS/ML/DL Researcher & PhD Applicant",
         "CONIA Hackathon 2025: 1st Place Winner",
         "Graduate Research Assistant @ UY1",
         "Senior FullStack Developer",
         "Explainable AI Specialist"
       ],
       "fr": [
-        "Chercheur en AI/ML/DL & Candidat PhD",
+        "Chercheur en AI/DS/ML/DL & Candidat PhD",
         "Hackathon CONIA 2025: Gagnant 1ère Place",
         "Assistant de Recherche Diplômé @ UY1",
         "Développeur FullStack Senior",
