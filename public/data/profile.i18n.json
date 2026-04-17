@@ -44,7 +44,8 @@
       "website": "https://victornico-github-io.pages.dev/"
     },
     "cvs": [
-      { "title": { "en": "Data Scientist - ML & Customer Analytics", "fr": "Data Scientist - ML et analyse client" }, "path": "/assets/cvs/cv.pdf" }
+      { "title": { "en": "Data Scientist - ML & Customer Analytics", "fr": "Data Scientist - ML et analyse client" }, "path": "/assets/cvs/cv_victor-djiembou_ds_ca.pdf" },
+      { "title": { "en": "Senior Data Scientist / Machine Learning Engineer", "fr": "Data Scientist / Ingenieur Machine Learning Senior" }, "path": "/assets/cvs/cv_victor-djiembou_ds_ml_senior.pdf" }
     ],
     "social": [
       {

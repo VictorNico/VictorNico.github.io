@@ -5,6 +5,44 @@
   },
   "awards": [
     {
+      "id": 0,
+      "title": {
+        "en": "1st Place - Best Project I3AFD 2026",
+        "fr": "1ère Place - Meilleur Projet I3AFD 2026"
+      },
+      "issuer": "I3AFD (UY1, ENPS, Clermont Auvergne, CNRS)",
+      "date": "2026",
+      "description": {
+        "en": "Awarded for the design and development of a system known as Document Q&A. The solution demonstrated a practical RAG pipeline for the competition’s document-based contexts, striking a balance between system performance and resource efficiency.",
+        "fr": "Récompensé pour la conception et le développement d'un système dit Document Q & A. La solution a démontré une pipeline RAG pratique pour les contextes documentaire de la compétition, équilibrant performance du système et frugalité."
+      },
+      "achievement": {
+        "en": "Frugal efficient for Document Q&A system",
+        "fr": "Système de questions-réponses pour documents, à la fois économique et efficace"
+      },
+      "icon": "bi-trophy-fill",
+      "color": "#2FD900"
+    },
+    {
+      "id": 3,
+      "title": {
+        "en": "1st Place - Best Poster I3AFD 2026",
+        "fr": "1ère Place - Meilleur Poster I3AFD 2026"
+      },
+      "issuer": "I3AFD (UY1, ENPS, Clermont Auvergne, CNRS)",
+      "date": "2026",
+      "description": {
+        "en": "Awarded for the best research paper. The title of the research is: \"Cost-Sensitive Bank Credit Risk Prediction Integrating Descriptors Extracted from Multilayer Bipartite Graph\".",
+        "fr": "Récompensé pour la présentation du meilleur travail de recherche. La recherche a pour titre : \"Cost-Sensitive Bank Credit Risk Prediction Integrating Descriptors Extracted from Multilayer Bipartite Graph\"."
+      },
+      "achievement": {
+        "en": "Relevant contributions, good methodology, and a strong research track",
+        "fr": "des contributions pertinentes, une méthodologie rigoureuse et un solide parcours de recherche"
+      },
+      "icon": "bi-trophy-fill",
+      "color": "#20DFF0"
+    },
+    {
       "id": 1,
       "title": {
         "en": "1st Place - CONIA Hackathon 2025",
