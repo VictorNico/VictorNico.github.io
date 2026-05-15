@@ -585,6 +585,44 @@
           "fr": "Manuscrit en préparation pour IEEE Access, soumission prévue avril 2026"
         }
       ]
+    },
+    {
+      "id": 14,
+      "type": "employment",
+      "title": {
+        "en": "Data Scientist – ML & Customer Analytics",
+        "fr": "Data Scientist – ML & Customer Analytics"
+      },
+      "company": "Orange Cameroun (via Cible Études & Conseil)",
+      "location": "Douala, CMR",
+      "startDate": "2026-05",
+      "endDate": "current",
+      "responsibilities": [
+        {
+          "en": "Mission within the CX Transformation Direction, in a department dedicated to quality and design thinking, transforming customer experience through data and Machine Learning",
+          "fr": "Mission au sein de la Direction CX Transformation, dans un département dédié à la qualité et au design thinking, autour de la transformation de l'expérience client par la donnée et le Machine Learning"
+        },
+        {
+          "en": "Architecture and industrialization of the Voice of Customer (VoC): centralizing heterogeneous sources (call center logs, verbatims, complaints, NPS/CSAT, public reviews) into a unified client view",
+          "fr": "Architecture et industrialisation de la Voice of Customer (VoC) : centralisation des sources hétérogènes (logs call center, verbatims, réclamations, NPS/CSAT, avis publics) en une vision client unifiée"
+        },
+        {
+          "en": "Predictive modeling for early churn detection and identification of weak insatisfaction signals",
+          "fr": "Modélisation prédictive pour la détection précoce du churn et l'identification des signaux faibles d'insatisfaction"
+        },
+        {
+          "en": "Advanced semantic analysis (NLP): sentiment analysis, topic modeling, intent classification on customer interactions",
+          "fr": "Analyse sémantique avancée (NLP) : sentiment analysis, topic modeling, classification d'intentions sur les interactions clients"
+        },
+        {
+          "en": "Design of a Customer Experience Health Dashboard unifying quantitative and qualitative signals",
+          "fr": "Conception d'un Dashboard de Santé de l'Expérience Client unifiant les signaux quantitatifs et qualitatifs"
+        },
+        {
+          "en": "Translation of Design Thinking hypotheses into data-driven validations through cross-analysis of perceived quality and product quality",
+          "fr": "Translation des hypothèses Design Thinking en validations data-driven via l'analyse croisée de la qualité perçue et de la qualité produit"
+        }
+      ]
     }
   ]
 }

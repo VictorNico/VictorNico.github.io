@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://victornico.github.io/",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "vite --host --open",
     "build": "vite build",
     "preview": "vite preview",
     "release:major": "npm version major",
