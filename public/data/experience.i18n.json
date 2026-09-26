@@ -599,8 +599,12 @@
       "endDate": "current",
       "responsibilities": [
         {
-          "en": "Mission within the CX Transformation Direction, in a department dedicated to quality and design thinking, transforming customer experience through data and Machine Learning",
-          "fr": "Mission au sein de la Direction CX Transformation, dans un département dédié à la qualité et au design thinking, autour de la transformation de l'expérience client par la donnée et le Machine Learning"
+          "en": "Mission within the CX Transformation Direction, in a department dedicated to quality and design thinking, transforming customer experience through data and Machine Learning (FDP: CX Quality Management Transformation Specialist)",
+          "fr": "Mission au sein de la Direction CX Transformation, dans un département dédié à la qualité et au design thinking, autour de la transformation de l'expérience client par la donnée et le Machine Learning (FDP: Spécialiste de la transformation CX et gestion de la qualité)"
+        },
+        {
+          "en": "Automation of maintenance and implementation of a root-cause analysis approach using Lean Six Sigma and DMAIC",
+          "fr": "automatisation des manutenion et impulsion d'une pratique se recherche de cause racide avec Lean Six Sigma et Dmaic"
         },
         {
           "en": "Architecture and industrialization of the Voice of Customer (VoC): centralizing heterogeneous sources (call center logs, verbatims, complaints, NPS/CSAT, public reviews) into a unified client view",

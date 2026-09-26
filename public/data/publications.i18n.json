@@ -4,37 +4,6 @@
     "fr": "Contributions à la recherche et publications académiques en Apprentissage Automatique sur Graphes, Analyse de Réseaux Multicouches et IA Agricole."
   },
   "_publications": [
-
-    {
-      "id": 3,
-      "status": "under-review",
-      "title": {
-        "en": "Optimized Deep Learning for Plant Disease Classification: A Competition-Winning Approach Balancing Accuracy and Speed",
-        "fr": "Apprentissage Profond Optimisé pour la Classification des Maladies des Plantes : Une Approche Gagnante de Compétition Équilibrant Précision et Vitesse"
-      },
-      "authors": [
-        "Djiembou, V.N.",
-        "[Co-authors]"
-      ],
-      "journal": "IEEE Access",
-      "year": 2026,
-      "submissionDate": "2026-04",
-      "abstract": {
-        "en": "This paper presents an optimized CNN architecture for plant disease classification that achieves superior accuracy while significantly reducing inference time, enabling mobile deployment in resource-constrained agricultural settings. Building upon the baseline models published in IJCA 2025, we introduce novel optimization techniques including advanced data augmentation, model compression, and efficient training pipelines. Our approach won 1st Place at the CONIA Hackathon 2025, demonstrating practical deployment readiness for Sub-Saharan African agricultural contexts.",
-        "fr": "Cet article présente une architecture CNN optimisée pour la classification des maladies des plantes qui atteint une précision supérieure tout en réduisant considérablement le temps d'inférence, permettant le déploiement mobile dans des contextes agricoles aux ressources limitées. En s'appuyant sur les modèles de référence publiés dans IJCA 2025, nous introduisons de nouvelles techniques d'optimisation incluant l'augmentation avancée de données, la compression de modèles et des pipelines d'entraînement efficaces. Notre approche a remporté la 1ère place au Hackathon CONIA 2025, démontrant la préparation au déploiement pratique pour les contextes agricoles d'Afrique subsaharienne."
-      },
-      "achievement": {
-        "en": "1st Place Winner - CONIA Hackathon 2025 (Computational Intelligence & AI Applications)",
-        "fr": "Gagnant 1ère Place - Hackathon CONIA 2025 (Intelligence Computationnelle et Applications IA)"
-      },
-      "note": {
-        "en": "Manuscript in preparation for IEEE Access, target submission April 2026.",
-        "fr": "Manuscrit en préparation pour IEEE Access, soumission prévue en avril 2026."
-      },
-      "tags": ["Deep Learning", "Computer Vision", "Agricultural AI", "Model Optimization", "Mobile Deployment", "Competition Winner"]
-    }
-  ],
-  "publications": [
     {
       "id": 2,
       "status": "under-review",
@@ -65,6 +34,37 @@
       },
       "tags": ["Graph Machine Learning", "Multilayer Networks", "Feature Extraction", "PageRank", "Supervised Learning", "Multi Domains", "Explainable AI"]
     },
+    {
+      "id": 3,
+      "status": "under-review",
+      "title": {
+        "en": "Optimized Deep Learning for Plant Disease Classification: A Competition-Winning Approach Balancing Accuracy and Speed",
+        "fr": "Apprentissage Profond Optimisé pour la Classification des Maladies des Plantes : Une Approche Gagnante de Compétition Équilibrant Précision et Vitesse"
+      },
+      "authors": [
+        "Djiembou, V.N.",
+        "[Co-authors]"
+      ],
+      "journal": "IEEE Access",
+      "year": 2026,
+      "submissionDate": "2026-04",
+      "abstract": {
+        "en": "This paper presents an optimized CNN architecture for plant disease classification that achieves superior accuracy while significantly reducing inference time, enabling mobile deployment in resource-constrained agricultural settings. Building upon the baseline models published in IJCA 2025, we introduce novel optimization techniques including advanced data augmentation, model compression, and efficient training pipelines. Our approach won 1st Place at the CONIA Hackathon 2025, demonstrating practical deployment readiness for Sub-Saharan African agricultural contexts.",
+        "fr": "Cet article présente une architecture CNN optimisée pour la classification des maladies des plantes qui atteint une précision supérieure tout en réduisant considérablement le temps d'inférence, permettant le déploiement mobile dans des contextes agricoles aux ressources limitées. En s'appuyant sur les modèles de référence publiés dans IJCA 2025, nous introduisons de nouvelles techniques d'optimisation incluant l'augmentation avancée de données, la compression de modèles et des pipelines d'entraînement efficaces. Notre approche a remporté la 1ère place au Hackathon CONIA 2025, démontrant la préparation au déploiement pratique pour les contextes agricoles d'Afrique subsaharienne."
+      },
+      "achievement": {
+        "en": "1st Place Winner - CONIA Hackathon 2025 (Computational Intelligence & AI Applications)",
+        "fr": "Gagnant 1ère Place - Hackathon CONIA 2025 (Intelligence Computationnelle et Applications IA)"
+      },
+      "note": {
+        "en": "Manuscript in preparation for IEEE Access, target submission April 2026.",
+        "fr": "Manuscrit en préparation pour IEEE Access, soumission prévue en avril 2026."
+      },
+      "tags": ["Deep Learning", "Computer Vision", "Agricultural AI", "Model Optimization", "Mobile Deployment", "Competition Winner"]
+    }
+  ],
+  "publications": [
+    
     {
       "id": 1,
       "status": "published",
