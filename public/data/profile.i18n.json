@@ -11,12 +11,12 @@
     },
     "birthdate": "2000-01-28",
     "location": {
-      "city": "Yaoundé",
+      "city": "Douala",
       "country": "CAMEROON",
-      "address": "Quartier Général, Rue 3.719",
+      "address": "Ndogpassi 3",
       "coordinates": {
-        "lat": 3.8480,
-        "lng": 11.5021
+        "lat": 4.0135,
+        "lng": 9.7745
       }
     },
     "photo": "/assets/victor.jpg",
@@ -35,7 +35,8 @@
     "contacts": {
       "emails": [
         "nico.djiembou@facsciences-uy1.cm",
-        "Viclegranddab@gmail.com"
+        "Viclegranddab@gmail.com",
+        "victor.djiembou.28@gmail.com"
       ],
       "phones": [
         "+237 695 449 091",
