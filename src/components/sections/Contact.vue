@@ -43,7 +43,7 @@
 
           <div class="map-container">
             <iframe
-              :src="`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJr0HlhJHPixAR44u_g8K2t4A&key=AIzaSyBZKolxiadm2uMJnUrCyxKapWyy3wPyf-I`"
+              :src="`https://www.google.com/maps/embed/v1/place?q=2Q3F%2BJCW%2C+Douala%2C+Cameroun&key=AIzaSyBZKolxiadm2uMJnUrCyxKapWyy3wPyf-I`"
               width="100%"
               height="290"
               style="border:0;"
